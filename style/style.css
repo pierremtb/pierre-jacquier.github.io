@@ -77,30 +77,33 @@ body
     font-weight: 300;
 }
 
-#left
-    {
-      width: 50%;
-      float: left;
-        padding-left: 20;
-        color: #313131;
-    }
-#left ul, #right ul
+#skills
 {
-  list-style-type: circle;   
-    margin-left: 150;
+    list-style-type: none;
+    width: 100%;
+    margin-top: 30;
+    margin-bottom: 80;
 }
 
-    #right
-    {
-      margin-left: 50%; /* Change this to whatever the width of your left column is*/
-      padding-left: 20;
-        color: #313131;
-    }
+#skills > li
+{
+    float:left;
+    width: 33.3%;
+    text-align: center;
+}
 
-    .clear
-    {
-      clear: both;
-    }
+#skills li ul
+{
+    list-style-type: none;
+    font-size: 20px; 
+    color: #313131;    
+}
+
+#skills li ul li
+{
+    margin-top: 5;
+    margin-bottom: 5;
+}
 
 .elevation-2
 {
@@ -128,6 +131,38 @@ body
 .project
 {
     display: inline;
+    background: #313131;
+    color: white;
     padding: 30;
 }
 
+@media screen and (max-width:700px)
+{
+    #cover
+    {
+        height: 200px;
+    }
+
+    #avatar
+    {
+        width: 140px;
+        top: 30;
+        margin-left: -70;
+    }
+
+    #content
+    {
+        top: 200;
+        padding: 30;
+    }
+
+    .slog
+    {
+        font-size: 38px;    
+    }
+    
+    #pres
+    {
+        font-size: 18px;   
+    }
+}
