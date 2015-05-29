@@ -18,7 +18,6 @@ body
     background-size: cover; 
     width: 100%;
     position: fixed;
-    overflow-x: hidden;
 }
 
 #avatar
@@ -311,5 +310,9 @@ z-index: 10;
     #pres
     {
         font-size: 18px;   
+    }
+    body
+    {
+    overflow-x: hidden;   
     }
 }
