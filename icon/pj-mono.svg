@@ -15,7 +15,10 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="pj.svg">
+   sodipodi:docname="pj-mono.svg"
+   inkscape:export-filename="/home/pierremtb/pierremtb.github.io/images/graph2.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
   <defs
      id="defs4">
     <filter
@@ -441,6 +444,70 @@
          result="composite2"
          id="feComposite3426" />
     </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Drop Shadow"
+       id="filter4414">
+      <feFlood
+         flood-opacity="0.113725"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood4416" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite4418" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="3"
+         result="blur"
+         id="feGaussianBlur4420" />
+      <feOffset
+         dx="2"
+         dy="1.9"
+         result="offset"
+         id="feOffset4422" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="composite2"
+         id="feComposite4424" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Drop Shadow"
+       id="filter4426">
+      <feFlood
+         flood-opacity="0.113725"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood4428" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite4430" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="3"
+         result="blur"
+         id="feGaussianBlur4432" />
+      <feOffset
+         dx="2"
+         dy="1.9"
+         result="offset"
+         id="feOffset4434" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="composite2"
+         id="feComposite4436" />
+    </filter>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -449,9 +516,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.4599157"
-     inkscape:cx="-62.053545"
-     inkscape:cy="328.19379"
+     inkscape:zoom="0.5"
+     inkscape:cx="530.39772"
+     inkscape:cy="126.34667"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -472,7 +539,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -481,92 +548,172 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(-69.483521,-316.71384)">
-    <rect
-       style="fill:#009688;fill-opacity:1"
-       id="rect3401"
-       width="650"
-       height="650"
-       x="69.483521"
-       y="316.71384"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90" />
     <g
-       id="g3345"
-       style="filter:url(#filter3416)">
+       id="g4358"
+       transform="matrix(1,0,0,0.9006922,0,58.592356)"
+       style="filter:url(#filter4414)">
       <rect
          inkscape:export-ydpi="90"
          inkscape:export-xdpi="90"
-         ry="5.0064535"
-         y="448.75354"
-         x="219.13049"
-         height="387.88483"
-         width="49.241814"
-         id="rect3344"
-         style="fill:#ffffff;fill-rule:evenodd;stroke:none;stroke-width:0.75818574px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;" />
-      <rect
-         inkscape:export-ydpi="90"
-         inkscape:export-xdpi="90"
-         ry="5"
-         y="448.00964"
-         x="219.80556"
-         height="50"
-         width="271.42856"
-         id="rect3346"
-         style="fill:#ffffff;" />
-      <rect
-         inkscape:export-ydpi="90"
-         inkscape:export-xdpi="90"
-         ry="5"
-         y="448.01743"
-         x="442.67996"
-         height="181.42899"
-         width="50"
-         id="rect3348"
-         style="fill:#ffffff;" />
-    </g>
-    <g
-       id="g3340"
-       style="filter:url(#filter3439)">
-      <rect
-         inkscape:export-ydpi="90"
-         inkscape:export-xdpi="90"
-         ry="5.0130601"
+         ry="5.1939049"
          transform="scale(-1,-1)"
-         y="-836.67413"
-         x="-569.83655"
-         height="388.3967"
-         width="49.241814"
+         y="-835.67987"
+         x="-570.70654"
+         height="402.40799"
+         width="33"
          id="rect3344-2"
-         style="fill:#ffffff;fill-rule:evenodd;stroke:none;stroke-width:0.75818574px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;" />
+         style="fill:#666666;fill-rule:evenodd;stroke:none;stroke-width:0.75818574px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
       <rect
          inkscape:export-ydpi="90"
          inkscape:export-xdpi="90"
-         ry="5"
+         ry="3.6638486"
          transform="scale(-1,-1)"
-         y="-837.12457"
-         x="-569.14423"
-         height="50"
-         width="271.42856"
+         y="-835.66736"
+         x="-569.14465"
+         height="36.638489"
+         width="271.42899"
          id="rect3346-2"
-         style="fill:#ffffff;" />
+         style="fill:#666666" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         ry="4.9860568"
+         transform="scale(-1,-1)"
+         y="-834.68384"
+         x="-328.78113"
+         height="180.92303"
+         width="33"
+         id="rect3348-2"
+         style="fill:#666666" />
+    </g>
+    <rect
+       style="fill:#666666;fill-opacity:1;stroke:none"
+       id="rect3428"
+       width="4.1902623"
+       height="3.3522098"
+       x="-21.864197"
+       y="733.73523" />
+    <rect
+       style="fill:none;fill-opacity:0.94117647;stroke:none"
+       id="rect4314"
+       width="643.6333"
+       height="425.93375"
+       x="75.793648"
+       y="427.19772"
+       inkscape:export-filename="/home/pierremtb/pierremtb.github.io/images/graph2.png"
+       inkscape:export-xdpi="20.974676"
+       inkscape:export-ydpi="20.974676" />
+    <g
+       transform="matrix(-1,0,0,-0.9006922,802.49021,1202.3596)"
+       id="g4358-2"
+       style="filter:url(#filter4426)">
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         ry="5.1939049"
+         transform="scale(-1,-1)"
+         y="-835.67987"
+         x="-570.70654"
+         height="402.40799"
+         width="33"
+         id="rect3344-2-0"
+         style="fill:#666666;fill-rule:evenodd;stroke:none;stroke-width:0.75818574px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         ry="3.6638486"
+         transform="scale(-1,-1)"
+         y="-836.75989"
+         x="-569.24323"
+         height="36.638489"
+         width="271.42899"
+         id="rect3346-2-1"
+         style="fill:#666666" />
       <rect
          inkscape:export-ydpi="90"
          inkscape:export-xdpi="90"
          ry="4.9860568"
          transform="scale(-1,-1)"
          y="-836.90436"
-         x="-347.78113"
+         x="-328.78113"
          height="180.92303"
-         width="50"
-         id="rect3348-2"
-         style="fill:#ffffff;" />
+         width="33"
+         id="rect3348-2-2"
+         style="fill:#666666" />
     </g>
     <rect
-       style="fill:#009688;fill-opacity:1;stroke:none"
-       id="rect3428"
-       width="4.1902623"
-       height="3.3522098"
-       x="-21.864197"
-       y="733.73523" />
+       style="fill:none;fill-opacity:0.94117647;stroke:none"
+       id="rect4387"
+       width="652.55811"
+       height="441.73166"
+       x="68.368034"
+       y="413.43381"
+       ry="5.1939001"
+       inkscape:export-filename="/home/pierremtb/pierremtb.github.io/images/graph2.png"
+       inkscape:export-xdpi="21.572853"
+       inkscape:export-ydpi="21.572853" />
+    <rect
+       style="fill:none;fill-opacity:0.94117647;stroke:none"
+       id="rect4389"
+       width="646.98071"
+       height="432.8078"
+       x="69.483521"
+       y="415.66476"
+       ry="5.1939001"
+       inkscape:export-filename="/home/pierremtb/pierremtb.github.io/images/graph2.png"
+       inkscape:export-xdpi="20.866156"
+       inkscape:export-ydpi="20.866156" />
+    <rect
+       style="fill:none;fill-opacity:0.94117647;stroke:none"
+       id="rect4391"
+       width="1.115484"
+       height="4.2872076"
+       x="377.35709"
+       y="460.88931"
+       ry="0.53590095" />
+    <rect
+       style="fill:none;fill-opacity:0.94117647;stroke:none"
+       id="rect4395"
+       width="650.32715"
+       height="433.92328"
+       x="69.483521"
+       y="423.47314"
+       ry="12.833033"
+       rx="0"
+       inkscape:export-filename="/home/pierremtb/pierremtb.github.io/images/graph2.png"
+       inkscape:export-xdpi="20.740995"
+       inkscape:export-ydpi="20.740995" />
+    <rect
+       style="fill:none;fill-opacity:0.94117647;stroke:none"
+       id="rect4397"
+       width="652"
+       height="432"
+       x="65.483521"
+       y="414.71384"
+       ry="4.9860601"
+       inkscape:export-filename="/home/pierremtb/pierremtb.github.io/images/graph2.png"
+       inkscape:export-xdpi="20.705521"
+       inkscape:export-ydpi="20.705521" />
+    <rect
+       style="fill:none;fill-opacity:0.94117647;stroke:none"
+       id="rect4438"
+       width="656"
+       height="440.75003"
+       x="69.483521"
+       y="405.96384"
+       ry="5.1939001"
+       rx="5.75" />
+    <rect
+       style="fill:none;fill-opacity:0.94117647;stroke:none"
+       id="rect4440"
+       width="650"
+       height="440.00003"
+       x="69.483521"
+       y="411.01379"
+       rx="5.75"
+       ry="5.1939101"
+       inkscape:export-filename="/home/pierremtb/pierremtb.github.io/images/graph2.png"
+       inkscape:export-xdpi="20.705521"
+       inkscape:export-ydpi="20.705521" />
   </g>
 </svg>
