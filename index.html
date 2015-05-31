@@ -8,9 +8,19 @@
 		<meta charset="utf-8">
 		<link rel="shortcut icon" href="icon/pj-rounded-shadows.png" type="image/png">
 		<link rel="icon" type="image/png" href="icon/pj-rounded-shadows.png" />
+        <script src="js/script.js"></script>
 	</head>
     <body>
         <div id="cover"></div>
+        <img src="images/languages.png" id="more_languages" onclick="openLanguagesDropdown()">
+         <ul id="dropdown_languages" class="elevation-2" onclick="closeLanguagesDropdown()">
+            <li id="drop_languages_item_1" onclick="location.href='http://pierre-jacquier.com/';">
+                English
+            </li>
+            <li id="drop_languages_item_2" onclick="location.href='http://pierre-jacquier.com/fr';">
+                Français
+            </li>
+        </ul>
         <img id="avatar" class="elevation-2" src="icon/pj-shadows-rounded-name.png">
         <div id="content" class="elevation-2-top">
             <div class="slog">Code. Design.</div>

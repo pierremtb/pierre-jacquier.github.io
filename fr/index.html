@@ -8,22 +8,30 @@
 		<meta charset="utf-8">
 		<link rel="shortcut icon" href="../icon/pj-rounded-shadows.png" type="image/png">
 		<link rel="icon" type="image/png" href="../icon/pj-rounded-shadows.png" />
+        <script src="../js/script.js"></script>
 	</head>
     <body>
         <div id="cover"></div>
+        <img src="../images/languages.png" id="more_languages" onclick="openLanguagesDropdown()">
+        <ul id="dropdown_languages" class="elevation-2"  onclick="closeLanguagesDropdown()">
+            <li id="drop_languages_item_1" onclick="location.href='http://pierre-jacquier.com/';">
+                English
+            </li>
+            <li id="drop_languages_item_2" onclick="location.href='http://pierre-jacquier.com/fr';">
+                Français
+            </li>
+        </ul>
         <img id="avatar" class="elevation-2" src="../icon/pj-shadows-rounded-name.png">
         <div id="content" class="elevation-2-top">
             <div class="slog">Code. Design.</div>
             <p id="pres">
-            	//FR version is coming
-                I'm an engineering student in first grade at Université de Technologie Belfort Montbéliard, France.
-                Mountainbiking and technology are my leading hobbys, therefore as I love to ride outside, I'm also a nut about everything related to tech, programmation and mechanics, especially when things are well-presended : I am found of design. This website is created to present myself and my projects, as well as to have fun with web-design.
+                Je suis étudiant ingénieur en première année à l'Université de Technologie Belfort Montbéliard, en France.
+                Le VTT et la technologie sont mes deux principaux centres d'intérêts, ainsi, autant j'aime rouler à l'extérieur, je suis également très intéressé dans tout ce qui se rapporte à la technologie, à la programmation et à la mécanique, et surtout lorsque les choses sont bien présentées : le design est pour moi un point très important. Ce site a pour vocation de me présenter rapidement, ainsi que mes projets, mais également pour s'amuser en web-design.
             </p>
             <img class="sep" src="../images/sep.png">
             <div class="slog">In front of a keyboard</div>
             <p id="pres">
-                After many experimentations I've come to learn a bunch of programming langages, either low or high-level. 
-                As I care about design, I'm used to play with graphic softwares, as Inkscape or Gimp.
+                Après de nombreuses expérimentations, j'ai fini par apprendre plusieurs langages de programmations, de niveaux différents. Comme je m'intéresse au design, j'ai également l'habitude de travailler avec des logiciels de graphisme.
                 
             </p>
                  <ul id="skills">
@@ -56,7 +64,7 @@
                 </ul>
             <div class="clear"></div>
             <img class="sep" src="../images/sep.png">
-            <div class="slog">My current projects</div>
+            <div class="slog">Mes projets actuels</div>
     <div id="projects_container">
         
             
@@ -65,7 +73,7 @@
             </div>
             <div class="card_legend">
             <span class="project_header">Papyros Calculator</span>
-                <p class="project_legend">A calculator for Papyros</p>
+                <p class="project_legend">Une calculatrice pour Papyros</p>
             </div>
             </div></a>
         <a href="https://github.com/Diffusio/diffusio-gtk"><div class="project elevation-1" id="p2">
@@ -73,7 +81,7 @@
             </div>
             <div class="card_legend elevation-3">
             <span class="project_header">Diffusio</span>
-            <p class="project_legend">Building website is now simple</p>
+            <p class="project_legend">Créer des sites web n'a jamais été aussi simple</p>
             </div>
         </div></a>
     </div>
