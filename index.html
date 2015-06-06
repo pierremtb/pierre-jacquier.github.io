@@ -11,9 +11,22 @@
 		<link rel="icon" type="image/png" href="icon/pj-rounded-shadows.png" />
         <script src="js/script.js"></script>
 	</head>
-    <body>
+    <body onscroll="closeMenu();closeLanguagesDropdown()">
         <div id="cover"  onclick="closeLanguagesDropdown()"></div>
+        <div id="arrow" class="material-icon hamburger" onclick="toogleMenu()">
+			<span id="s_1" class="first"></span>
+			<span id="s_2" class="second"></span>
+			<span id="s_3" class="third"></span>
+		</div>
         <img src="images/languages.png" id="more_languages" onclick="openLanguagesDropdown()">
+        <div id="menu" onclick="closeMenu()" class="elevation-2">
+            <ul id="sub_menus">
+                <li class="sub_menu" onclick="closeMenu()" id="menu_header">Menu</li>
+                <li class="sub_menu" onclick="">Home</li>
+                <li class="sub_menu" onclick="">My Projects</li>
+                <li class="sub_menu" onclick="">C.V</li>
+            </ul>
+        </div>
          <ul id="dropdown_languages" class="elevation-2" onclick="closeLanguagesDropdown()">
             <li id="drop_languages_item_1" onclick="location.href='http://pierre-jacquier.com/';">
                 English
