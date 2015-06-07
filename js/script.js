@@ -1,3 +1,23 @@
+var b_hgt, b_wth;
+getViewport();
+
+function getViewport() {
+
+
+ // the more standards compliant browsers (mozilla/netscape/opera/IE7) use window.innerWidth and window.innerHeight
+ if (typeof window.innerWidth != 'undefined') {
+   b_wth = window.innerWidth,
+   b_hgt = window.innerHeight
+ }
+
+// IE6 in standards compliant mode (i.e. with a valid doctype as the first line in the document)
+ else if (typeof document.documentElement != 'undefined'
+ && typeof document.documentElement.clientWidth !=
+ 'undefined' && document.documentElement.clientWidth != 0) {
+    b_wth = document.documentElement.clientWidth,
+    b_hgt = document.documentElement.clientHeight
+ }
+}
 function openLanguagesDropdown()
 {
     document.getElementById("dropdown_languages").style.transition = "max-height 5s, max-width 5s, opacity 0.3s"
@@ -26,7 +46,7 @@ function openMenu()
 {
     document.getElementById('menu').style.transition = "height 0.6s, width 0.3s";
     document.getElementById('menu').style.width = 300;
-    document.getElementById('menu').style.height = 195;
+    document.getElementById('menu').style.height = 199;
     document.getElementById('s_1').style.background= "rgb(90,90,90)";
     document.getElementById('s_2').style.background= "rgb(90,90,90)";
     document.getElementById('s_3').style.background= "rgb(90,90,90)";
@@ -72,4 +92,38 @@ function toogleMenu()
         closeMenu()
     else
         openMenu()
+}
+
+function manageAvatar()
+{
+    if(document.body.scrollTop >= document.getElementById('content').offsetTop)
+    {
+        document.getElementById('arrow').style.left = 12;
+        document.getElementById('arrow').style.top = 20;
+        document.getElementById('avatar_mini').style.top = 10;
+        document.getElementById('menu_header').style.marginTop = 13;
+        document.getElementById('arrow_up').style.top = 12;
+        
+    }
+    else
+    {
+        document.getElementById('arrow').style.left = 12;
+        document.getElementById('arrow').style.top = 12;
+        document.getElementById('avatar_mini').style.top = -55;
+        document.getElementById('menu_header').style.marginTop = 5;
+        document.getElementById('arrow_up').style.top = -50;
+    }
+    if(b_wth<800 && document.body.scrollTop >= document.getElementById('content').offsetTop)
+    {
+        document.getElementById('s_1').style.background= "rgb(90,90,90)";
+        document.getElementById('s_2').style.background= "rgb(90,90,90)";
+        document.getElementById('s_3').style.background= "rgb(90,90,90)";
+    }
+    else
+    {
+        document.getElementById('s_1').style.background= "#fff";
+        document.getElementById('s_2').style.background= "#fff";
+        document.getElementById('s_3').style.background= "#fff";
+    }   
+    
 }

@@ -11,13 +11,15 @@
 		<link rel="icon" type="image/png" href="icon/pj-rounded-shadows.png" />
         <script src="js/script.js"></script>
 	</head>
-    <body onscroll="closeMenu();closeLanguagesDropdown()">
+    <body onscroll="closeMenu();closeLanguagesDropdown();manageAvatar()" onresize="getViewport()">
         <div id="cover"  onclick="closeLanguagesDropdown()"></div>
+        <img id="avatar_mini" onclick="openMenu()" class="elevation-2" src="icon/pj-shadows-rounded-name.png">
         <div id="arrow" class="material-icon hamburger" onclick="toogleMenu()">
-			<span id="s_1" class="first"></span>
+			<span id="s_1" class="first "></span>
 			<span id="s_2" class="second"></span>
-			<span id="s_3" class="third"></span>
+			<span id="s_3" class="third "></span>
 		</div>
+        <img src="images/arrow_up.png" id="arrow_up" onclick="document.body.scrollTop=0">
         <img src="images/languages.png" id="more_languages" onclick="openLanguagesDropdown()">
         <div id="menu" onclick="closeMenu()" class="elevation-2">
             <ul id="sub_menus">
@@ -36,15 +38,17 @@
             </li>
         </ul>
         <img id="avatar" class="elevation-2" src="icon/pj-shadows-rounded-name.png">
-        <div id="content" class="elevation-2-top">
-            <div class="slog">Code. Design.</div>
-            <p id="pres">
+        <div id="content" class="elevation-2">
+            <div class="slog" id="first_s">Code. Design.</div>
+            <img class="sep" src="images/sep.png">
+            <img id="me" src="images/me.jpg">
+            <p class="pres" id="voice">
                 I'm an engineering student in first grade at Université de Technologie Belfort Montbéliard, France.
                 Mountainbiking and technology are my leading hobbys, therefore as I love to ride outside, I'm also a nut about everything related to tech, programmation and mechanics, especially when things are well-presented : I am found of design. This website is created to present myself and my projects, as well as to have fun with web-design.
             </p>
             <img class="sep" src="images/sep.png">
             <div class="slog">In front of a keyboard</div>
-            <p id="pres">
+            <p class="pres">
                 After many experimentations I've come to learn a bunch of programming langages, either low or high-level. 
                 As I care about design, I'm used to play with graphic softwares, as Inkscape or Gimp.
                 

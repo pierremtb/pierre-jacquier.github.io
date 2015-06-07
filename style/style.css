@@ -13,8 +13,9 @@ body
 
 #cover
 {
-    height: 300px;
-    background: url(../images/cover1.jpg);
+    height: 1080px;
+    height: 100vh;
+    background: url(../images/cover2.jpg);
     -webkit-background-size: cover;
     background-size: cover; 
     width: 100%;
@@ -28,20 +29,43 @@ body
     margin: 0 auto;
     border-radius: 50%;
     position: fixed;
-    z-index: 10;
-    width: 200px;
+    z-index: 3;
+    width: 300px;
     top: 50;
     left: 50%;
-   margin-left: -100;
+   margin-left: -150;
 }
 
 #content
 {
     background: white;
-    top: 300;
+    top: 400;
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 20;
     position: relative;
-    z-index: 35;
+    z-index: 5;
     padding: 50;
+}
+
+#me
+{
+    width: 20%;
+    display: inline-block;
+    margin-right: 5%;
+    vertical-align: middle;
+    border-radius: 50%;
+    margin-top: 10;
+}
+
+#arrow_up
+{
+    position: fixed;
+    width: 30;
+    right: 50;
+    top: -50;
+    transition: 0.5s;
+    cursor: pointer;
 }
 
 .slog
@@ -49,6 +73,11 @@ body
     text-align: center;
     font-size: 55px;
     font-weight: 200;
+}
+
+#first_s
+{
+    font-size: 90px;   
 }
 
 .sep
@@ -60,12 +89,19 @@ body
     margin-top: 60;
 }
 
-#pres
+.pres
 {
     font-size: 25px;
     padding-top: 30px;
     font-weight: 300;
     text-align: justify;
+}
+
+#voice
+{
+    display: inline-block;
+    width: 74%;
+    vertical-align: middle;
 }
 
 .clear
@@ -137,6 +173,18 @@ body
     text-align: center;
     display: block;
     margin-top: 20;
+}
+
+#avatar_mini
+{
+    width: 40px;
+    border-radius: 50%;
+    position: fixed;
+    top: -55;
+    z-index: 15;
+    cursor: pointer;
+    left: 45;
+    transition: 0.5s;
 }
 
 #social_container
@@ -255,8 +303,8 @@ z-index: 10;
 {
     position: fixed;
     z-index: 1;
-    right: 5;
-    top: 5;
+    right: 12;
+    top: 12;
     width: 30;
     position: fixed;
     cursor: pointer;
@@ -353,7 +401,7 @@ z-index: 10;
     background: white;
     width: 0;
     height: 0;
-    z-index: 11;
+    z-index: 15;
     border-radius: 0px 2px 2px 2px;
     transition: width 0.3s, height 0.6s;
     position: fixed;
@@ -364,6 +412,7 @@ z-index: 10;
 {
     margin: 0;
     padding: 0;
+    z-index: -5;
     padding-top: 5;
     list-style-type: none;
 }
@@ -392,6 +441,7 @@ z-index: 10;
     font-weight: 400;
     color: rgb(60,60,60);
     padding:  0 50;
+    margin-top:5;
     padding-bottom: 10;
 }
 
@@ -413,6 +463,12 @@ z-index: 10;
 .material-icon span,
 .material-icon {
   transition: all 500ms ease;
+}
+
+#arrow
+{
+    top: 12;
+    left: 12;
 }
 
 #arrow span {
@@ -487,7 +543,6 @@ z-index: 10;
         width: 25;
     }
     
-    #do
     
     #avatar
     {
@@ -505,15 +560,21 @@ z-index: 10;
     }
     #cover
     {
-        height: 350;   
+        height: 1500px;
+        height: 100vh;   
     }
 }
 
-@media screen and (max-width:700px)
+@media screen and (max-width:800px)
 {
     #cover
     {
         height: 200px;
+    }
+    
+    #avatar_mini, #arrow_up
+    {
+        display: none;
     }
     
     .skill
@@ -556,18 +617,40 @@ z-index: 10;
     #content
     {
         top: 200;
+        width: 100%;
+        margin-bottom: 0;
         padding: 30;
+        margin-left: 0;
     }
+    
+    #first_s
+    {
+        font-size: 60;   
+    }
+    
+    #me 
+    {
+        display: block;
+        margin: auto;
+        width: 30%;
+    }   
+    
 
     .slog
     {
         font-size: 38px;    
     }
     
-    #pres
+    .pres
     {
-        font-size: 18px;   
+        font-size: 20px;   
     }
+    
+    #voice
+    {
+        width: 100%;   
+    }
+    
     body
     {
     overflow-x: hidden;   
