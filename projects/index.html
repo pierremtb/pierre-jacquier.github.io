@@ -1,0 +1,52 @@
+<DOCTYPE html>
+<html>
+    <head>
+        <title>Projects - Pierre Jacquier</title>
+	    <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700' rel='stylesheet' type='text/css'>
+		<link rel='stylesheet' href='style/style.css'>
+		<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0">
+		<meta charset="utf-8">
+		<link rel="shortcut icon" href="icon/pj-rounded-shadows.png" type="image/png">
+		<link rel="icon" type="image/png" href="icon/pj-rounded-shadows.png" />
+	</head>
+    <body onscroll="update();getViewport()">
+        <img id="menu_tiny" src="../images/menu.png" onclick="openDrawer()">
+        <div id="side_menu">
+            <img id="me_icon" src="../icon/pj-mono.svg">
+            <ul id="menu">
+                <a href="../index.html"><li>Home</li></a>
+                <li>Projects
+                    <ul>
+                        <li></li>
+                    </ul>
+                </li>
+                <li>C.V</li>
+            </ul>
+            <p id="me_credits">Pierre Jacquier</p>
+        </div>
+        <div id="article">
+            <div id="article_header">
+                <div id="article_header_title">
+                    Papyros Calculator
+                </div>
+            </div>
+            <div id="article_content">
+                <p class="justify">
+                Papyros Calculator is a calculator application created for the Linux distribution Papyros. It is written in Qt/QML, with their QML-Material framework. This projects has two goals : provide a user-friendly, but full-featured calculator, and a modern design.
+                </p>
+                <h1>Screenshots</h1>
+                <img id="screen" src="../images/papyros-calculator-0.1-win.png">
+                <h1>Download</h1>
+                    <span class="button">WINDOWS</span>
+                <h1>Changelog</h1>
+                <h2>0.1</h2>
+                <ul id="changes">
+                    <li>First release on Windows</li>
+                </ul>    
+                <h1>Source code</h1>
+            </div>
+        </div>
+        
+        <script src="js/script.js"></script>
+    </body>
+</html>

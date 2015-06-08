@@ -10,10 +10,25 @@
 		<link rel="icon" type="image/png" href="../icon/pj-rounded-shadows.png" />
         <script src="../js/script.js"></script>
 	</head>
-    <body>
+    <body onscroll="closeMenu();closeLanguagesDropdown();manageAvatar()" onresize="getViewport()">
         <div id="cover"  onclick="closeLanguagesDropdown()"></div>
+        <img id="avatar_mini" onclick="openMenu()" class="elevation-2" src="../icon/pj-shadows-rounded-name.png">
+        <div id="arrow" class="material-icon hamburger" onclick="toogleMenu()">
+			<span id="s_1" class="first "></span>
+			<span id="s_2" class="second"></span>
+			<span id="s_3" class="third "></span>
+		</div>
+        <img src="../images/arrow_up.png" id="arrow_up" onclick="document.body.scrollTop=0">
         <img src="../images/languages.png" id="more_languages" onclick="openLanguagesDropdown()">
-        <ul id="dropdown_languages" class="elevation-2"  onclick="closeLanguagesDropdown()">
+        <div id="menu" onclick="closeMenu()" class="elevation-2">
+            <ul id="sub_menus">
+                <li class="sub_menu" onclick="closeMenu()" id="menu_header">Menu</li>
+                <li class="sub_menu" onclick="">Home</li>
+                <li class="sub_menu" onclick="">Projets</li>
+                <li class="sub_menu" onclick="">C.V</li>
+            </ul>
+        </div>
+         <ul id="dropdown_languages" class="elevation-2" onclick="closeLanguagesDropdown()">
             <li id="drop_languages_item_1" onclick="location.href='http://pierre-jacquier.com/';">
                 English
             </li>
@@ -23,14 +38,16 @@
         </ul>
         <img id="avatar" class="elevation-2" src="../icon/pj-shadows-rounded-name.png">
         <div id="content" class="elevation-2-top">
-            <div class="slog">Code. Design.</div>
-            <p id="pres">
+            <div class="slog" id="first_s">Code. Design.</div>
+            <img class="sep" src="../images/sep.png">
+            <img id="me" src="../images/me.jpg">
+            <p class="pres" id="voice">
                 Je suis étudiant ingénieur en première année à l'Université de Technologie Belfort Montbéliard, en France.
                 Le VTT et la technologie sont mes deux principaux centres d'intérêts, ainsi, autant j'aime rouler à l'extérieur, je suis également très intéressé dans tout ce qui se rapporte à la technologie, à la programmation et à la mécanique, et surtout lorsque les choses sont bien présentées : le design est pour moi un point très important. Ce site a pour vocation de me présenter rapidement, ainsi que mes projets, mais également pour s'amuser en web-design.
             </p>
             <img class="sep" src="../images/sep.png">
             <div class="slog">Devant un clavier</div>
-            <p id="pres">
+            <p class="pres">
                 Après de nombreuses expérimentations, j'ai fini par apprendre plusieurs langages de programmations, de niveaux différents. Comme je m'intéresse au design, j'ai également l'habitude de travailler avec des logiciels de graphisme.
                 
             </p>
