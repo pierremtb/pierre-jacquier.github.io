@@ -38,7 +38,10 @@ function update()
         document.getElementById('article_header_title').style.bottom = 'auto';
         if(b_wth >= 900)
             document.getElementById('article_header_title').style.left = '250';
-        document.getElementById('article_header_title').style.fontSize = '30';
+        if(b_wth > 900)
+            document.getElementById('article_header_title').style.fontSize = '32';
+        else
+            document.getElementById('article_header_title').style.fontSize = '25';
 document.getElementById('article_header_title').style.boxShadow = "0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)";
     }
     else
@@ -49,11 +52,43 @@ document.getElementById('article_header_title').style.boxShadow = "0 3px 6px rgb
         document.getElementById('article_header_title').style.left = '0';
          document.getElementById('article_header').style.background = '#e91e63';
         document.getElementById('article_header_title').style.boxShadow = "none";
-        document.getElementById('article_header_title').style.fontSize = '45';
+        if(b_wth > 900)
+            document.getElementById('article_header_title').style.fontSize = '45';
+        else
+            document.getElementById('article_header_title').style.fontSize = '32';
     }
 }
 
 function openDrawer()
 {
     document.getElementById('side_menu').style.transform = 'translateX(260px)';   
+}
+
+function closeDrawer()
+{
+    document.getElementById('side_menu').style.transform = 'translateX(-10px)';   
+}
+
+function openSubMenu(e)
+{
+    e.style.display = 'block';   
+}
+
+function closeSubMenu(e)
+{
+    e.style.display = 'none';   
+}
+
+var sub_projects = false;
+
+function toogleSubMenu(str)
+{
+    if(str == "projects")
+    {
+        if(sub_projects)
+            openSubMenu(document.getElementById('sub_projects'));
+        else 
+            closeSubMenu(document.getElementById('sub_projects'));
+        sub_projects = !sub_projects;
+    }
 }

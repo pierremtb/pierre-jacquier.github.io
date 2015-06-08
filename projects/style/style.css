@@ -22,11 +22,11 @@ body
     width: 250;
     height: 100vh;
     z-index: 10;
-    overflow-y: auto;
     position: fixed;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     transition: transform 0.5s;
 }
+
 
 #article
 {
@@ -73,6 +73,7 @@ body
 {
     font-weight: 400;
     padding: 0 0 10 0;
+    color: #646264;
 }
 
 #me_icon
@@ -88,7 +89,7 @@ body
     list-style-type: none;
 }
 
-#menu li
+#menu  li
 {
     padding: 15 40;
     font-weight: 500;
@@ -103,6 +104,19 @@ body
     background: rgba(0,0,0,0.05);   
 }
 
+#sub_projects
+{
+    list-style-type: none;
+}
+
+#sub_projects li
+{
+    font-size: 19;
+    color: rgb(70,70,70);
+    font-weight: 400;
+}
+
+
 #me_credits
 {
     position: absolute;
@@ -115,10 +129,20 @@ body
 .button
 {
     color: white;
-    background: #009688;
     border-radius: 3px;
-    padding: 5 10;
+    padding: 8 16;
+        background: #444345;  
      box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.button_pink
+{
+    background: #e91e63;
+}
+
+.button_gray
+{
+    background: #444345;      
 }
 
 #changes
@@ -128,7 +152,7 @@ body
 
 #screen
 {
-    width: 50%;
+    width: 500;
 }
 
 #article p
@@ -145,11 +169,23 @@ body
     z-index: 6;
 }
 
+#youtube
+{
+    width: 500;
+    margin-top: 10;
+}
+
 @media screen and (max-width:900px)
 {
       #side_menu
     {
         left: -260;   
+    }
+    
+    #youtube
+    {
+        width: 100%;   
+        height: 150;
     }
     
     #article
@@ -159,6 +195,11 @@ body
     
     #article_header_title
     {
-        padding-left: 70;   
+        padding-left: 70; 
+        font-size: 32;
+    }
+    #screen
+    {
+        width: 100%;   
     }
 }
