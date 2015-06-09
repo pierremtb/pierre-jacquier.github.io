@@ -130,9 +130,15 @@ body
 {
     color: white;
     border-radius: 3px;
+    margin-left: 20;
     padding: 8 16;
         background: #444345;  
      box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.button:first-child
+{
+    margin-left: 0;   
 }
 
 .button_pink
@@ -148,6 +154,7 @@ body
 #changes
 {
     margin-left: 30;
+    margin-bottom: 10;
 }
 
 #screen
