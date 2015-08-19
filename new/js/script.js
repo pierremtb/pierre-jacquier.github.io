@@ -8,6 +8,7 @@ getViewport();
 closeDrawer();
 toogleSubMenu("projects");
 
+
 function getViewport() {
 
 if (typeof window.innerWidth != 'undefined') {
@@ -162,5 +163,21 @@ function toogleSubMenu(str)
         else 
             closeSubMenu($('#sub_projects'));
         sub_projects = !sub_projects;
+    }
+}
+
+function makePresentationAwesome(){
+    //$('#pres_content').style.opacity = 1 - (document.body.scrollTop/b_hgt);
+    var progress = document.body.scrollTop/b_hgt;
+    if(progress < 1) {
+        $('#sub_icon_pres').style.transform = "rotateX(" + progress*180 + "deg)";
+        if(progress < 0.5)
+            $('#page_shadow_1').style.opacity = progress;
+        else
+            $('#page_shadow_2').style.opacity = 1 - progress;
+    }
+    else {
+        $('#sub_icon_pres').style.transform = "rotateX(180deg)";
+        $('#page_shadow_2').style.opacity = 0;
     }
 }

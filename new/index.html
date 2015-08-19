@@ -9,9 +9,8 @@
 		<meta charset="utf-8">
 		<link rel="shortcut icon" href="/icon/favicon.ico">
 	</head>
-    <body onscroll="closeLanguagesDropdown();manageAvatar()" onresize="getViewport()">
+    <body onscroll="closeLanguagesDropdown();makePresentationAwesome();" onresize="getViewport()">
         <div id="cover"  onclick="closeLanguagesDropdown()"></div>
-        <img id="avatar_mini" onclick="openMenu()" class="elevation-2" src="icon/pj-shadows-rounded-name.png">
         <div id="arrow" class="material-icon hamburger" onclick="openDrawer()">
 			<span id="s_1" class="first "></span>
 			<span id="s_2" class="second"></span>
@@ -19,16 +18,6 @@
 		</div>
         <img src="images/arrow_up.png" id="arrow_up" onclick="document.body.scrollTop=0">
         <img src="images/languages.png" id="more_languages" onclick="openLanguagesDropdown()">
-        <!--
-        <div id="menu" onclick="closeMenu()" class="elevation-2">
-            <ul id="sub_menus">
-                <li class="sub_menu" onclick="closeMenu()" id="menu_header">Menu</li>
-                <li class="sub_menu" onclick="">Home</li>
-                <a href="projects/papyros-calculator.html"><li class="sub_menu" onclick="">Projects</li></a>
-                <li class="sub_menu" onclick="">C.V</li>
-            </ul>
-        </div>
-        -->
         <div id="side_menu">
             <img id="me_icon" src="icon/pj-mono.svg" onclick="closeDrawer()">
             <ul id="menu">
@@ -51,11 +40,30 @@
                 Français
             </li>
         </ul>
-        <img id="avatar" class="elevation-2" src="icon/pj-shadows-rounded-name.png">
+        <div id="pres_content">
+            <div id="icon_pres">
+                <img id="avatar" class="" src="icon/pj-shadows-name-transparent.png">
+            </div>
+            <div id="sub_icon_pres">
+                <div id="front" class="card-face">
+                    <div id="homemess">
+                        <p class="slog" id="s_first">Code. Design.</p>
+                        <p id="scroll_invite">Welcome to my personnal website. Scroll down for more.</p>
+                    </div>    
+                    <div id="page_shadow_1"></div>
+                </div>
+                <div id="back" class="card-face">
+                    <img id="me" src="images/me.png">
+                    <p class="pres" id="voice">
+                        I'm an engineering student in first grade at Université de Technologie Belfort Montbéliard, France.
+                        Mountainbiking and technology are my leading hobbys, therefore as I love to ride outside, I'm also a nut about everything related to tech, programmation and mechanics, especially when things are well-presented : I am found of design. This website is created to present myself and my projects, as well as to have fun with web-design.
+                    </p>
+                    <div id="page_shadow_2"></div>
+                </div>
+            </div>
+        </div>
         <div id="content" class="elevation-2">
-            <div class="slog" id="first_s">Code. Design.</div>
-            <img class="sep" src="images/sep.png">
-            <img id="me" src="images/me.jpg">
+            <img id="me" src="images/me.png">
             <p class="pres" id="voice">
                 I'm an engineering student in first grade at Université de Technologie Belfort Montbéliard, France.
                 Mountainbiking and technology are my leading hobbys, therefore as I love to ride outside, I'm also a nut about everything related to tech, programmation and mechanics, especially when things are well-presented : I am found of design. This website is created to present myself and my projects, as well as to have fun with web-design.
