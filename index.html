@@ -9,31 +9,16 @@
 		<meta charset="utf-8">
 		<link rel="shortcut icon" href="/icon/favicon.ico">
 	</head>
-    <body onscroll="closeLanguagesDropdown();manageAvatar()" onresize="getViewport()">
+    <body onscroll="makePresentationAwesome();" onresize="getViewport()">
         <div id="cover"  onclick="closeLanguagesDropdown()"></div>
-        <img id="avatar_mini" onclick="openMenu()" class="elevation-2" src="icon/pj-shadows-rounded-name.png">
-        <div id="arrow" class="material-icon hamburger" onclick="openDrawer()">
-			<span id="s_1" class="first "></span>
-			<span id="s_2" class="second"></span>
-			<span id="s_3" class="third "></span>
-		</div>
+        <img id="hamburger" src="images/menu.png" onclick="openDrawer()">
         <img src="images/arrow_up.png" id="arrow_up" onclick="document.body.scrollTop=0">
         <img src="images/languages.png" id="more_languages" onclick="openLanguagesDropdown()">
-        <!--
-        <div id="menu" onclick="closeMenu()" class="elevation-2">
-            <ul id="sub_menus">
-                <li class="sub_menu" onclick="closeMenu()" id="menu_header">Menu</li>
-                <li class="sub_menu" onclick="">Home</li>
-                <a href="projects/papyros-calculator.html"><li class="sub_menu" onclick="">Projects</li></a>
-                <li class="sub_menu" onclick="">C.V</li>
-            </ul>
-        </div>
-        -->
         <div id="side_menu">
             <img id="me_icon" src="icon/pj-mono.svg" onclick="closeDrawer()">
             <ul id="menu">
                 <a href="index.html"><li>Home</li></a>
-                <li><span onclick="toogleSubMenu('projects');">Projects</span>
+                <li><span onclick="toogleSubMenu('projects');">Projects & Collabs</span>
                     <ul id="sub_projects">
                         <a href="projects/papyros-calculator.html"><li >Papyros Calculator</li></a>
                         <a href="projects/material-browser.html"><li >Material Browser</li></a>
@@ -52,16 +37,34 @@
                 Français
             </li>
         </ul>
-        <img id="avatar" class="elevation-2" src="icon/pj-shadows-rounded-name.png">
-        <div id="content" class="elevation-2">
-            <div class="slog" id="first_s">Code. Design.</div>
-            <img class="sep" src="images/sep.png">
-            <img id="me" src="images/me.jpg">
-            <p class="pres" id="voice">
-                I'm an engineering student in first grade at Université de Technologie Belfort Montbéliard, France.
-                Mountainbiking and technology are my leading hobbys, therefore as I love to ride outside, I'm also a nut about everything related to tech, programmation and mechanics, especially when things are well-presented : I am found of design. This website is created to present myself and my projects, as well as to have fun with web-design.
-            </p>
-            <img class="sep" src="images/sep.png">
+        <div id="pres_content">
+            <div id="icon_pres">
+                <img id="avatar" class="" src="icon/pj-shadows-name-transparent.png">
+            </div>
+            <div id="sub_icon_pres">
+                <div id="front" class="card-face">
+                    <div id="homemess">
+                        <p class="slog" id="s_first">Code. Design.</p>
+                        <p id="scroll_invite">Welcome to my personnal website. Scroll down for more.</p>
+                    </div>    
+                    <div id="page_shadow_1"></div>
+                </div>
+                <div id="back" class="card-face">
+                    <div id="next_navbar">
+            <img id="hamburger2" class="navitem" src="images/menu.png" onclick="openDrawer()">
+            <span class="navitem" id="title2">Pierre Jacquier</span>
+            <img src="icon/pj-shadows-transparent.png" id="icon2" class="navitemright">
+        </div>                                                                                          
+                    <img id="me" src="images/me.jpg">
+                    <p class="pres" id="voice">
+                        I'm an engineering student in first grade at Université de Technologie Belfort Montbéliard, France.
+                        Mountainbiking and technology are my leading hobbys, therefore as I love to ride outside, I'm also a nut about everything related to tech, programmation and mechanics, especially when things are well-presented : I am found of design. This website is created to present myself and my projects, as well as to have fun with web-design.
+                    </p>
+                    <div id="page_shadow_2"></div>
+                </div>
+            </div>
+        </div>
+        <div id="content" class="">
             <div class="slog">In front of a keyboard</div>
             <p class="pres">
                 After many experimentations I've come to learn a bunch of programming langages, either low or high-level. 
@@ -103,7 +106,7 @@
     <div id="projects_container">
         
             
-        <a href="projects/papyros-calculator.html"><div class="project elevation-1" id="p1">
+        <a href="projects/papyros-calculator.html"><div class="project" id="p1">
             <div class="project_img">
             </div>
             <div class="card_legend">
@@ -111,7 +114,15 @@
                 <p class="project_legend">A calculator for Papyros</p>
             </div>
             </div></a>
-        <a href="http://diffusio.co"><div class="project elevation-1" id="p2">
+        <a href="projects/material-browser.html"><div class="project" id="p3">
+            <div class="project_img">
+            </div>
+            <div class="card_legend elevation-3">
+            <span class="project_header">Material Browser</span>
+            <p class="project_legend">A minimal browser for Papyros</p>
+            </div>
+        </div></a>
+        <a href="http://diffusio.co"><div class="project" id="p2">
             <div class="project_img">
             </div>
             <div class="card_legend elevation-3">
@@ -119,19 +130,25 @@
             <p class="project_legend">Building website is now simple</p>
             </div>
         </div></a>
+        
     </div>
             
         <img class="sep" src="images/sep.png">
             <div class="slog">Contact & Follow</div>
     <div id="social_container">
-        <a href="https://www.facebook.com/pierre.jacquier.7"><div class="icon_rounder elevation-1" id="ic_fb"><img id="fb_img" src="images/facebook.png"></div></a>
-        <a href="https://plus.google.com/u/0/+PierreJacquierFR/posts"><div class="icon_rounder elevation-1" id="ic_gp"><img id="tw_img" src="images/googleplus.png"></div></a>
-        <a href="https://plus.google.com/u/0/+PierreJacquierFR/posts"><div class="icon_rounder elevation-1" id="ic_gh"><img id="gh_img" src="images/github.svg"></div></a>
-        <a href="mailto:pierrejacquier39@gmail.com"><div class="icon_rounder elevation-1" id="ic_m"><img id="tw_img" src="images/mail.png"></div></a>
+        <a href="https://www.facebook.com/pierre.jacquier.7"><div class="icon_rounder" id="ic_fb"><img id="fb_img" src="images/facebook.png"></div></a>
+        <a href="https://plus.google.com/u/0/+PierreJacquierFR/posts"><div class="icon_rounder" id="ic_gp"><img id="tw_img" src="images/googleplus.png"></div></a>
+        <a href="https://plus.google.com/u/0/+PierreJacquierFR/posts"><div class="icon_rounder" id="ic_gh"><img id="gh_img" src="images/github.svg"></div></a>
+        <a href="mailto:pierrejacquier39@gmail.com"><div class="icon_rounder" id="ic_m"><img id="tw_img" src="images/mail.png"></div></a>
     </div>
             
         </div>
         <div id="shadow_drawer" onclick="closeDrawer()"></div>
+        <div id="next_navbar2">
+            <img id="hamburger2" class="navitem" src="images/menu.png" onclick="openDrawer()">
+            <span class="navitem" id="title2">Pierre Jacquier</span>
+            <img src="icon/pj-shadows-transparent.png" id="icon2" class="navitemright">
+        </div>   
         <script src="js/script.js"></script>
     </body>
 </html>
