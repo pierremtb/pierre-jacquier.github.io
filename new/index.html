@@ -9,7 +9,7 @@
 		<meta charset="utf-8">
 		<link rel="shortcut icon" href="/icon/favicon.ico">
 	</head>
-    <body onscroll="closeLanguagesDropdown();makePresentationAwesome();" onresize="getViewport()">
+    <body onscroll="makePresentationAwesome();" onresize="getViewport()">
         <div id="cover"  onclick="closeLanguagesDropdown()"></div>
         <img id="hamburger" src="images/menu.png" onclick="openDrawer()">
         <img src="images/arrow_up.png" id="arrow_up" onclick="document.body.scrollTop=0">
@@ -18,9 +18,10 @@
             <img id="me_icon" src="icon/pj-mono.svg" onclick="closeDrawer()">
             <ul id="menu">
                 <a href="index.html"><li>Home</li></a>
-                <li><span onclick="toogleSubMenu('projects');">Projects</span>
+                <li><span onclick="toogleSubMenu('projects');">Projects & Collabs</span>
                     <ul id="sub_projects">
                         <a href="projects/papyros-calculator.html"><li >Papyros Calculator</li></a>
+                        <a href="projects/material-browser.html"><li >Material Browser</li></a>
                         <a href="http://diffusio.co"><li>Diffusio</li></a>
                     </ul>
                 </li>
@@ -105,7 +106,7 @@
     <div id="projects_container">
         
             
-        <a href="projects/papyros-calculator.html"><div class="project elevation-1" id="p1">
+        <a href="projects/papyros-calculator.html"><div class="project" id="p1">
             <div class="project_img">
             </div>
             <div class="card_legend">
@@ -113,7 +114,15 @@
                 <p class="project_legend">A calculator for Papyros</p>
             </div>
             </div></a>
-        <a href="http://diffusio.co"><div class="project elevation-1" id="p2">
+        <a href="projects/material-browser.html"><div class="project" id="p3">
+            <div class="project_img">
+            </div>
+            <div class="card_legend elevation-3">
+            <span class="project_header">Material Browser</span>
+            <p class="project_legend">A minimal browser for Papyros</p>
+            </div>
+        </div></a>
+        <a href="http://diffusio.co"><div class="project" id="p2">
             <div class="project_img">
             </div>
             <div class="card_legend elevation-3">
@@ -121,15 +130,16 @@
             <p class="project_legend">Building website is now simple</p>
             </div>
         </div></a>
+        
     </div>
             
         <img class="sep" src="images/sep.png">
             <div class="slog">Contact & Follow</div>
     <div id="social_container">
-        <a href="https://www.facebook.com/pierre.jacquier.7"><div class="icon_rounder elevation-1" id="ic_fb"><img id="fb_img" src="images/facebook.png"></div></a>
-        <a href="https://plus.google.com/u/0/+PierreJacquierFR/posts"><div class="icon_rounder elevation-1" id="ic_gp"><img id="tw_img" src="images/googleplus.png"></div></a>
-        <a href="https://plus.google.com/u/0/+PierreJacquierFR/posts"><div class="icon_rounder elevation-1" id="ic_gh"><img id="gh_img" src="images/github.svg"></div></a>
-        <a href="mailto:pierrejacquier39@gmail.com"><div class="icon_rounder elevation-1" id="ic_m"><img id="tw_img" src="images/mail.png"></div></a>
+        <a href="https://www.facebook.com/pierre.jacquier.7"><div class="icon_rounder" id="ic_fb"><img id="fb_img" src="images/facebook.png"></div></a>
+        <a href="https://plus.google.com/u/0/+PierreJacquierFR/posts"><div class="icon_rounder" id="ic_gp"><img id="tw_img" src="images/googleplus.png"></div></a>
+        <a href="https://plus.google.com/u/0/+PierreJacquierFR/posts"><div class="icon_rounder" id="ic_gh"><img id="gh_img" src="images/github.svg"></div></a>
+        <a href="mailto:pierrejacquier39@gmail.com"><div class="icon_rounder" id="ic_m"><img id="tw_img" src="images/mail.png"></div></a>
     </div>
             
         </div>

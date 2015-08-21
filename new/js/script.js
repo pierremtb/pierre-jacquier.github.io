@@ -1,9 +1,42 @@
-var $ = document.querySelector.bind(document);
-var $$ = document.querySelectorAll.bind(document);
-HTMLElement.prototype.$ = HTMLElement.prototype.querySelector;
-HTMLElement.prototype.$$ = HTMLElement.prototype.querySelectorAll;
+var Q = document.querySelector.bind(document);
+var Qq = document.querySelectorAll.bind(document);
+HTMLElement.prototype.Q = HTMLElement.prototype.querySelector;
+HTMLElement.prototype.Qq = HTMLElement.prototype.querySelectorAll;
 
 
+function posTop() {
+    return typeof window.pageYOffset != 'undefined' ? window.pageYOffset: document.documentElement.scrollTop? document.documentElement.scrollTop: document.body.scrollTop? document.body.scrollTop:0;
+}
+
+function detectIE() {
+    var ua = window.navigator.userAgent;
+
+    var msie = ua.indexOf('MSIE ');
+    if (msie > 0) {
+    // IE 10 or older => return version number
+    return parseInt(ua.substring(msie + 5, ua.indexOf('.', msie)), 10);
+    }
+
+    var trident = ua.indexOf('Trident/');
+    if (trident > 0) {
+    // IE 11 => return version number
+    var rv = ua.indexOf('rv:');
+    return parseInt(ua.substring(rv + 3, ua.indexOf('.', rv)), 10);
+    }
+
+    var edge = ua.indexOf('Edge/');
+    if (edge > 0) {
+    // IE 12 => return version number
+    return parseInt(ua.substring(edge + 5, ua.indexOf('.', edge)), 10);
+    }
+
+    // other browser
+    return false;
+}
+
+
+
+window.onscroll = makePresentationAwesome;
 getViewport();
 toogleSubMenu("projects");
 
@@ -48,13 +81,13 @@ function closeLanguagesDropdown()
 
 function openMenu()
 {
-    $('#menu').style.transition = "height 0.6s, width 0.3s";
-    $('#menu').style.width = 300;
-    $('#menu').style.height = 199;
-    $('#s_1').style.background= "rgb(90,90,90)";
-    $('#s_2').style.background= "rgb(90,90,90)";
-    $('#s_3').style.background= "rgb(90,90,90)";
-    $('#arrow').className = "material-icon hamburger arrow";
+    Q('#menu').style.transition = "height 0.6s, width 0.3s";
+    Q('#menu').style.width = 300;
+    Q('#menu').style.height = 199;
+    Q('#s_1').style.background= "rgb(90,90,90)";
+    Q('#s_2').style.background= "rgb(90,90,90)";
+    Q('#s_3').style.background= "rgb(90,90,90)";
+    Q('#arrow').className = "material-icon hamburger arrow";
     var sub_menu = document.getElementsByClassName('sub_menu');
     var sub_menu_l=sub_menu.length;
     for(var i=0;i<sub_menu_l;i++)
@@ -68,13 +101,13 @@ function openMenu()
 
 function closeMenu()
 {
-    $('#menu').style.width = 0;
-    $('#menu').style.height = 0;   
-    $('#menu').style.transition = "height 0.3s 0.2s, width 0.7s 0.2s";
-    $('#s_1').style.background= "#fff";
-    $('#s_2').style.background= "#fff";
-    $('#s_3').style.background= "#fff";
-    $('#arrow').className = "material-icon hamburger";
+    Q('#menu').style.width = 0;
+    Q('#menu').style.height = 0;   
+    Q('#menu').style.transition = "height 0.3s 0.2s, width 0.7s 0.2s";
+    Q('#s_1').style.background= "#fff";
+    Q('#s_2').style.background= "#fff";
+    Q('#s_3').style.background= "#fff";
+    Q('#arrow').className = "material-icon hamburger";
     var sub_menu = document.getElementsByClassName('sub_menu');
     var sub_menu_l=sub_menu.length;
     var j=sub_menu_l;
@@ -100,47 +133,47 @@ function toogleMenu()
 
 function manageAvatar()
 {
-    if(document.body.scrollTop >= $('#content').offsetTop)
+    if(document.body.scrollTop >= Q('#content').offsetTop)
     {
-        $('#arrow').style.left = 12;
-        $('#arrow').style.top = 20;
-        $('#avatar_mini').style.top = 10;
-        $('#menu_header').style.marginTop = 13;
-        $('#arrow_up').style.top = 12;
+        Q('#arrow').style.left = 12;
+        Q('#arrow').style.top = 20;
+        Q('#avatar_mini').style.top = 10;
+        Q('#menu_header').style.marginTop = 13;
+        Q('#arrow_up').style.top = 12;
         
     }
     else
     {
-        $('#arrow').style.left = 12;
-        $('#arrow').style.top = 12;
-        $('#avatar_mini').style.top = -55;
-        $('#menu_header').style.marginTop = 5;
-        $('#arrow_up').style.top = -50;
+        Q('#arrow').style.left = 12;
+        Q('#arrow').style.top = 12;
+        Q('#avatar_mini').style.top = -55;
+        Q('#menu_header').style.marginTop = 5;
+        Q('#arrow_up').style.top = -50;
     }
-    if(b_wth<800 && document.body.scrollTop >= $('#content').offsetTop)
+    if(b_wth<800 && document.body.scrollTop >= Q('#content').offsetTop)
     {
-        $('#s_1').style.background= "rgb(90,90,90)";
-        $('#s_2').style.background= "rgb(90,90,90)";
-        $('#s_3').style.background= "rgb(90,90,90)";
+        Q('#s_1').style.background= "rgb(90,90,90)";
+        Q('#s_2').style.background= "rgb(90,90,90)";
+        Q('#s_3').style.background= "rgb(90,90,90)";
     }
     else
     {
-        $('#s_1').style.background= "#fff";
-        $('#s_2').style.background= "#fff";
-        $('#s_3').style.background= "#fff";
+        Q('#s_1').style.background= "#fff";
+        Q('#s_2').style.background= "#fff";
+        Q('#s_3').style.background= "#fff";
     }   
     
 }
 
 function openDrawer() {
-    $('#side_menu').style.transform = 'translateX(0)';
-    $('#shadow_drawer').style.opacity = 1;
-    $('#shadow_drawer').style.zIndex = 9;
+    Q('#side_menu').style.transform = 'translateX(260px)';
+    Q('#shadow_drawer').style.opacity = 1;
+    Q('#shadow_drawer').style.zIndex = 9;
 }
 
 function closeDrawer() {
-    $('#side_menu').style.transform = 'translateX(-260px)';
-    $('#shadow_drawer').style.zIndex = -10;
+    Q('#side_menu').style.transform = 'translateX(0)';
+    Q('#shadow_drawer').style.zIndex = -10;
 }
 
 function openSubMenu(e) {
@@ -151,41 +184,51 @@ function closeSubMenu(e) {
     e.style.display = 'none';   
 }
 
-var sub_projects = false;
+var sub_projects = true;
 
 function toogleSubMenu(str)
 {
     if(str == "projects")
     {
         if(sub_projects)
-            openSubMenu($('#sub_projects'));
+            openSubMenu(Q('#sub_projects'));
         else 
-            closeSubMenu($('#sub_projects'));
+            closeSubMenu(Q('#sub_projects'));
         sub_projects = !sub_projects;
     }
 }
 
 function makePresentationAwesome(){
-    //$('#pres_content').style.opacity = 1 - (document.body.scrollTop/b_hgt);
-    var progress = document.body.scrollTop/b_hgt;
-    if(progress < 1) {
-        $('#sub_icon_pres').style.transform = "rotateX(" + progress*180 + "deg)";
-        $('#hamburger').style.opacity = 1 - progress*1.5;
-        $('#more_languages').style.opacity = 1 - progress*1.5;
-        if(progress < 0.5)
-            $('#page_shadow_1').style.opacity = progress;
-        else {
-            $('#page_shadow_2').style.opacity = 1 - progress;
+    console.log("tratnure");
+    var progress = posTop()/b_hgt;
+    if(!detectIE() && b_wth > 800) {
+        if(progress < 1) {
+            Q('#sub_icon_pres').style.transform = "rotateX(" + progress*180 + "deg)";
+            Q('#hamburger').style.opacity = 1 - progress*1.5;
+            Q('#more_languages').style.opacity = 1 - progress*1.5;
+            if(progress < 0.5)
+                Q('#page_shadow_1').style.opacity = progress;
+            else {
+                Q('#page_shadow_2').style.opacity = 1 - progress;
+            }
+            Q('#pres_content').style.position = "fixed";
+            Q('#pres_content').style.top = "0";
+            Q('#next_navbar2').style.display = "none";
         }
-        $('#pres_content').style.position = "fixed";
-        $('#pres_content').style.top = "0";
-        $('#next_navbar2').style.display = "none";
+        else {
+            Q('#sub_icon_pres').style.transform = "rotateX(180deg)";
+            Q('#page_shadow_2').style.opacity = 0;
+            Q('#pres_content').style.position = "absolute";
+            Q('#pres_content').style.top = "100vh";
+            Q('#next_navbar2').style.display = "block";
+        } 
     }
     else {
-        $('#sub_icon_pres').style.transform = "rotateX(180deg)";
-        $('#page_shadow_2').style.opacity = 0;
-        $('#pres_content').style.position = "absolute";
-        $('#pres_content').style.top = "100vh";
-        $('#next_navbar2').style.display = "block";
-    }
+        if(posTop()>b_hgt)
+            Q('#next_navbar2').style.display = "block";
+        else
+            Q('#next_navbar2').style.display = "none";
+            
+    }   
+    
 }
