@@ -5,7 +5,6 @@ HTMLElement.prototype.$$ = HTMLElement.prototype.querySelectorAll;
 
 
 getViewport();
-closeDrawer();
 toogleSubMenu("projects");
 
 
@@ -171,13 +170,22 @@ function makePresentationAwesome(){
     var progress = document.body.scrollTop/b_hgt;
     if(progress < 1) {
         $('#sub_icon_pres').style.transform = "rotateX(" + progress*180 + "deg)";
+        $('#hamburger').style.opacity = 1 - progress*1.5;
+        $('#more_languages').style.opacity = 1 - progress*1.5;
         if(progress < 0.5)
             $('#page_shadow_1').style.opacity = progress;
-        else
+        else {
             $('#page_shadow_2').style.opacity = 1 - progress;
+        }
+        $('#pres_content').style.position = "fixed";
+        $('#pres_content').style.top = "0";
+        $('#next_navbar2').style.display = "none";
     }
     else {
         $('#sub_icon_pres').style.transform = "rotateX(180deg)";
         $('#page_shadow_2').style.opacity = 0;
+        $('#pres_content').style.position = "absolute";
+        $('#pres_content').style.top = "100vh";
+        $('#next_navbar2').style.display = "block";
     }
 }

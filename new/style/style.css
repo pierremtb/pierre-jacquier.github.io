@@ -9,6 +9,7 @@ body
 {
     font-family: 'Roboto', sans-serif;
     overflow-x:hidden;
+    background: white;
 }
 
 a
@@ -20,20 +21,20 @@ a
 {
     height: 1080px;
     height: 100vh;
-    background: url(../images/cover2.jpg);
-    -webkit-background-size: cover;
-    background-size: cover; 
-    width: 100%;
+     width: 100%;
     position: fixed;
     z-index: 0;
-    -webkit-filter: blur(8px) ; 
-    filter: blur(8px) ;
+    
 }
 
 #pres_content {
     position: fixed;
     perspective: 800px;
     width: 100%;
+    height: 100vh;
+    /*background: url(../images/cover2.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;*/
 }
 
 #sub_icon_pres {
@@ -55,15 +56,17 @@ a
 }
 
 #front {
-	z-index: 2;
-    background: transparent;
+	z-index: 5;
 	transform: rotateY(0deg);
+    
+    background: rgb(30,30,30);  
 }
 
 #back {
 	transform: rotateY(180deg) rotateZ(180deg);
     background: white;
     padding: 50;
+    z-index: 4;
 }
 
 #homemess {
@@ -104,10 +107,9 @@ a
 
 #content {
     background: white;
-    top: 100vh;
+    top: 150vh;
     position: relative;
     z-index: 7;
-    opacity: 0;
     padding: 50;
 }
 
@@ -143,6 +145,7 @@ a
 
 #icon_pres {
     height: 50vh;
+    background: rgb(30,30,30);
 }
 
 
@@ -455,90 +458,14 @@ z-index: 10;
 }
 
 
-
-.material-icon {
-  width: 25px;
-  height: 45px;
-  position: fixed;
-  top: 5;
-  cursor: pointer;
-  z-index: 20;
-  left: 5;
-}
- 
-.material-icon span,
-.material-icon {
-  transition: all 500ms ease;
-}
-
-#arrow
-{
+#hamburger {
+    position: fixed;
     top: 12;
     left: 12;
+    cursor: pointer;
+    width: 30;
+    z-index: 2;
 }
-
-#arrow span {
-  background-color: #fff;
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition:  0.7s;
-  width: 100%;
-}
-
-.hamburger 
-{
-  -webkit-transform: translateY(2px);
-  transform: translateY(2px);
-    
-}
-
-
-
-.hamburger span {
-  height: 3px;
-    transition: 0.5s;
-}
- 
-.hamburger .second {
-  -webkit-transform: translateY(7px);
-    transform: translateY(7px);
-    transition: background 0.7s;
-}
- 
-.hamburger .third{
-  -webkit-transform: translateY(15px);
-    transform: translateY(15x);
-    transition:  0.7s;
-}
-/* This part is added to the hamburger css so they have the same height and positioning. */
-.hamburger span {
-  height: 3px;
-  transition: transform 0.5s;
-}
- 
-.arrow .first
-{
-    -webkit-transform: translateY(7px) rotate(45deg);  
-    transform: translateY(7px) rotate(45deg);
-    transition:  0.7s;
-}
-
-.arrow .second
-{
-    opacity: 0;  
-    -webkit-transform: translateY(7px) rotate(45deg);
-    transform: translateY(7px) rotate(45deg);
-}
-
-.arrow .third
-{
-       -webkit-transform: translateY(7px) rotate(-45deg);
-       transform: translateY(7px) rotate(-45deg);
-}
-
-/* This part is added to the hamburger css so they have the same height and positioning. */
 
 #side_menu
 {
@@ -549,6 +476,7 @@ z-index: 10;
     position: fixed;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     transition: transform 0.5s;
+    transform: translateX(-260px);
 }
 
 #me_icon
@@ -607,7 +535,60 @@ z-index: 10;
     top: 0;
     width: 100vw;
     z-index: 9;
+    opacity: 0;
     background: rgba(0,0,0,0.3);
+}
+
+#next_navbar {
+    background: rgb(50,50,50);
+    top: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    z-index: 20;
+}
+
+#next_navbar2 {
+    background: rgb(50,50,50);
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    display: none;
+    z-index: 20;
+}
+
+#hamburger2 {
+    width: 32;
+    margin: 10;
+    cursor: pointer;
+}
+
+#more_languages2
+{
+    right: 12;
+    top: 12;
+    width: 30;
+    cursor: pointer;
+}
+
+#icon2 {
+    width: 50;   
+}
+
+#title2 {
+    color: white;
+    font-size: 20px;
+}
+
+.navitem {
+    display: inline;
+    margin-right: 10;
+    vertical-align: middle;
+}
+
+.navitemright {
+    float: right;
 }
 
 @media screen and (min-width:1700px)
@@ -690,14 +671,14 @@ z-index: 10;
 
     #content
     {
-        top: 100vh;
+        top: 140vh;
         width: 100%;
         margin-bottom: 0;
         padding: 30;
         margin-left: 0;
     }
     
-    #first_s
+    #s_first
     {
         font-size: 60;   
     }
@@ -729,4 +710,5 @@ z-index: 10;
     {
     overflow-x: hidden;   
     }
+
 }
