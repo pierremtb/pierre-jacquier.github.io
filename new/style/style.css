@@ -97,9 +97,9 @@ a
     margin: 0 auto;
     position: relative;
     z-index: 3;
-    width: 350px;
+    width: 30%;
     left: 50%;
-   margin-left: -175;
+   margin-left: -15%;
     position: relative;
   top: 50%;
   transform: translateY(-50%);
@@ -615,31 +615,7 @@ a
 
 @media screen and (min-width:1700px)
 {
-    #more_languages
-    {
-        width: 25;
-    }
     
-    
-    #avatar
-    {
-        width: 250px;
-        left: 50%;
-       margin-left: -125;
-    }
-    #content
-    {
-        background: white;
-        top: 350;
-        position: relative;
-        z-index: 15;
-        padding: 50;
-    }
-    #cover
-    {
-        height: 1500px;
-        height: 100vh;   
-    }
 }
 
 @media screen and (max-width:800px)
@@ -656,7 +632,7 @@ a
     
     .skill
     {
-        width: 140;  
+        width: 170;  
     }
     
     #skills li ul
@@ -743,7 +719,8 @@ a
     {
         display: block;
         margin: auto;
-        width: 50%;
+        width: 100%;
+        margin-top: 40;
     }   
     
 

@@ -201,7 +201,7 @@ function toogleSubMenu(str)
 function makePresentationAwesome(){
     console.log("tratnure");
     var progress = posTop()/b_hgt;
-    if(!detectIE() && b_wth > 800) {
+    if((!detectIE() || detectIE() == 12) && b_wth > 800) {
         if(progress < 1) {
             Q('#sub_icon_pres').style.transform = "rotateX(" + progress*180 + "deg)";
             Q('#hamburger').style.opacity = 1 - progress*1.5;
