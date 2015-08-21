@@ -203,6 +203,7 @@ function makePresentationAwesome(){
     var progress = posTop()/b_hgt;
     if((!detectIE() || detectIE() == 12) && b_wth > 800) {
         if(progress < 1) {
+            Q('#sub_icon_pres').style.WebkitTransform = "rotateX(" + progress*180 + "deg)";
             Q('#sub_icon_pres').style.transform = "rotateX(" + progress*180 + "deg)";
             Q('#hamburger').style.opacity = 1 - progress*1.5;
             Q('#more_languages').style.opacity = 1 - progress*1.5;
@@ -216,6 +217,7 @@ function makePresentationAwesome(){
             Q('#next_navbar2').style.display = "none";
         }
         else {
+            Q('#sub_icon_pres').style.WebkitTransform = "rotateX(180deg)";
             Q('#sub_icon_pres').style.transform = "rotateX(180deg)";
             Q('#page_shadow_2').style.opacity = 0;
             Q('#pres_content').style.position = "absolute";

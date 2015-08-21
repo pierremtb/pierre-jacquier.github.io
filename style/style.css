@@ -57,13 +57,14 @@ a
 
 #front {
 	z-index: 5;
-	transform: rotateY(0deg);
-    
+	-webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
     background: rgb(30,30,30);  
 }
 
 #back {
-	transform: rotateY(180deg) rotateZ(180deg);
+	-webkit-transform: rotateY(180deg) rotateZ(180deg);
+    transform: rotateY(180deg) rotateZ(180deg);
     background: white;
     padding: 50;
     z-index: 4;
@@ -72,6 +73,7 @@ a
 #homemess {
   position: relative;
   top: 50%;
+  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 
