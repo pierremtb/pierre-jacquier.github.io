@@ -5,11 +5,45 @@
     margin: 0;
 }
 
+
 body
 {
     font-family: 'Roboto', sans-serif;
     overflow-x:hidden;
     background: white;
+}
+
+#top_menu {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    color: black;
+    padding: 20;
+    text-align: center;
+    background: grey;
+    background: url(../images/texture.png) repeat;
+    width: 100%;
+    margin: auto;
+    color: white;
+}
+
+#top_menu span {
+    padding: 50;
+    padding-bottom: 20;
+    text-transform: uppercase;
+    font-weight: 300;   
+    cursor: pointer;
+    letter-spacing: 5px;
+    transition: 0.3s;
+}
+
+#top_menu a {
+    color: white;
+}
+
+#top_menu span:hover {
+    letter-spacing: 7px;
+    background: rgba(255,255,255,0.1);
 }
 
 a
@@ -24,7 +58,6 @@ a
      width: 100%;
     position: fixed;
     z-index: 0;
-    
 }
 
 #pres_content {
@@ -60,6 +93,8 @@ a
 	-webkit-transform: rotateY(0deg);
     transform: rotateY(0deg);
     background: rgb(30,30,30);  
+    
+    background: url(../images/texture.png) repeat;
 }
 
 #back {
@@ -77,7 +112,7 @@ a
   transform: translateY(-50%);
 }
 
-#page_shadow_1, #page_shadow_2 {
+#page_shadow_1, #page_shadow_2, #page_shadow3 {
     background: black;
     position: absolute;
     top: 0;
@@ -85,6 +120,23 @@ a
     right: 0;
     bottom: 0;
     opacity: 0;
+}
+
+#page_shadow_1 { 
+}
+
+#page_shadow3 {
+    transition: 0.5s;
+}
+
+#filter {
+    background: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.1;
 }
 
 #scroll_invite {
@@ -113,6 +165,7 @@ a
     position: relative;
     z-index: 1;
     padding: 50;
+    padding-top: 1;
 }
 
 #me {
@@ -147,7 +200,11 @@ a
 
 #icon_pres {
     height: 50vh;
+    z-index: 8;
     background: rgb(30,30,30);
+    background: url(../images/texture.png) repeat;
+    transform-origin: bottom;
+    transition: transform 0.5s;
 }
 
 
@@ -395,12 +452,13 @@ a
 
 #more_languages
 {
-    position: fixed;
+    position: absolute;
     z-index: 1;
     right: 12;
     top: 12;
     width: 30;
     position: fixed;
+    transition: 0.5s;
     cursor: pointer;
 }
 
@@ -483,10 +541,11 @@ a
 
 
 #hamburger {
-    position: fixed;
+    position: absolute;
     top: 12;
     left: 12;
     cursor: pointer;
+    transition: 0.5s;
     width: 30;
     z-index: 2;
 }

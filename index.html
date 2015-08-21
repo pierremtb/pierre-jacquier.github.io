@@ -10,10 +10,12 @@
 		<link rel="shortcut icon" href="/icon/favicon.ico">
 	</head>
     <body onscroll="makePresentationAwesome();" onresize="getViewport()">
+        <div id="top_menu">
+            <a href="index.html"><span>Home</span></a>
+            <a href="projects/papyros-calculator.html"><span>Projects</span></a>
+            <a href="#"><span>C.V</span></a>
+        </div>
         <div id="cover"  onclick="closeLanguagesDropdown()"></div>
-        <img id="hamburger" src="images/menu.png" onclick="openDrawer()">
-        <img src="images/arrow_up.png" id="arrow_up" onclick="document.body.scrollTop=0">
-        <img src="images/languages.png" id="more_languages" onclick="openLanguagesDropdown()">
         <div id="side_menu">
             <img id="me_icon" src="icon/pj-mono.svg" onclick="closeDrawer()">
             <ul id="menu">
@@ -38,20 +40,24 @@
             </li>
         </ul>
         <div id="pres_content" onclick="closeLanguagesDropdown()">
-            <div id="icon_pres">
+            <div id="icon_pres" class="">
+                <div id="filter"></div>
+                <img id="hamburger" src="images/menu.png" onclick="toogleTopMenu()">
+                <img src="images/languages.png" id="more_languages" onclick="openLanguagesDropdown()">
                 <img id="avatar" class="" src="icon/pj-shadows-name-transparent.png">
+                <div id="page_shadow3"></div>
             </div>
             <div id="sub_icon_pres">
                 <div id="front" class="card-face">
                     <div id="homemess">
                         <p class="slog" id="s_first">Code. Design.</p>
-                        <p id="scroll_invite">Welcome to my personnal website. Scroll down for more.</p>
+                        <p id="scroll_invite">Welcome to my personal website</p>
                     </div>    
                     <div id="page_shadow_1"></div>
                 </div>
                 <div id="back" class="card-face">
                     <div id="next_navbar">
-            <img id="hamburger2" class="navitem" src="images/menu.png" onclick="openDrawer()">
+            <img id="hamburger2" class="navitem" src="images/menu.png" onclick="smoothScrollTo(0)">
             <span class="navitem" id="title2">Pierre Jacquier</span>
             <img src="icon/pj-shadows-transparent.png" id="icon2" class="navitemright">
         </div>                                                                                          
@@ -65,6 +71,8 @@
             </div>
         </div>
         <div id="content" class="">
+            
+            <img class="sep" id="sep1" src="images/sep.png">
             <div class="slog">In front of a keyboard</div>
             <p class="pres">
                 After many experimentations I've come to learn a bunch of programming langages, either low or high-level. 
@@ -145,7 +153,7 @@
         </div>
         <div id="shadow_drawer" onclick="closeDrawer()"></div>
         <div id="next_navbar2">
-            <img id="hamburger2" class="navitem" src="images/menu.png" onclick="openDrawer()">
+            <img id="hamburger2" class="navitem" src="images/menu.png" onclick="smoothScrollTo(0);setTimeout(function(){toogleTopMenu()},500)">
             <span class="navitem" id="title2">Pierre Jacquier</span>
             <img src="icon/pj-shadows-transparent.png" id="icon2" class="navitemright">
         </div>   
