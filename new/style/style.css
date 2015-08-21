@@ -664,9 +664,8 @@ z-index: 10;
     
     #avatar
     {
-        width: 140px;
-        top: 30;
-        margin-left: -70;
+        width: 200px;
+        margin-left: -100;
     }
 
     #content
@@ -680,7 +679,7 @@ z-index: 10;
     
     #s_first
     {
-        font-size: 60;   
+        font-size: 50;   
     }
     
     #me 
