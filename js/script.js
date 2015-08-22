@@ -3,29 +3,7 @@ var Qq = document.querySelectorAll.bind(document);
 HTMLElement.prototype.Q = HTMLElement.prototype.querySelector;
 HTMLElement.prototype.Qq = HTMLElement.prototype.querySelectorAll;
 
-function openTopMenu() {
-    if(b_wth > 1400) {
-        Q('#icon_pres').style.WebkitTransform = "rotateX(-55deg)";
-        Q('#icon_pres').style.transform = "rotateX(-55deg)";
-    }
-    else if(b_wth > 1600) {
-        Q('#icon_pres').style.WebkitTransform = "rotateX(-58deg)";
-        Q('#icon_pres').style.transform = "rotateX(-58deg)";
-    }
-    else {
-        Q('#icon_pres').style.WebkitTransform = "rotateX(-52deg)";
-        Q('#icon_pres').style.transform = "rotateX(-52deg)";
-    }
-    Q('#page_shadow3').style.opacity = 0.3;
-    setTimeout(function(){Q('#top_menu').style.zIndex = 30;}, 500);
-}
 
-function closeTopMenu() {
-    Q('#icon_pres').style.WebkitTransform = "rotateX(0deg)";
-    Q('#icon_pres').style.transform = "rotateX(0deg)";
-    Q('#page_shadow3').style.opacity = 0;
-    Q('#top_menu').style.zIndex = 0;
-}
 
 function posTop() {
     return typeof window.pageYOffset != 'undefined' ? window.pageYOffset: document.documentElement.scrollTop? document.documentElement.scrollTop: document.body.scrollTop? document.body.scrollTop:0;
@@ -334,3 +312,27 @@ function Init () {
     }
 }
 Init();
+
+function openTopMenu() {
+    if(b_wth > 1400) {
+        Q('#icon_pres').style.WebkitTransform = "rotateX(-55deg)";
+        Q('#icon_pres').style.transform = "rotateX(-55deg)";
+    }
+    else if(b_wth > 1600) {
+        Q('#icon_pres').style.WebkitTransform = "rotateX(-58deg)";
+        Q('#icon_pres').style.transform = "rotateX(-58deg)";
+    }
+    else {
+        Q('#icon_pres').style.WebkitTransform = "rotateX(-52deg)";
+        Q('#icon_pres').style.transform = "rotateX(-52deg)";
+    }
+    Q('#page_shadow3').style.opacity = 0.3;
+    setTimeout(function(){Q('#top_menu').style.zIndex = 30;}, 500);
+}
+
+function closeTopMenu() {
+    Q('#icon_pres').style.WebkitTransform = "rotateX(0deg)";
+    Q('#icon_pres').style.transform = "rotateX(0deg)";
+    Q('#page_shadow3').style.opacity = 0;
+    Q('#top_menu').style.zIndex = 0;
+}
