@@ -10,18 +10,26 @@ body
 {
     font-family: 'Roboto', sans-serif;
     overflow-x:hidden;
-    background: white;
+    background: white;    
+}
+
+#top_menu_background {
+    background: url(../images/texture.png) repeat;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -30;
+    height: 200px;
 }
 
 #top_menu {
-    position: absolute;
-    z-index: 0;
+    position: fixed;
+    z-index: -10;
     top: 0;
     color: black;
     padding: 20;
     text-align: center;
-    background: grey;
-    background: url(../images/texture.png) repeat;
     width: 100%;
     margin: auto;
     color: white;
@@ -29,7 +37,7 @@ body
 
 #top_menu span {
     padding: 50;
-    padding-bottom: 20;
+    padding-bottom: 16;
     text-transform: uppercase;
     font-weight: 300;   
     cursor: pointer;
@@ -39,6 +47,12 @@ body
 
 #top_menu a {
     color: white;
+}
+
+#close_top_menu {
+    float: left;
+    cursor: pointer;    
+    height: 20;
 }
 
 #top_menu span:hover {
@@ -141,7 +155,10 @@ a
 
 #scroll_invite {
     text-align: center;
-    font-size: 20;
+    font-size: 35;
+    font-weight: 100;
+    letter-spacing: 10px;
+    text-transform: uppercase;
     margin-top:10;
 }
 
@@ -676,7 +693,17 @@ a
 
 @media screen and (min-width:1700px)
 {
+    #avatar {
+        width:25%;
+    }
     
+    #s_first {
+        font-size: 150px;
+    }
+    
+    #scroll_invite {
+        font-size: 40px;   
+    }
 }
 
 @media screen and (max-width:800px)
