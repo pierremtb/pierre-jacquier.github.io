@@ -42,7 +42,7 @@
             </li>
         </ul>
         <div id="pres_content" onclick="closeLanguagesDropdown()">
-            <div id="icon_pres" class="">
+            <div id="icon_pres" class="" onclick="closeTopMenu()">
                 <div id="filter"></div>
                 <img id="hamburger" src="images/menu.png" onclick="openTopMenu()">
                 <img src="images/languages.png" id="more_languages" onclick="openLanguagesDropdown()">
@@ -50,7 +50,7 @@
                 <div id="page_shadow3"></div>
             </div>
             <div id="sub_icon_pres">
-                <div id="front" class="card-face">
+                <div id="front" class="card-face" onclick="closeTopMenu()">
                     <div id="homemess">
                         <p class="slog" id="s_first">Code. Design.</p>
                         <p id="scroll_invite">Welcome to my personal website</p>
@@ -155,7 +155,7 @@
         </div>
         <div id="shadow_drawer" onclick="closeDrawer()"></div>
         <div id="next_navbar2">
-            <img id="hamburger2" class="navitem" src="images/menu.png" onclick="smoothScrollTo(0);setTimeout(function(){toogleTopMenu()},500)">
+            <img id="hamburger2" class="navitem" src="images/menu.png" onclick="smoothScrollTo(0);setTimeout(function(){openTopMenu()},600)">
             <span class="navitem" id="title2">Pierre Jacquier</span>
             <img src="icon/pj-shadows-transparent.png" id="icon2" class="navitemright">
         </div>

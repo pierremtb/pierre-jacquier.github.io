@@ -3,16 +3,6 @@ var Qq = document.querySelectorAll.bind(document);
 HTMLElement.prototype.Q = HTMLElement.prototype.querySelector;
 HTMLElement.prototype.Qq = HTMLElement.prototype.querySelectorAll;
 
-var top_menu_closed = true;
-
-function toogleTopMenu() {
-    if(top_menu_closed)
-        openTopMenu();
-    else 
-        closeTopMenu();
-    top_menu_closed = !top_menu_closed;
-}
-
 function openTopMenu() {
     if(b_wth > 1400) {
         Q('#icon_pres').style.WebkitTransform = "rotateX(-55deg)";
@@ -303,3 +293,44 @@ function makePresentationAwesome(){
             
     }  
 }   
+
+var top_menu_try = 0;
+
+function MouseScroll (event) 
+{
+    var rolled = 0;
+    if ('wheelDelta' in event) {
+        rolled = event.wheelDelta;
+    }
+    else {  
+        rolled = -40 * event.detail;
+    }
+
+    if(posTop() == 0) {
+        if(rolled > 0) 
+            top_menu_try++;
+        if(top_menu_try > 7) {
+           openTopMenu();
+           top_menu_try = 0;
+        }
+    }
+    else
+        top_menu_try = 0;
+}
+
+function Init () {
+        // for mouse scrolling in Firefox
+    var elem = document.body;
+    if (elem.addEventListener) {    // all browsers except IE before version 9
+            // Internet Explorer, Opera, Google Chrome and Safari
+        elem.addEventListener ("mousewheel", MouseScroll, false);
+            // Firefox
+        elem.addEventListener ("DOMMouseScroll", MouseScroll, false);
+    }
+    else {
+        if (elem.attachEvent) { // IE before version 9
+            elem.attachEvent ("onmousewheel", MouseScroll);
+        }
+    }
+}
+Init();
