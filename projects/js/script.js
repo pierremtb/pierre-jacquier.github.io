@@ -51,7 +51,7 @@ Q('#article_header_title').style.boxShadow = "0 3px 6px rgba(0,0,0,0.16), 0 3px 
         Q('#article_header_title').style.top = 'auto';
         Q('#article_header_title').style.bottom = '0';
         Q('#article_header_title').style.left = '0';
-        if(Q('#article_header_title').innerHTML == "Material Browser")
+        if(Q('#article_header_title').innerHTML == "Liri Browser")
             Q('#article_header').style.background = '#03A9F4';
         else
             Q('#article_header').style.background = '#e91e63';
