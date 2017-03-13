@@ -16,6 +16,7 @@
   <div class="column is-narrow relative full-height primary-dark-bg">
     <div class="primary-bg padded">
       <div id="title-container">
+        <div id="expandable-circle" class="expanded"></div>
         <img src="images/me.jpg" id="me" alt="">
         <div id="name" class="txt-on-primary">
           <span>Pierre</span>
@@ -23,36 +24,61 @@
         </div>
       </div>
       <div class="divider"></div>
-      <p class="txt-on-primary" id="intro-text">
-        Mechanical engineering student <br>
-        1st year at UTBM, France <br>
-        Mountainbiking and IT lover</p>
+      <p class="txt-on-primary" id="intro-text" data-translatable>
+        <span>
+          Mechanical engineering student <br>
+          1st year at UTBM, France <br>
+          Mountainbiking and IT lover
+        </span>
+        <span>
+          Élève-ingénieur en mécanique<br>
+          1ère année à UTBM<br>
+          Fan de VTT et de technologie
+        </span>
+        <span>
+          Maschinenbau student<br>
+          1st Jahre an UTBM, Frankreich<br>
+          Mountainbike und IT Fan
+        </span>
+      </p>
     </div>
     <div class="primary-dark-bg txt-on-primary padded is-hidden-mobile">
       <ul>
         <a href="#projects">
-          <li class="navigation-item active" id="nav-projects">Projects</li>
+          <li class="navigation-item active" id="nav-projects" data-translatable>
+            <span>Projects</span>
+            <span>Projets</span>
+            <span>Projekte</span>
+          </li>
         </a>
         <a href="#skills">
-          <li class="navigation-item" id="nav-skills">Skills</li>
+          <li class="navigation-item" id="nav-skills">
+            Skills
+          </li>
         </a>
         <a href="#education">
-          <li class="navigation-item" id="nav-education">Education</li>
+          <li class="navigation-item" id="nav-education">
+            Education
+          </li>
         </a>
         <a href="#mtb">
-          <li class="navigation-item" id="nav-mtb">Mountain biking</li>
+          <li class="navigation-item" id="nav-mtb">
+            Mountain biking
+          </li>
         </a>
         <a href="#resume">
-          <li class="navigation-item" id="nav-resume">Resume</li>
+          <li class="navigation-item" id="nav-resume">
+            Resume
+          </li>
         </a>
 
       </ul>
     </div>
-    <div class="bottom not-bottom-mobile">
-      <p id="languages">
-        <span class="txt-on-primary">EN</span>
-        <span class="txt-on-primary--secondary">FR</span>
-        <span class="txt-on-primary--secondary">DE</span>
+    <div class="bottom not-bottom-mobile" style="z-index: 101">
+      <p id="languages" class="txt-on-primary">
+        <span id="en-US" class="pointer">EN</span>
+        <span id="fr" class="pointer">FR</span>
+        <span id="de" class="pointer">DE</span>
       </p>
       <div class="accent-bg txt-on-accent padded small-vertical-padded columns is-gapless is-mobile"
            style="text-align: center">
@@ -336,8 +362,10 @@
   </div>
 </div>
 
+
+<script src="js/vendor/dom-i18n.min.js"></script>
 <script src="js/vendor/sprint.min.js"></script>
-<script src="js/vendor/lodash.core.min.js"></script>
-<script src="js/scripts.js"></script>
+<script src="js/translations.js"></script>
+<script src="js/layout.js"></script>
 </body>
 </html>
