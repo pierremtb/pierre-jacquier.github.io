@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pierre Jacquier</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700" rel="stylesheet">
+  <link href="css/vendor/mdi/css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css"/>
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+
+<div class="columns is-gapless">
+
+  <!--Navigation-->
+  <div class="column is-narrow relative full-height primary-dark-bg">
+    <div class="primary-bg padded">
+      <div id="title-container">
+        <img src="images/me.jpg" id="me" alt="">
+        <div id="name" class="txt-on-primary">
+          <span>Pierre</span>
+          <span id="surname">Jacquier</span>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <p class="txt-on-primary" id="intro-text">
+        Mechanical engineering student <br>
+        1st year at UTBM, France <br>
+        Mountainbiking and IT lover</p>
+    </div>
+    <div class="primary-dark-bg txt-on-primary padded is-hidden-mobile">
+      <ul>
+        <a href="#projects">
+          <li class="navigation-item active" id="nav-projects">Projects</li>
+        </a>
+        <a href="#skills">
+          <li class="navigation-item" id="nav-skills">Skills</li>
+        </a>
+        <a href="#education">
+          <li class="navigation-item" id="nav-education">Education</li>
+        </a>
+        <a href="#mtb">
+          <li class="navigation-item" id="nav-mtb">Mountain biking</li>
+        </a>
+        <a href="#resume">
+          <li class="navigation-item" id="nav-resume">Resume</li>
+        </a>
+
+      </ul>
+    </div>
+    <div class="bottom not-bottom-mobile">
+      <p id="languages">
+        <span class="txt-on-primary">EN</span>
+        <span class="txt-on-primary--secondary">FR</span>
+        <span class="txt-on-primary--secondary">DE</span>
+      </p>
+      <div class="accent-bg txt-on-accent padded small-vertical-padded columns is-gapless is-mobile"
+           style="text-align: center">
+        <div class="column">
+          <a class="txt-on-accent mdi mdi-24px mdi-facebook-box" href="https://www.facebook.com/pierremtb"
+             target="_blank"></a>
+        </div>
+        <div class="column">
+          <a class="txt-on-accent mdi mdi-24px mdi-twitter" href="https://twitter.com/PierreJacquier"
+             target="_blank"></a>
+        </div>
+        <div class="column">
+          <a class="txt-on-accent mdi mdi-24px mdi-google-plus" href="https://plus.google.com/+PierreJacquierFR"
+             target="_blank"></a>
+        </div>
+        <div class="column">
+          <a class="txt-on-accent mdi mdi-24px mdi-github-circle" href="https://github.com/pierremtb"
+             target="_blank"></a>
+        </div>
+        <div class="column">
+          <a class="txt-on-accent mdi mdi-24px mdi-linkedin"
+             href="https://www.linkedin.com/in/pierre-jacquier-762b82ba/" target="_blank"></a>
+        </div>
+        <div class="column">
+          <a class="txt-on-accent mdi mdi-24px mdi-email" href="mailto:pierrejacquier39@gmail.com" target="_blank"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Content-->
+  <div class="column full-height scroll" id="content">
+    <div class="background-bg padded" id="projects">
+      <nav class="level">
+        <div class="level-left">
+          <div class="level-item">
+            <div>
+              <h1>Projects</h1>
+              <div class="divider divider-short mb0"></div>
+            </div>
+          </div>
+        </div>
+        <div class="level-right">
+          <a class="button level-item is-outlined" href="https://github.com/pierremtb"
+             target="_blank">
+            <i class="txt-on-accent mdi mdi-24px mdi-github-circle"></i>
+            <span style="padding-left: 0.5rem">
+              Check out more on my Github
+            </span>
+          </a>
+        </div>
+      </nav>
+      <div class="tile is-ancestor">
+        <div class="tile is-parent">
+          <div class="tile is-child card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="images/liri.jpg" alt="Image">
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-content">
+                  <p class="title is-4">Liri OS</p>
+                  <p class="subtitle is-6">An OS and apps built with modern design and features</p>
+                </div>
+              </div>
+              <div class="content">
+                Member of this project since the very beginning. We started building small cross-plateform
+                applications, and then merged with the Papyros operating system.
+                <br>
+                <small>Apps development and design team</small>
+              </div>
+              <a class="button" href="https://liri.io" target="_blank">Go to the website</a>
+            </div>
+          </div>
+        </div>
+        <div class="tile is-6 is-vertical is-parent">
+          <div class="tile is-child card">
+            <div class="card-content">
+              <div class="media">
+                <div class="media-content">
+                  <p class="title is-4">EasyFit</p>
+                  <p class="subtitle is-6">A JS library to parse .FIT files easily</p>
+                </div>
+              </div>
+              <div class="content">
+                There was no direct way to parse .FIT activities file from Javascript, so I decided to look into it and
+                turned a prototype I found into a modern library, packaged in npm, written in ES6.
+                <br>
+                <small>Main developer and maintainer</small>
+              </div>
+              <a class="button" href="https://github.com/pierremtb/easy-fit" target="_blank">Go to the repo</a>
+            </div>
+          </div>
+          <div class="tile is-child card">
+            <div class="card-content">
+              <div class="media">
+                <div class="media-content">
+                  <p class="title is-4">WaitButWhy Android</p>
+                  <p class="subtitle is-6">An unofficial Android client for waitbutwhy.com</p>
+                </div>
+              </div>
+              <div class="content">
+                I started this client for this awesome website in order to improve my Android skills. The app was almost
+                finished when I got the answer from the folks at the website that I wasn't allowed to publish it to the
+                Google Play Store.
+                <br>
+                <small>Main developer & designer</small>
+              </div>
+              <a class="button" href="https://github.com/pierremtb/waitbutwhy-android-unofficial" target="_blank">Go to
+                the repo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="background-bg-dark padded" id="skills">
+      <h1>Skills</h1>
+      <div class="divider divider-short"></div>
+      <!--<p style="text-align: center; font-size: 64px">-->
+      <!--<i class="mdi mdi-earth"></i>-->
+      <!--</p>-->
+      <nav class="level">
+        <div class="level-item has-text-centered">
+          <div>
+            <p class="heading">French</p>
+            <p class="subtitle">Mother tongue</p>
+          </div>
+        </div>
+        <div class="level-item has-text-centered">
+          <div>
+            <p class="heading">English</p>
+            <p class="subtitle">Advanced (C1)</p>
+          </div>
+        </div>
+        <div class="level-item has-text-centered">
+          <div>
+            <p class="heading">German</p>
+            <p class="subtitle">Intermediate (B1)</p>
+          </div>
+        </div>
+        <div class="level-item has-text-centered">
+          <div>
+            <p class="heading">Spanish</p>
+            <p class="subtitle">Basic communication</p>
+          </div>
+        </div>
+      </nav>
+      <!--<p style="text-align: center; font-size: 64px">-->
+      <!--<i class="mdi mdi-laptop"></i>-->
+      <!--</p>-->
+      <nav class="level">
+        <div class="level-item has-text-centered">
+          <div>
+            <p class="heading">Applications</p>
+            <p class="subtitle">
+              C#, C++ (Qt-QML) <br>
+              Java (Android) <br>
+              Python <br>
+            </p>
+          </div>
+        </div>
+        <div class="level-item has-text-centered">
+          <div>
+            <p class="heading">Front-end</p>
+            <p class="subtitle">
+              HTML, CSS, JS <br>
+              SASS, ES6 <br>
+              React, Angular
+            </p>
+          </div>
+        </div>
+        <div class="level-item has-text-centered">
+          <div>
+            <p class="heading">Server</p>
+            <p class="subtitle">
+              NodeJS, Meteor, PHP<br>
+              MySQL, MongoDB <br>
+              REST, GraphQL
+            </p>
+          </div>
+        </div>
+        <div class="level-item has-text-centered">
+          <div>
+            <p class="heading">Engineering</p>
+            <p class="subtitle">
+              MATLAB, Simulink <br>
+              CATIAv5, PTC Creo <br>
+              Abaqus <br>
+            </p>
+          </div>
+        </div>
+        <div class="level-item has-text-centered">
+          <div>
+            <p class="heading">Graphic design</p>
+            <p class="subtitle">
+              Adobe Illustrator <br>
+              Adobe InDesign <br>
+              Figma
+            </p>
+          </div>
+        </div>
+      </nav>
+
+      <!--<p style="text-align: center; font-size: 64px">-->
+      <!--<i class="mdi mdi-school"></i>-->
+      <!--</p>-->
+      <nav class="level">
+        <div class="level-item has-text-centered">
+          <div>
+            <p class="heading">Maths</p>
+            <p class="subtitle">
+              Numerical analysis <br>
+              Algebra applications
+            </p>
+          </div>
+        </div>
+        <div class="level-item has-text-centered">
+          <div>
+            <p class="heading">Physics</p>
+            <p class="subtitle">
+              Continuum mechanics <br>
+              Fluids, thermodynamics <br>
+              Energy mechanics, structural analysis
+            </p>
+          </div>
+        </div>
+        <div class="level-item has-text-centered">
+          <div>
+            <p class="heading">Engineering</p>
+            <p class="subtitle">
+              Design office <br>
+              Project management
+            </p>
+          </div>
+        </div>
+      </nav>
+
+    </div>
+
+    <div class="padded background-bg" id="education">
+      <h1>Education</h1>
+      <div class="divider divider-short"></div>
+      <nav class="level">
+        <p class="level-item has-text-centered">
+          <img src="images/utbm.svg" alt="" style="height: 90px;">
+        </p>
+        <p class="level-item has-text-centered">
+          <img src="images/hska.svg" alt="" style="height: 90px;">
+        </p>
+      </nav>
+    </div>
+
+    <div class="padded" id="mtb" style="background: url(images/bg.jpg); background-size: cover">
+      <h1 class="txt-on-primary">Mountain biking</h1>
+      <div class="divider divider-short"></div>
+      <div class="columns is-gapless">
+        <div class="column is-4">
+          <div class="box" style="margin-bottom: 170px;">
+            <p>Crazy about sports, especially mountain biking, that I’ve practiced since I was 6 in national
+              competitions. Owner of coaching license, I teach to younger riders for my club every saturday afternoon.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="padded background-bg" id="resume">
+      <h1>Resume</h1>
+      <div class="divider divider-short"></div>
+      <nav class="level">
+        <p class="level-item has-text-centered">
+          <a class="button is-primary txt-on-accent" href="files/Pierre%20JACQUIER-CV-EN.pdf" target="_blank">
+            <i class="mdi mdi-download"></i>
+            <span style="margin-left: 0.5rem">Download Resume (.pdf)</span>
+          </a>
+        </p>
+      </nav>
+    </div>
+  </div>
+</div>
+
+<script src="js/vendor/sprint.min.js"></script>
+<script src="js/vendor/lodash.core.min.js"></script>
+<script src="js/scripts.js"></script>
+</body>
+</html>
