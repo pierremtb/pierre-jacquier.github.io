@@ -9,7 +9,7 @@ $accent-color-dark: $md-yellow-600;
 $accent-color-text: rgba(0, 0, 0, 0.87);
 $background-color: $md-grey-50;
 $background-color-dark: $md-grey-100;
-$background-color-text:   $accent-color-text;
+$background-color-text: $accent-color-text;
 
 $spacing: 3rem;
 $small-spacing: 1.5rem;
@@ -241,4 +241,12 @@ h1 {
   font-size: 1.4rem;
   color: $background-color-text;
   margin-top: -5px;
+}
+
+.button-download {
+  margin: 50px auto;
+}
+
+.columns.is-gapless:not(:last-child) {
+    margin-bottom: 0;
 }

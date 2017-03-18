@@ -16,6 +16,7 @@
   <div class="column is-narrow relative full-height primary-dark-bg">
     <div class="primary-bg padded">
       <div id="title-container">
+        <div id="expandable-circle" class="expanded"></div>
         <img src="images/me.jpg" id="me" alt="">
         <div id="name" class="txt-on-primary">
           <span>Pierre</span>
@@ -23,36 +24,69 @@
         </div>
       </div>
       <div class="divider"></div>
-      <p class="txt-on-primary" id="intro-text">
-        Mechanical engineering student <br>
-        1st year at UTBM, France <br>
-        Mountainbiking and IT lover</p>
+      <p class="txt-on-primary" id="intro-text" data-translatable>
+        <span>
+          Mechanical engineering student <br>
+          1st year at UTBM, France <br>
+          Mountainbiking and IT lover
+        </span>
+        <span>
+          Élève-ingénieur en mécanique<br>
+          1ère année à UTBM<br>
+          Fan de VTT et de technologie
+        </span>
+        <span>
+          Maschinenbau student<br>
+          1st Jahre an UTBM, Frankreich<br>
+          Mountainbike und IT Fan
+        </span>
+      </p>
     </div>
     <div class="primary-dark-bg txt-on-primary padded is-hidden-mobile">
       <ul>
         <a href="#projects">
-          <li class="navigation-item active" id="nav-projects">Projects</li>
+          <li class="navigation-item active" id="nav-projects" data-translatable>
+            <span>Projects</span>
+            <span>Projets</span>
+            <span>Projekte</span>
+          </li>
         </a>
         <a href="#skills">
-          <li class="navigation-item" id="nav-skills">Skills</li>
+          <li class="navigation-item" id="nav-skills" data-translatable>
+            <span>Skills</span>
+            <span>Compétences</span>
+            <span>Fähigkeiten</span>
+          </li>
         </a>
         <a href="#education">
-          <li class="navigation-item" id="nav-education">Education</li>
+          <li class="navigation-item" id="nav-education" data-translatable>
+            <span>Education</span>
+            <span>Formation</span>
+            <span>Ausbildung</span>
+          </li>
         </a>
         <a href="#mtb">
-          <li class="navigation-item" id="nav-mtb">Mountain biking</li>
+          <li class="navigation-item" id="nav-mtb" data-translatable>
+            <span>Mountain biking</span>
+            <span>VTT</span>
+            <span>Mountainbike</span>
+          </li>
         </a>
         <a href="#resume">
-          <li class="navigation-item" id="nav-resume">Resume</li>
+          <li class="navigation-item" id="nav-resume" data-translatable>
+            <span>Resume</span>
+            <span>CV</span>
+            <span>CV</span>
+          </li>
         </a>
 
       </ul>
     </div>
-    <div class="bottom not-bottom-mobile">
-      <p id="languages">
-        <span class="txt-on-primary">EN</span>
-        <span class="txt-on-primary--secondary">FR</span>
-        <span class="txt-on-primary--secondary">DE</span>
+    <div class="bottom not-bottom-mobile" style="z-index: 101">
+      <p id="languages" class="txt-on-primary">
+        <span id="en-US" class="pointer">EN</span>
+        <span id="fr" class="pointer">FR</span>
+        <span id="de" class="pointer">DE</span>
       </p>
       <div class="accent-bg txt-on-accent padded small-vertical-padded columns is-gapless is-mobile"
            style="text-align: center">
@@ -90,7 +124,11 @@
         <div class="level-left">
           <div class="level-item">
             <div>
-              <h1>Projects</h1>
+              <h1 data-translatable>
+                <span>Projects</span>
+                <span>Projets</span>
+                <span>Projekte</span>
+              </h1>
               <div class="divider divider-short mb0"></div>
             </div>
           </div>
@@ -99,8 +137,10 @@
           <a class="button level-item is-outlined" href="https://github.com/pierremtb"
              target="_blank">
             <i class="txt-on-accent mdi mdi-24px mdi-github-circle"></i>
-            <span style="padding-left: 0.5rem">
-              Check out more on my Github
+            <span style="padding-left: 0.5rem" data-translatable>
+              <span>Check out more on my Github</span>
+              <span>Voir plus sur mon Github</span>
+              <span>Mehr auf meinem Github</span>
             </span>
           </a>
         </div>
@@ -117,16 +157,41 @@
               <div class="media">
                 <div class="media-content">
                   <p class="title is-4">Liri OS</p>
-                  <p class="subtitle is-6">An OS and apps built with modern design and features</p>
+                  <p class="subtitle is-6" data-translatable>
+                    <span>An OS and apps built with modern design and features</span>
+                    <span>Un OS et des applications modernes et design</span>
+                    <!-- TODO: de -->
+                    <span>An OS and apps built with modern design and features</span>
+                  </p>
                 </div>
               </div>
               <div class="content">
-                Member of this project since the very beginning. We started building small cross-plateform
-                applications, and then merged with the Papyros operating system.
+                <span data-translatable>
+                  <span>
+                    Member of this project since the very beginning. We started building small cross-plateform
+                    applications, and then merged with the Papyros operating system and Hawaii.
+                  </span>
+                  <span>
+                    Membre du Liri Project depuis le début, quand ce n'était que des petites applications cross-plateform. Nous avons ensuite rejoint les projets Papyros et Hawai pour former Liri OS.
+                  </span>
+                  <!-- TODO: de -->
+                  <span>
+                    Member of this project since the very beginning. We started building small cross-plateform
+                    applications, and then merged with the Papyros operating system and Hawaii.
+                  </span>
+                </span>
                 <br>
-                <small>Apps development and design team</small>
+                <span data-translatable>
+                  <small>Apps development and design team</small>
+                  <small>Dévelopement d'applications et équipe graphique</small>
+                  <small>Apps Entwicklung und Design Team</small>
+                </span>
               </div>
-              <a class="button" href="https://liri.io" target="_blank">Go to the website</a>
+              <a class="button" href="https://liri.io" target="_blank" data-translatable>
+                <span>Website</span>
+                <span>Site internet</span>
+                <span>Webseite</span>
+              </a>
             </div>
           </div>
         </div>
@@ -136,16 +201,38 @@
               <div class="media">
                 <div class="media-content">
                   <p class="title is-4">EasyFit</p>
-                  <p class="subtitle is-6">A JS library to parse .FIT files easily</p>
+                  <p class="subtitle is-6" data-translatable>
+                    <span>A JS library to parse .FIT files easily</span>
+                    <span>Une biblotheque JS pour lire les fichiers .FIT facilement</span>
+                    <span>Eine JS-Bibliothek um .FIT einfach zu lesen</span>
+                  </p>
                 </div>
               </div>
               <div class="content">
-                There was no direct way to parse .FIT activities file from Javascript, so I decided to look into it and
-                turned a prototype I found into a modern library, packaged in npm, written in ES6.
+                <span data-translatable>
+                  <span>
+                    There was no direct way to parse .FIT activities file from Javascript, so I decided to look into it and turned a prototype I found into a modern library, packaged in npm, written in ES6.
+                  </span>
+                  <span>
+                    Il n'y avait pas de façon simple de lire les fichiers d'activités sportives .FIT depuis Javascript, donc je m'y suis penché et j'ai transformé un prototype que j'avais trouvé en bibliothèque moderne, facilement installable avec NPM, écrite en ES6.
+                  </span>
+                  <!-- TODO: de -->
+                  <span>
+                    There was no direct way to parse .FIT activities file from Javascript, so I decided to look into it and turned a prototype I found into a modern library, packaged in npm, written in ES6.
+                  </span>
+                </span>
                 <br>
-                <small>Main developer and maintainer</small>
+                <small data-translatable>
+                  <span>Main developer and maintainer</span>
+                  <span>Développeur et mainteneur</span>
+                  <span>Hauptentwickler und Betreuer</span>
+                </small>
               </div>
-              <a class="button" href="https://github.com/pierremtb/easy-fit" target="_blank">Go to the repo</a>
+              <a class="button" href="https://github.com/pierremtb/easy-fit" target="_blank" data-translatable>
+                <span>Repository</span>
+                <span>Repository</span>
+                <span>Repository</span>
+              </a>
             </div>
           </div>
           <div class="tile is-child card">
@@ -153,18 +240,38 @@
               <div class="media">
                 <div class="media-content">
                   <p class="title is-4">WaitButWhy Android</p>
-                  <p class="subtitle is-6">An unofficial Android client for waitbutwhy.com</p>
+                  <p class="subtitle is-6" data-translatable>
+                    <span>An unofficial Android client for waitbutwhy.com</span>
+                    <span>Un client Android non-officiel pour waitbutwhy.com</span>
+                    <span>Eine unoffizielle App für waitbutwhy.com</span>
+                  </p>
                 </div>
               </div>
               <div class="content">
-                I started this client for this awesome website in order to improve my Android skills. The app was almost
-                finished when I got the answer from the folks at the website that I wasn't allowed to publish it to the
-                Google Play Store.
+                <span data-translatable>
+                  <span>
+                    I started this client for this awesome website in order to improve my Android skills. The app was almost finished when I got the answer from the folks at the website that I wasn't allowed to publish it to the Google Play Store.
+                  </span>
+                  <span>
+                    J'ai commencé cette application pour ce très bon site pour m'expérimenter en développement Android. Mais juste avant de la publier sur le Google Play Store, j'ai eu la réponse de l'équipe du site, me l'interdisant.
+                  </span>
+                  <!-- TODO: de -->
+                  <span>
+                    I started this client for this awesome website in order to improve my Android skills. The app was almost finished when I got the answer from the folks at the website that I wasn't allowed to publish it to the Google Play Store.
+                  </span>
+                </span>
                 <br>
-                <small>Main developer & designer</small>
+                <small data-translatable>
+                  <span>Main developer and designer</span>
+                  <span>Développer et designe</span>
+                  <span>Entwickler und Designer</span>
+                </small>
               </div>
-              <a class="button" href="https://github.com/pierremtb/waitbutwhy-android-unofficial" target="_blank">Go to
-                the repo</a>
+              <a class="button" href="https://github.com/pierremtb/waitbutwhy-android-unofficial" target="_blank" data-translatable>
+                <span>Repository</span>
+                <span>Repository</span>
+                <span>Repository</span>
+              </a>
             </div>
           </div>
         </div>
@@ -179,32 +286,61 @@
       <nav class="level">
         <div class="level-item has-text-centered">
           <div>
-            <p class="heading">French</p>
-            <p class="subtitle">Mother tongue</p>
+            <p class="heading" data-translatable>
+              <span>French</span>
+              <span>Français</span>
+              <span>Französisch</span>
+            </p>
+            <p class="subtitle" data-translatable>
+              <span>Mother tongue</span>
+              <span>Langue maternelle</span>
+              <span>Muttersprache</span>
+            </p>
           </div>
         </div>
         <div class="level-item has-text-centered">
           <div>
-            <p class="heading">English</p>
-            <p class="subtitle">Advanced (C1)</p>
+            <p class="heading" data-translatable>
+              <span>English</span>
+              <span>Anglais</span>
+              <span>Englisch</span>
+            </p>
+            <p class="subtitle" data-translatable>
+              <span>Advanced (C1)</span>
+              <span>Avancé (C1)</span>
+              <span>Fortgeschrittene Kenntnisse (C1)</span>
+            </p>
           </div>
         </div>
         <div class="level-item has-text-centered">
           <div>
-            <p class="heading">German</p>
-            <p class="subtitle">Intermediate (B1)</p>
+            <p class="heading" data-translatable>
+              <span>German</span>
+              <span>Allemand</span>
+              <span>Deustch</span>
+            </p>
+            <p class="subtitle" data-translatable>
+              <span>Intermediate (B1)</span>
+              <span>Intermédiaire (B1)</span>
+              <span>Mittelstufe (B1)</span>
+            </p>
           </div>
         </div>
         <div class="level-item has-text-centered">
           <div>
-            <p class="heading">Spanish</p>
-            <p class="subtitle">Basic communication</p>
+            <p class="heading" data-translatable>
+              <span>Spanish</span>
+              <span>Espagnol</span>
+              <span>Spanisch</span>
+            </p>
+            <p class="subtitle" data-translatable>
+              <span>Basic communication</span>
+              <span>Notions de communication</span>
+              <span>Einstieg</span>
+            </p>
           </div>
         </div>
       </nav>
-      <!--<p style="text-align: center; font-size: 64px">-->
-      <!--<i class="mdi mdi-laptop"></i>-->
-      <!--</p>-->
       <nav class="level">
         <div class="level-item has-text-centered">
           <div>
@@ -238,7 +374,11 @@
         </div>
         <div class="level-item has-text-centered">
           <div>
-            <p class="heading">Engineering</p>
+            <p class="heading" data-translatable>
+              <span>Modeling/Simulation</span>
+              <span>Modelisation/Simulation</span>
+              <span>Modellierung/Simulation</span>
+            </p>
             <p class="subtitle">
               MATLAB, Simulink <br>
               CATIAv5, PTC Creo <br>
@@ -264,29 +404,80 @@
       <nav class="level">
         <div class="level-item has-text-centered">
           <div>
-            <p class="heading">Maths</p>
+            <p class="heading" data-translatable>
+              <span>Maths</span>
+              <span>Maths</span>
+              <span>Mathematik</span>
+            </p>
             <p class="subtitle">
-              Numerical analysis <br>
-              Algebra applications
+              <span data-translatable>
+                <span>Numerical analysis</span>
+                <span>Analyse numérique</span>
+                <!-- TODO: de -->
+                <span>Numerical analysis</span>
+              </span>
+              <br>
+              <span data-translatable>
+                <span>Algebra applications</span>
+                <span>Applications en algèbre</span>
+                <span>Algebra applications</span>
+              </span>
             </p>
           </div>
         </div>
         <div class="level-item has-text-centered">
           <div>
-            <p class="heading">Physics</p>
+            <p class="heading" data-translatable>
+              <span>Physics</span>
+              <span>Physique</span>
+              <span>Physik</span>
+            </p>
             <p class="subtitle">
-              Continuum mechanics <br>
-              Fluids, thermodynamics <br>
-              Energy mechanics, structural analysis
+              <span data-translatable>
+                <span>Continuum mechanics</span>
+                <span>Mécanique des milieux continus</span>
+                <!-- TODO: de -->
+                <span>Continuum mechanics</span>
+              </span>
+              <br>
+              <span data-translatable>
+                <span>Fluids, thermodynamics</span>
+                <span>Fluides, thermodynamique</span>
+                <!-- TODO: de  -->
+                <span>Fluids, thermodynamics</span>
+              </span>
+              <br>
+              <span data-translatable>
+                <span>Energy mechanics, structural analysis</span>
+                <span>Mécanique énergétique, analyse des structures</span>
+                <!-- TODO: de -->
+                <span>Energy mechanics, structural analysis</span>
+              </span>
             </p>
           </div>
         </div>
         <div class="level-item has-text-centered">
           <div>
-            <p class="heading">Engineering</p>
+            <p class="heading" data-translatable>
+              <span>Engineering</span>
+              <span>Ingénierie</span>
+              <!-- TODO: de -->
+              <span>Engineering</span>
+            </p>
             <p class="subtitle">
-              Design office <br>
-              Project management
+              <span data-translatable>
+                <span>Design office</span>
+                <span>Bureau d'études</span>
+                <!-- TODO: de -->
+                <span>Design office</span>
+              </span>
+              <br>
+              <span data-translatable>
+                <span>Project management</span>
+                <span>Management de projet</span>
+                <!-- TODO: de -->
+                <span>Project management</span>
+              </span>
             </p>
           </div>
         </div>
@@ -295,7 +486,11 @@
     </div>
 
     <div class="padded background-bg" id="education">
-      <h1>Education</h1>
+      <h1 data-translatable>
+        <span>Education</span>
+        <span>Formation</span>
+        <span>Ausbildung</span>
+      </h1>
       <div class="divider divider-short"></div>
       <nav class="level">
         <p class="level-item has-text-centered">
@@ -308,27 +503,82 @@
     </div>
 
     <div class="padded" id="mtb" style="background: url(images/bg.jpg); background-size: cover">
-      <h1 class="txt-on-primary">Mountain biking</h1>
+      <h1 class="txt-on-primary" data-translatable>
+        <span>Mountain biking</span>
+        <span>VTT</span>
+        <span>Mountainbike</span>
+      </h1>
       <div class="divider divider-short"></div>
       <div class="columns is-gapless">
         <div class="column is-4">
-          <div class="box" style="margin-bottom: 170px;">
-            <p>Crazy about sports, especially mountain biking, that I’ve practiced since I was 6 in national
-              competitions. Owner of coaching license, I teach to younger riders for my club every saturday afternoon.
+          <div class="box">
+            <p data-translatable>
+              <span>
+                Crazy about sports, especially mountain biking, that I’ve practiced since I was 6 in competitions.
+                <br><br>
+                Member of the french national mountainbike team VTT Conliège Jura Bassin de Lons-le-Saunier, I'm racing within the Elites category in french national cups, and some UCI international competitions.
+                <br><br>
+                Owner of coaching license, I teach to younger riders for my club every saturday afternoon.
+              </span>
+              <span>
+                Fan de sports, et surtout de VTT, que je pratique en compétitions nationales depuis l’âge de 6 ans. 
+                <br><br>
+                Membre du Team XC VTT Conliège Jura Bassin de Lons-le-Saunier, je roule en Coupes de France dans la catégorie Élites, ainsi que sur quelques courses UCI internationales.
+                <br><br>
+                Titulaire d’un brevet fédéral « Entraineur Jeunes » et du PSC1, je suis bénévole le samedi après-midi au sein de mon club.
+              </span>
+              <!-- TODO: de -->
+              <span>
+                Crazy about sports, especially mountain biking, that I’ve practiced since I was 6 in competitions.
+                <br><br>
+                Member of the french national mountainbike team VTT Conliège Jura Bassin de Lons-le-Saunier, I'm racing within the Elites category in french national cups, and some UCI international competitions.
+                <br><br>
+                Owner of coaching license, I teach to younger riders for my club every saturday afternoon.
+              </span>
             </p>
           </div>
+          <nav class="level button-download">
+            <p class="level-item has-text-centered">
+              <a class="button is-primary txt-on-accent" href="files/Pierre%20JACQUIER-Profil%20VTT.pdf" target="_blank">
+                <i class="mdi mdi-download"></i>
+                <span style="margin-left: 0.5rem" data-translatable>
+                  <span>Download my rider sheet (FRA, pdf)</span>
+                  <span>Télécharger ma fiche coureur (FRA, pdf)</span>
+                  <span>Download my rider sheet (FRA, pdf)</span>
+                </span>
+              </a>
+            </p>
+          </nav>
         </div>
       </div>
     </div>
 
     <div class="padded background-bg" id="resume">
-      <h1>Resume</h1>
+      <h1 data-translatable>
+        <span>Resume</span>
+        <span>CV</span>
+        <span>Resume</span>
+      </h1>
       <div class="divider divider-short"></div>
-      <nav class="level">
+      <nav class="level button-download">
         <p class="level-item has-text-centered">
           <a class="button is-primary txt-on-accent" href="files/Pierre%20JACQUIER-CV-EN.pdf" target="_blank">
             <i class="mdi mdi-download"></i>
-            <span style="margin-left: 0.5rem">Download Resume (.pdf)</span>
+            <span style="margin-left: 0.5rem" data-translatable>
+              <span>Download my resume (ENG, pdf)</span>
+              <span>Télécharger mon CV (ENG, pdf)</span>
+              <span>Download mein CV (ENG, pdf)</span>
+            </span>
+          </a>
+        </p>
+        <p class="level-item has-text-centered">
+          <a class="button is-primary txt-on-accent" href="files/Pierre%20JACQUIER-CV-FR.pdf" target="_blank">
+            <i class="mdi mdi-download"></i>
+            <span style="margin-left: 0.5rem" data-translatable>
+              <span>Download my resume (FRA, pdf)</span>
+              <span>Télécharger mon CV (FRA, pdf)</span>
+              <span>Download mein CV (FRA, pdf)</span>
+            </span>
           </a>
         </p>
       </nav>
@@ -336,8 +586,10 @@
   </div>
 </div>
 
+
+<script src="js/vendor/dom-i18n.min.js"></script>
 <script src="js/vendor/sprint.min.js"></script>
-<script src="js/vendor/lodash.core.min.js"></script>
-<script src="js/scripts.js"></script>
+<script src="js/translations.js"></script>
+<script src="js/layout.js"></script>
 </body>
 </html>
