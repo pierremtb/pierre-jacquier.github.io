@@ -1,0 +1,13 @@
+{
+    "me": {
+      "BIO_FIRST_LINE": "Élève-ingénieur en mécanique.",
+      "BIO_SECOND_LINE": "Fan de vélo et d'IT."
+    },
+    "lang": {
+        "EN_ENABLED": "",
+        "FR_ENABLED": "active",
+        "DE_ENABLED": "",
+        "ES_ENABLED": "",
+        "CH_ENABLED": ""
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "me": {
+      "BIO_FIRST_LINE": "Mechanical engineering student.",
+      "BIO_SECOND_LINE": "Cycling and IT lover."
+    },
+    "lang": {
+        "EN_ENABLED": "active",
+        "FR_ENABLED": "",
+        "DE_ENABLED": "",
+        "ES_ENABLED": "",
+        "CH_ENABLED": ""
+    }
+}
