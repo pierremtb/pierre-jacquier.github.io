@@ -35,6 +35,12 @@ module.exports = function (grunt) {
             dest: path.join(project.dist, project.assets),
             filter: 'isFile',
           },
+          {
+            flatten: true,
+            expand: true,
+            src: path.join(project.src, 'CNAME'),
+            dest: path.join(project.dist, '/'),
+          }
         ],
       },
     },
