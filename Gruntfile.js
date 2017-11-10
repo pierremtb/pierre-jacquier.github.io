@@ -1,4 +1,5 @@
 var path = require('path');
+const jpegoptim = require('imagemin-jpegoptim');
 
 module.exports = function (grunt) {
   var project = {
@@ -30,7 +31,7 @@ module.exports = function (grunt) {
           {
             expand: true,
             flatten: true,
-            src: [path.join(project.src, project.assets, '*')],
+            src: [path.join(project.src, project.assets, '**')],
             dest: path.join(project.dist, project.assets),
             filter: 'isFile',
           },
@@ -41,28 +42,37 @@ module.exports = function (grunt) {
     watch: {
 			options: { livereload:true },
 			files: [path.join(project.src, '**')],
-			tasks: ['i18n', 'copy'],
+			tasks: ['i18n', 'copy', 'cwebp'],
 		},
-  		express:{
-  			all:{
-  				options:{
-  					port: 3000,
-  					hostname: 'localhost',
-  					bases: [project.dist],
-  					livereload: true	
-  				}
-  			}
-  		}
+    express:{
+      all:{
+        options:{
+          port: 3000,
+          hostname: 'localhost',
+          bases: [project.dist],
+          livereload: true	
+        }
+      }
+    },
+    cwebp: {
+          images: {
+            files: {
+              'dist/assets/': [
+                'dist/assets/*.jpg',
+                'dist/assets/*.png'
+              ]
+            }
+          }
+        }
   });
 
   grunt.loadNpmTasks('grunt-i18n-static');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-watch');
-	grunt.loadNpmTasks('grunt-express');
-  
+  grunt.loadNpmTasks('grunt-express');
+  grunt.loadNpmTasks('grunt-webp-compress');
 
-  grunt.registerTask('default', ['clean', 'i18n', 'copy']);
-  grunt.registerTask('build-serve', ['clean', 'i18n', 'copy']);
+  grunt.registerTask('default', ['clean', 'i18n', 'copy', 'cwebp']);
   grunt.registerTask('server',['express','watch']);
 };

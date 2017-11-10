@@ -15,7 +15,7 @@
         "headline": "Pierre Jacquier",
         "datePublished": "2017-11-10T12:02:41Z",
         "image": [
-          "assets/me.jpg"
+          "/assets/me.jpg"
         ]
       }
     </script>
@@ -170,6 +170,10 @@
       .cube {
         min-height: 15rem;
       }
+
+      amp-img.cover img {
+        object-fit: cover;
+      }
       
       .paper-round-top-left {
         border-top-left-radius: 1rem;
@@ -251,6 +255,7 @@
         opacity: 0;
         white-space: nowrap;
         transition: opacity 400ms;
+        display: none;
       }
 
       .language-popup.top-language {
@@ -259,6 +264,7 @@
 
       #languages li:hover .language-popup {
         opacity: 1;
+        display: block;
       }
 
       .i-do {
@@ -272,20 +278,15 @@
         font-family: 'Roboto Mono', monospace;
       }
       
-      #i-study {
-        background: url('/assets/i-study.jpg');
-        background-size: cover;
-      }
-      
       #i-race {
-        background: url('/assets/i-race.jpg');
-        background-size: cover;
+        /* background: url('/assets/i-race.jpg'); */
+        /* background-size: cover; */
         height: 50rem;
       }
 
       #i-write {
-        background: url('/assets/i-write.jpg');
-        background-size: cover;
+        /* background: url('/assets/i-write.jpg'); */
+        /* background-size: cover; */
       }
       
       .h2m {
@@ -440,19 +441,11 @@
       .disabled {
         opacity: 0.38;
       }
-      
-      #why-hiring-me {
-        background-image: url('/assets/i-write-hiring.png');
-      }
-
-      #developing-android-apps {
-        background-image: url('/assets/i-write-dev-cb.png');
-      }
 
       .story-img {
-        width: 200px;
+        width: 220px;
         height: 150px;
-        background-size: cover;
+        /* background-size: cover; */
       }
 
       #vtt-conliege {
@@ -462,6 +455,10 @@
 
       .big-hide {
         display: none;
+      }
+
+      .zi-2 {
+        z-index: 2
       }
 
       @media (max-width: 1260px) {
@@ -567,6 +564,20 @@
           border-top-left-radius: 0;
           margin-right: 0;
         }
+
+        #i-race-cards {
+          margin: 0;
+          margin-right: 1.5rem;
+        }
+
+        #about {
+          display: none;
+        }
+
+        #about-li:hover #about {
+          opacity: 1;
+          display: block;
+        }
       }
     
 
@@ -581,9 +592,17 @@
           <div class="pt3 px3 border-box clearfix left-side right-align">
             <amp-img class="circle inline-block align-middle"
                     width="98" height="98"
-                    src="/assets/me.jpg"
+                    src="/assets/me.webp"
                     alt="Pierre Jacquier"
-                    layout="fixed"></amp-img>
+                    layout="fixed">
+              <div fallback>
+                <amp-img class="circle inline-block align-middle"
+                width="98" height="98"
+                src="/assets/me.jpg"
+                alt="Pierre Jacquier"
+                layout="fixed"></amp-img>
+              </div>      
+            </amp-img>
               <h2 class="white mt0d5 ml0 mr0 mb0 h1 inline-block align-middle left-align">
               </h2>
           </div>
@@ -802,7 +821,11 @@
           <div class="left-side border-box p3 pt4">
             <div class="i-do bg-accent black bold table">
               <span class="table-cell align-middle pr2">I study</span>
-              <amp-img class="table-cell align-middle" width="22" height="22" src="/assets/emoji-rocket.png" alt="Book" layout="fixed"></amp-img>
+              <amp-img class="table-cell align-middle" width="22" height="22" src="/assets/emoji-rocket.webp" alt="Book" layout="fixed">
+                <div fallback>
+                  <amp-img class="table-cell align-middle" width="22" height="22" src="/assets/emoji-rocket.png" alt="Book" layout="fixed"></amp-img>
+                </div>
+              </amp-img>
             </div>
           </div>
           <div class="flex-auto p3 py4 bg-primary">
@@ -810,7 +833,11 @@
               <div class="center" id="study-utbm">
                 <div class="clearfix">
                   <div id="utbm" class="mr2 bg-light inlign-block p2 pl3 pr4 relative">
-                    <amp-img width="200" height="82" src="/assets/utbm.png" alt="UTBM" layout="fixed"></amp-img>
+                    <amp-img width="200" height="82" src="/assets/utbm.webp" alt="UTBM" layout="fixed">
+                      <div fallback>
+                        <amp-img width="200" height="82" src="/assets/utbm.png" alt="UTBM" layout="fixed"></amp-img>
+                      </div>
+                    </amp-img>
                     <amp-img class="absolute top-0 right-0" width="40" height="27" id="utbm-logo"
                              src="/assets/fr.svg" alt="France" layout="fixed"></amp-img>
                   </div>
@@ -844,7 +871,11 @@
           <div class="left-side border-box p3">
             <div class="i-do bg-accent black bold table">
               <span class="table-cell align-middle pr2">I code</span>
-              <amp-img class="table-cell align-middle" width="22" height="22" src="/assets/emoji-glasses.png" alt="Book" layout="fixed"></amp-img>
+              <amp-img class="table-cell align-middle" width="22" height="22" src="/assets/emoji-glasses.webp" alt="Book" layout="fixed">
+                <div fallback>
+                  <amp-img class="table-cell align-middle" width="22" height="22" src="/assets/emoji-glasses.png" alt="Book" layout="fixed"></amp-img>
+                </div>
+              </amp-img>
             </div>
           </div>
           <div class="flex-auto">
@@ -1055,7 +1086,11 @@
                 <div class="card-title-underline"></div>
                 <div class="dev-logo table full-width">
                   <div class="table-cell align-middle">
-                    <amp-img layout="responsive" width="826" height="220" src="/assets/2pc.png" alt="2PEAK.COACH"></amp-img>
+                    <amp-img layout="responsive" width="826" height="220" src="/assets/2pc.webp" alt="2PEAK.COACH">
+                      <div fallback>
+                        <amp-img layout="responsive" width="826" height="220" src="/assets/2pc.png" alt="2PEAK.COACH"></amp-img>
+                      </div>
+                    </amp-img>
                   </div>
                 </div>
                 <div>
@@ -1078,13 +1113,26 @@
           <div class="left-side border-box p3">
             <div class="i-do bg-accent black bold table">
               <span class="table-cell align-middle pr2">I write</span>
-              <amp-img class="table-cell align-middle" width="22" height="22" src="/assets/emoji-book.png" alt="Book" layout="fixed"></amp-img>
+              <amp-img class="table-cell align-middle" width="22" height="22" src="/assets/emoji-book.webp" alt="Book" layout="fixed">
+                <div fallback>
+                  <amp-img class="table-cell align-middle" width="22" height="22" src="/assets/emoji-book.png" alt="Book" layout="fixed"></amp-img>
+                </div>
+              </amp-img>
             </div>
           </div>
-          <div class="flex-auto bg-light p3" id="i-write">
-            <div class="clearfix">
+          <div class="flex-auto bg-light p3 relative" id="i-write">
+            <amp-img layout="fill" class="cover absolute" src="/assets/i-write.webp" alt="I write">
+              <div fallback>
+                <amp-img layout="fill" class="cover absolute" src="/assets/i-write.jpg" alt="I write"></amp-img>
+              </div>
+            </amp-img>
+            <div class="clearfix relative zi-2">
                 <div class="bg-grey-1 rounded lg-col lg-col-6">
-                    <amp-img class="top-rounded" width="400" height="300" src="/assets/success.jpg" alt="Book" layout="responsive"></amp-img>
+                    <amp-img class="top-rounded" width="400" height="300" src="/assets/success.webp" alt="Book" layout="responsive">
+                      <div fallback>
+                        <amp-img class="top-rounded" width="400" height="300" src="/assets/success.jpg" alt="Book" layout="responsive"></amp-img>
+                      </div>
+                    </amp-img>
                     <div class="p2 black">
                         <p class="h2 m0">Success isn't just about hard work</p>
                         <p class="secondary-black m0 mt1">But rather strategy and fine timing</p>
@@ -1092,9 +1140,15 @@
                     </div>
                 </div>
             </div>
-            <div class="mt3 bg-light rounded">
+            <div class="mt3 bg-light rounded relative zi-2">
                <div class="clearfix lg-flex">
-                 <div class="story-img left-rounded" id="why-hiring-me"></div>
+                 <div class="story-img left-rounded relative">
+                  <amp-img layout="fill" class="cover absolute" src="/assets/i-write-dev-cb.webp" alt="Dev Apps on CB">
+                    <div fallback>
+                      <amp-img layout="fill" class="cover absolute" src="/assets/i-write-dev-cb.png" alt="I write"></amp-img>
+                    </div>
+                  </amp-img>
+                 </div>
                   <div class="p2 pl3 black flex-auto">
                       <p class="h3 m0 mt1">Developing Android Apps, right on your Chromebook</p>
                       <p class="secondary-black m0 mt1">Goodbye, emulators</p>
@@ -1110,9 +1164,15 @@
                   </div>
                </div>
             </div>
-            <div class="mt3 bg-light rounded">
+            <div class="mt3 bg-light rounded relative zi-2">
                <div class="clearfix lg-flex">
-                    <div class="story-img left-rounded" id="developing-android-apps"></div>
+                    <div class="story-img left-rounded relative">
+                      <amp-img layout="fill" class="cover absolute" src="/assets/i-write-hiring.webp" alt="Why hiring me">
+                        <div fallback>
+                          <amp-img layout="fill" class="cover absolute" src="/assets/i-write-hiring.png" alt="Why hiring me"></amp-img>
+                        </div>
+                      </amp-img>
+                    </div>
                   <div class="p2 pl3 black flex-auto">
                       <p class="h3 m0 mt1">Why hiring me as your Engineering Intern is a good idea</p>
                       <p class="secondary-black m0 mt1">Open motivational letter. Still relevant for insights about my mindset.</p>
@@ -1135,7 +1195,12 @@
             <div class="i-do bg-accent black bold table">
               <span class="table-cell align-middle pr2">I design</span>
               <amp-img class="table-cell align-middle" width="22" height="22"
-                       src="/assets/emoji-pencil.png" alt="Book" layout="fixed"></amp-img>
+                       src="/assets/emoji-pencil.webp" alt="Book" layout="fixed">
+                <div fallback>
+                  <amp-img class="table-cell align-middle" width="22" height="22"
+                  src="/assets/emoji-pencil.png" alt="Book" layout="fixed"></amp-img>
+                </div>        
+              </amp-img>
             </div>
           </div>
           <div class="flex-auto bg-light" id="books">
@@ -1145,7 +1210,12 @@
                   <div class="card-title-underline"></div>
                   <a href="https://dribbble.com/shots/3932023-Todoboard">
                     <amp-img width="767" height="569" layout="responsive"
-                             src="/assets/graphical.png" alt="Graphical"></amp-img>
+                             src="/assets/graphical.webp" alt="Graphical">
+                      <div fallback>
+                        <amp-img width="767" height="569" layout="responsive"
+                        src="/assets/graphical.png" alt="Graphical"></amp-img>  
+                      </div>        
+                    </amp-img>
                   </a>
                 </div>
                 <div class="sm-col sm-col-12 lg-col-6 bg-grey-2 pt3 px3" id="graphical">
@@ -1153,7 +1223,12 @@
                   <div class="card-title-underline"></div>
                   <a href="https://grabcad.com/library/sram-mtb-crankset-1">
                     <amp-img width="767" height="569" layout="responsive"
-                             src="/assets/mechanical.jpg" alt="Mechanical"></amp-img>
+                             src="/assets/mechanical.webp" alt="Mechanical">
+                      <div fallback>
+                        <amp-img width="767" height="569" layout="responsive"
+                        src="/assets/mechanical.jpg" alt="Mechanical"></amp-img>    
+                      </div>        
+                    </amp-img>
                   </a>
                 </div>
             </div>
@@ -1170,11 +1245,21 @@
             <div class="i-do bg-accent black bold table">
               <span class="table-cell align-middle pr2">I race</span>
               <amp-img class="table-cell align-middle" width="22" height="22"
-                       src="/assets/emoji-bike.png" alt="Book" layout="fixed"></amp-img>
+                       src="/assets/emoji-bike.webp" alt="Book" layout="fixed">
+                <div fallback>
+                  <amp-img class="table-cell align-middle" width="22" height="22"
+                  src="/assets/emoji-bike.png" alt="Book" layout="fixed"></amp-img>  
+                </div>        
+              </amp-img>
             </div>
           </div>
-          <div class="flex-auto bg-light paper-round-bottom-left paper-round-bottom-right shadow p3" id="i-race">
-            <div class="center mt4">
+          <div class="flex-auto bg-light paper-round-bottom-left paper-round-bottom-right shadow p3 relative" id="i-race">
+            <amp-img layout="fill" class="cover absolute" src="/assets/i-race.webp" alt="I race">
+              <div fallback>
+                <amp-img layout="fill" class="cover absolute" src="/assets/i-race.jpg" alt="I race"></amp-img>
+              </div>
+            </amp-img>
+            <div class="center mt4 absolute right-0 mr3 zi-2" id="i-race-cards">
               <div class="bg-dark-grey p3 w20 border-box" id="vtt-conliege">
                 <a href="https://www.facebook.com/teamxcvttconliege/">
                   <amp-img layout="responsive" width="490" height="114"
@@ -1186,7 +1271,7 @@
               </div>
               <div class="mt2 bg-accent rounded black p2 w20 border-box">
                 <!-- TODO: change link -->
-                <a href="test.com" class="mono bold uppercase block no-decoration black">Download my rider sheet (FR)</a>
+                <a href="#" class="mono bold uppercase block no-decoration black">Download my rider sheet (FR)</a>
               </div>
             </div>
           </div>
