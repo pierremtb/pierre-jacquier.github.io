@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
     <title>Pierre Jacquier</title>
     <link rel="canonical" href="http://pierrejacquier.com">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
@@ -584,7 +585,23 @@
     </style>
   </head>
   <body class="bg-primary-dark">
-    <div class="lg-flex max-width-hd">
+      <amp-analytics type="googleanalytics">
+        <script type="application/json">
+        {
+          "vars": {
+            "account": "UA-109523073-1"
+          },
+          "triggers": {
+            "trackPageview": {
+              "on": "visible",
+              "request": "pageview"
+            }
+          }
+        }
+        </script>
+      </amp-analytics>
+  
+      <div class="lg-flex max-width-hd">
       <div class="flex-auto">
 
         <!--Pierre Jacquier-->
