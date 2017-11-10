@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
     <title>Pierre Jacquier</title>
     <link rel="canonical" href="http://pierrejacquier.com">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
@@ -584,7 +585,23 @@
     </style>
   </head>
   <body class="bg-primary-dark">
-    <div class="lg-flex max-width-hd">
+      <amp-analytics type="googleanalytics">
+        <script type="application/json">
+        {
+          "vars": {
+            "account": "UA-109523073-1"
+          },
+          "triggers": {
+            "trackPageview": {
+              "on": "visible",
+              "request": "pageview"
+            }
+          }
+        }
+        </script>
+      </amp-analytics>
+  
+      <div class="lg-flex max-width-hd">
       <div class="flex-auto">
 
         <!--Pierre Jacquier-->
@@ -1132,9 +1149,9 @@
             <div class="mt3 bg-light rounded relative zi-2">
                <div class="clearfix lg-flex">
                  <div class="story-img left-rounded relative">
-                  <amp-img layout="fill" class="cover absolute left-rounded" src="/assets/i-write-dev-cb.webp" alt="Dev Apps on CB">
+                  <amp-img layout="fill" class="cover absolute" src="/assets/i-write-dev-cb.webp" alt="Dev Apps on CB">
                     <div fallback="">
-                      <amp-img layout="fill" class="cover absolute left-rounded" src="/assets/i-write-dev-cb.png" alt="I write"></amp-img>
+                      <amp-img layout="fill" class="cover absolute" src="/assets/i-write-dev-cb.png" alt="I write"></amp-img>
                     </div>
                   </amp-img>
                  </div>
@@ -1154,9 +1171,9 @@
             <div class="mt3 bg-light rounded relative zi-2">
                <div class="clearfix lg-flex">
                     <div class="story-img left-rounded relative">
-                      <amp-img layout="fill" class="cover absolute left-rounded" src="/assets/i-write-hiring.webp" alt="Why hiring me">
+                      <amp-img layout="fill" class="cover absolute" src="/assets/i-write-hiring.webp" alt="Why hiring me">
                         <div fallback="">
-                          <amp-img layout="fill" class="cover absolute left-rounded" src="/assets/i-write-hiring.png" alt="Why hiring me"></amp-img>
+                          <amp-img layout="fill" class="cover absolute" src="/assets/i-write-hiring.png" alt="Why hiring me"></amp-img>
                         </div>
                       </amp-img>
                     </div>
