@@ -460,6 +460,10 @@ amp-img.cover img {
   display: none;
 }
 
+.lg-ml4 {
+  margin-left: 4rem;
+}
+
 @media (max-width: 1260px) {
   body {
     padding: 0.5rem;
@@ -477,6 +481,10 @@ amp-img.cover img {
   }
   .big-hide {
     display: block;
+  }
+  
+  .lg-ml4 {
+    margin-left: 0;
   }
 }
 
@@ -502,6 +510,7 @@ amp-img.cover img {
   .md-mt2 {
     margin-top: 2rem;
   }
+
   .md-mb2 {
     margin-bottom: 2rem;
   }
