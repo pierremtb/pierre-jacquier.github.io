@@ -42,7 +42,7 @@
         </script>
       </amp-analytics>
   
-      <div class="lg-flex max-width-hd">
+      <div class="md-flex max-width-hd">
       <div class="flex-auto">
 
         <!--Pierre Jacquier-->
@@ -65,10 +65,26 @@
               </h2>
           </div>
           <div class="flex-auto paper-round-top-left paper-round-top-right bg-primary-tint pt0d1">
-            <div class="lg-flex paper-round-top-left paper-round-top-right bg-primary pt3 px3">
+            <div class="md-flex paper-round-top-left paper-round-top-right bg-primary pt3 px3">
+              <div class="lg-hide mr2">
+                <amp-img class="circle inline-block align-middle"
+                width="98" height="98"
+                src="/assets/me.webp"
+                alt="Pierre Jacquier"
+                layout="fixed">
+                  <div fallback>
+                    <amp-img class="circle inline-block align-middle"
+                    width="98" height="98"
+                    src="/assets/me.jpg"
+                    alt="Pierre Jacquier"
+                    layout="fixed"></amp-img>
+                  </div>      
+                </amp-img>
+                <span class="bold m0 ml2 h1 white inline-block align-middle md-hide lg-hide">Pierre Jacquier</span>
+              </div>  
               <div class="white flex-auto">
-                <p class="bold m0 h1">Pierre Jacquier</p>
-                <p class="white secondary-white h3 mt1 mb0">
+                <p class="bold m0 h1 sm-hide xs-hide">Pierre Jacquier</p>
+                <p class="white secondary-white h3 mt1 mb0 sm-mt2">
                   <span data-t>me.BIO_FIRST_LINE</span>
                   <br class="big-hide">
                   <span data-t>me.BIO_SECOND_LINE</span>
@@ -270,7 +286,7 @@
           <div class="separator flex-auto bg-accent"></div>
         </div> -->
 
-        <div class="bg-accent p1 px3 lg-hide">
+        <div class="bg-accent p1 px3 md-hide lg-hide">
           <h1 class="m0 black h2">I study</h1>
         </div>
 
@@ -286,8 +302,8 @@
               </amp-img>
             </div>
           </div>
-          <div class="flex-auto p3 py4 bg-primary">
-            <div class="lg-flex">
+          <div class="flex-auto p3 py4 bg-primary" id="i-study">
+            <div class="md-flex">
               <div class="center" id="study-utbm">
                 <div class="clearfix">
                   <div id="utbm" class="mr2 bg-light inlign-block p2 pl3 pr4 relative">
@@ -320,7 +336,7 @@
           </div>
         </div>
         
-        <div class="bg-accent p1 px3 lg-hide">
+        <div class="bg-accent p1 px3 md-hide lg-hide">
           <h1 class="m0 black h2">I code</h1>
         </div>
 
@@ -338,7 +354,7 @@
           </div>
           <div class="flex-auto">
             <div class="clearfix">
-              <div class="sm-col sm-col-12 lg-col-4 bg-grey-1 p3">
+              <div class="sm-col sm-col-12 md-col-4 bg-grey-1 p3">
                 <p class="card-title m0 mb2">Android</p>
                 <div class="card-title-underline"></div>
                 <div class="dev-logo table full-width">
@@ -510,7 +526,7 @@
                   <a class="link-button block mt2 disabled">Website</a>
                 </div>
               </div>
-              <div class="sm-col sm-col-12 lg-col-4 bg-liri p3">
+              <div class="sm-col sm-col-12 md-col-4 bg-liri p3">
                 <p class="card-title m0 mb2 white">Desktop</p>
                 <div class="card-title-underline"></div>
                 <div class="dev-logo table full-width">
@@ -539,7 +555,7 @@
                   <a href="https://liri.io" class="link-button block mt2 white">Website</a>
                 </div>
               </div>
-              <div class="sm-col sm-col-12 lg-col-4 bg-2pc p3">
+              <div class="sm-col sm-col-12 md-col-4 bg-2pc p3">
                 <p class="card-title white m0 mb2">Web</p>
                 <div class="card-title-underline"></div>
                 <div class="dev-logo table full-width">
@@ -562,7 +578,7 @@
           
         </div>
 
-        <div class="bg-accent p1 px3 lg-hide">
+        <div class="bg-accent p1 px3 md-hide lg-hide">
             <h1 class="m0 black h2">I write</h1>
         </div>
 
@@ -585,7 +601,7 @@
               </div>
             </amp-img>
             <div class="clearfix relative zi-2">
-                <div class="bg-grey-1 rounded lg-col lg-col-6">
+                <div class="bg-grey-1 rounded md-col md-col-6">
                     <amp-img class="top-rounded" width="400" height="300" src="/assets/success.webp" alt="Book" layout="responsive">
                       <div fallback>
                         <amp-img class="top-rounded" width="400" height="300" src="/assets/success.jpg" alt="Book" layout="responsive"></amp-img>
@@ -594,16 +610,16 @@
                     <div class="p2 black">
                         <p class="h2 m0">Success isn't just about hard work</p>
                         <p class="secondary-black m0 mt1">But rather strategy and fine timing</p>
-                        <a class="button mt2 inline-block disabled black">Read on Medium (yet to be published)</a>
+                        <a class="button mt2 inline-block disabled black">Read on Medium (soon)</a>
                     </div>
                 </div>
             </div>
             <div class="mt3 bg-light rounded relative zi-2">
-               <div class="clearfix lg-flex">
+               <div class="clearfix md-flex">
                  <div class="story-img left-rounded relative">
-                  <amp-img layout="fill" class="cover absolute" src="/assets/i-write-dev-cb.webp" alt="Dev Apps on CB">
+                  <amp-img layout="fill" class="left-rounded cover absolute" src="/assets/i-write-dev-cb.webp" alt="Dev Apps on CB">
                     <div fallback>
-                      <amp-img layout="fill" class="cover absolute" src="/assets/i-write-dev-cb.png" alt="I write"></amp-img>
+                      <amp-img layout="fill" class="left-rounded cover absolute" src="/assets/i-write-dev-cb.png" alt="I write"></amp-img>
                     </div>
                   </amp-img>
                  </div>
@@ -623,11 +639,11 @@
                </div>
             </div>
             <div class="mt3 bg-light rounded relative zi-2">
-               <div class="clearfix lg-flex">
+               <div class="clearfix md-flex">
                     <div class="story-img left-rounded relative">
-                      <amp-img layout="fill" class="cover absolute" src="/assets/i-write-hiring.webp" alt="Why hiring me">
+                      <amp-img layout="fill" class="left-rounded cover absolute" src="/assets/i-write-hiring.webp" alt="Why hiring me">
                         <div fallback>
-                          <amp-img layout="fill" class="cover absolute" src="/assets/i-write-hiring.png" alt="Why hiring me"></amp-img>
+                          <amp-img layout="fill" class="left-rounded cover absolute" src="/assets/i-write-hiring.png" alt="Why hiring me"></amp-img>
                         </div>
                       </amp-img>
                     </div>
@@ -643,7 +659,7 @@
           </div>
         </div>
 
-        <div class="bg-accent p1 px3 lg-hide">
+        <div class="bg-accent p1 px3 md-hide lg-hide">
           <h1 class="m0 black h2">I design</h1>
         </div>
 
@@ -663,7 +679,7 @@
           </div>
           <div class="flex-auto bg-light" id="books">
             <div class="clearfix">
-                <div class="sm-col sm-col-12 lg-col-6 bg-cyan pt3 px3" id="graphical">
+                <div class="sm-col sm-col-12 md-col-6 bg-cyan pt3 px3" id="graphical">
                   <p class="card-title m0 mb2">Graphical <br> <span class="h4 secondary-black no-transform">Illustrator-Indesign-Figma</span></p>
                   <div class="card-title-underline"></div>
                   <a href="https://dribbble.com/shots/3932023-Todoboard">
@@ -676,7 +692,7 @@
                     </amp-img>
                   </a>
                 </div>
-                <div class="sm-col sm-col-12 lg-col-6 bg-grey-2 pt3 px3" id="graphical">
+                <div class="sm-col sm-col-12 md-col-6 bg-grey-2 pt3 px3" id="graphical">
                   <p class="card-title m0 mb2">Mechanical <br> <span class="h4 secondary-black no-transform">SolidWorks-CATIA-OnShape</span></p>
                   <div class="card-title-underline"></div>
                   <a href="https://grabcad.com/library/sram-mtb-crankset-1">
@@ -693,7 +709,7 @@
           </div>
         </div>
 
-        <div class="bg-accent p1 px3 lg-hide">
+        <div class="bg-accent p1 px3 md-hide lg-hide">
           <h1 class="m0 black h2">I race</h1>
         </div>
 
@@ -735,11 +751,11 @@
           </div>
         </div>
       
-        <div class="bg-white-transparent black p1 px3 lg-hide">
+        <div class="bg-white-transparent black p1 px3 md-hide lg-hide">
           <h1 class="m0 black h2">And I'm only starting.</h1>
         </div>
 
-        <div class="flex mt4">
+        <div class="flex mt4" id="i-m-only-starting">
           <div class="left-side border-box p3">
             <div class="i-do bg-white-transparent black bold table mt0d25">
               <span class="table-cell align-middle">And I'm only starting.</span>
