@@ -81,7 +81,8 @@ module.exports = function (grunt) {
           prefix: '#'
         },
         files: [
-            {expand: true, flatten: true, src: ['dist/index.html'], dest: 'dist/'}
+            {expand: true, flatten: true, src: ['dist/index.html'], dest: 'dist/'},
+            {expand: true, flatten: true, src: ['dist/fr/index.html'], dest: 'dist/fr'},
         ]
       }
     },
