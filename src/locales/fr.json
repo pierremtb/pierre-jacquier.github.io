@@ -1,13 +1,51 @@
 {
     "me": {
       "BIO_FIRST_LINE": "Élève-ingénieur en mécanique.",
-      "BIO_SECOND_LINE": "Fan de vélo et d'IT."
+      "BIO_SECOND_LINE": "Passionné de vélo et d'IT.",
+      "RESUME": "CV",
+      "I_STUDY": "J'étudie",
+      "I_CODE": "Je code",
+      "I_WRITE": "J'écris",
+      "I_DESIGN": "Je design",
+      "I_RACE": "Je cours",
+      "AND_I_M_ONLY_STARTING_DOT": "Et je commence que."
+    },
+    "school": {
+        "PURSUING_A_MASTER_DEGREE": "2ème année d'Ecole d'Ingénieur",
+        "SEMESTER_ABROAD": "Semestre à l'étranger",
+        "SPRING_2016": "Primtemps 2016",
+        "ENGINEERING_INTERNSHIP": "Stage assistant ingénieur",
+        "FALL_2017": "Automne 2017",
+        "6_MONTHS_IN": "6 mois à",
+        "GERMANY": "Allemagne",
+        "MALAYSIA": "Malaisie"
+    },
+    "skills": {
+        "GRAPHICAL": "Graphique",
+        "MECHANICAL": "Mécanique",
+        "APPS_DEVELOPMENT_AND_DESIGN_TEAM": "Développement d'apps et équipe de design",
+        "COMING_SOON": "Bientôt disponible",
+        "FREELANCE_WORK_TO_DESIGN_AND_BUILD_THE_APP": "Design et la création de l'application (freelance)",
+        "TOP_25_MTB": "Pilote du Top 25 U23 XCO en France",
+        "RIDER_SHEET": "Fiche coureur"
+    },
+    "nav": {
+        "ABOUT": "À propos",
+        "BACK_TO_TOP": "Retour en haut",
+        "WEBSITE": "Site",
+        "READ_ON": "Lire sur",
+        "SOON": "Bientôt"
     },
     "lang": {
         "EN_ENABLED": "",
         "FR_ENABLED": "active",
         "DE_ENABLED": "",
         "ES_ENABLED": "",
-        "CH_ENABLED": ""
+        "CH_ENABLED": "",
+        "FLUENT": "Courant",
+        "NATIVE": "Natif",
+        "UPPER_ADVANCED": "Avancé",
+        "COMMUNICATION_SKILLS": "Notions de communications",
+        "JUST_STARTED": "Tout juste commencé"
     }
 }
