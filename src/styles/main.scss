@@ -472,6 +472,11 @@ amp-img.cover img {
     padding-left: 0.5rem;
     padding-right: 1rem;
   }
+
+  .left-side .lg-hide {
+    display: block;
+  }
+
   #languages-wrap {
     padding-right: 0.5rem;
   }
@@ -495,12 +500,15 @@ amp-img.cover img {
   #languages-wrap {
     display: none;
   }
+
   #social {
     margin-top: 0;
   }
-  #i-study {
-    padding-top: 1rem;
+
+  #i-code-small-title {
+    margin-top: 2rem;
   }
+
   #i-race {
     box-shadow: none;
   }
