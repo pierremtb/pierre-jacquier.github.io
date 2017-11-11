@@ -132,6 +132,10 @@ a {
   height: 100%;
 }
 
+.mt0d6 {
+  margin-top: 0.6rem;
+}
+
 .light {
   font-weight: 300;
 }
@@ -290,6 +294,14 @@ amp-img.cover img {
   width: 20rem;
 }
 
+.w21 {
+  width: 21em;
+}
+
+.w22 {
+  width: 22rem;
+}
+
 .hg1m {
   height: 0.5rem;
 }
@@ -399,7 +411,9 @@ amp-img.cover img {
   font-weight: 700;
   text-decoration: none;
   color: inherit;
-  text-transform: uppercase;
+  // text-transform: uppercase;
+  // border-bottom: solid 2px white;
+  // padding-bottom: 0.6rem;
 }
 
 .link-button.white {
