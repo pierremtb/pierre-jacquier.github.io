@@ -1,5 +1,4 @@
 var path = require('path');
-const jpegoptim = require('imagemin-jpegoptim');
 
 module.exports = function (grunt) {
   var project = {
@@ -48,7 +47,7 @@ module.exports = function (grunt) {
     watch: {
 			options: { livereload:true },
 			files: [path.join(project.src, '**')],
-			tasks: ['i18n', 'copy', 'cwebp'],
+			tasks: ['sass', 'i18n', 'replace'],
 		},
     express:{
       all:{
@@ -61,15 +60,41 @@ module.exports = function (grunt) {
       }
     },
     cwebp: {
-          images: {
-            files: {
-              'dist/assets/': [
-                'dist/assets/*.jpg',
-                'dist/assets/*.png'
-              ]
-            }
-          }
+      images: {
+        files: {
+          'dist/assets/': [
+            'dist/assets/*.jpg',
+            'dist/assets/*.png'
+          ]
         }
+      }
+    },
+    replace: {
+      dist: {
+        options: {
+          patterns: [
+              {
+                  match: 'styles{}',
+                  replacement: '<%= grunt.file.read("src/styles/styles.css") %>'
+              }
+          ],
+          prefix: '#'
+        },
+        files: [
+            {expand: true, flatten: true, src: ['dist/index.html'], dest: 'dist/'}
+        ]
+      }
+    },
+    sass: {
+      dist: {
+        options: {
+          style: 'compressed',
+        },
+        files: {
+          'src/styles/styles.css': 'src/styles/main.scss'
+        }
+      }
+    }
   });
 
   grunt.loadNpmTasks('grunt-i18n-static');
@@ -78,7 +103,9 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-express');
   grunt.loadNpmTasks('grunt-webp-compress');
+  grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-replace');
 
-  grunt.registerTask('default', ['clean', 'i18n', 'copy', 'cwebp']);
-  grunt.registerTask('server',['express','watch']);
+  grunt.registerTask('default', ['clean', 'sass', 'i18n', 'copy', 'cwebp', 'replace']);
+  grunt.registerTask('serve',['express','watch']);
 };
