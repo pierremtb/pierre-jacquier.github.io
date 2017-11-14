@@ -6,6 +6,7 @@ module.exports = function (grunt) {
     dist: 'dist',
     locales: 'locales',
     assets: 'assets',
+    todoboard: 'todoboard',
   }
 
   grunt.initConfig({
@@ -32,6 +33,13 @@ module.exports = function (grunt) {
             flatten: true,
             src: [path.join(project.src, project.assets, '**')],
             dest: path.join(project.dist, project.assets),
+            filter: 'isFile',
+          },
+          {
+            expand: true,
+            flatten: true,
+            src: [path.join(project.src, project.todoboard, '**')],
+            dest: path.join(project.dist, project.todoboard),
             filter: 'isFile',
           },
           {
