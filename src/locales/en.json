@@ -44,8 +44,8 @@
         "CH_ENABLED": "",
         "FLUENT": "Fluent",
         "NATIVE": "Native",
-        "UPPER_ADVANCED": "UPPER_ADVANCED",
-        "COMMUNICATION_SKILLS": "COMMUNICATION_SKILLS",
-        "JUST_STARTED": "JUST_STARTED"
+        "UPPER_ADVANCED": "Upper advanced",
+        "COMMUNICATION_SKILLS": "Communication skills",
+        "JUST_STARTED": "Just started"
     }
 }
