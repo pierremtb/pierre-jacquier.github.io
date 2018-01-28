@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <script async src="https://cdn.ampproject.org/v0.js"></script>
     <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+    <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
     <title>Pierre Jacquier</title>
     <link rel="canonical" href="http://pierrejacquier.com">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
@@ -128,8 +129,8 @@
                   <!-- <br class="big-hide"> -->
                   <br>
                   <span data-t>me.BIO_SECOND_LINE</span>
-                  <a href="https://github.com/pierremtb/pierremtb.github.io/releases/download/dl-1.0/GENERIC-Pierre.JACQUIER-CV-EN.pdf"
-                     class="link-button block mt0d6 white accent md-mb2">> <span data-t>me.RESUME</span></a>
+                  <a on="tap:resume-lightbox" role="button" tabindex="0"
+                     class="link-button block mt0d6 white accent md-mb2 pointer">> <span data-t>me.RESUME</span></a>
                 </p>
               </div>
               <div class="table mx-auto md-mt2 md-pb2" id="social">
@@ -919,5 +920,21 @@
         </li>
       </ul>
     </div>
+
+    <amp-lightbox id="resume-lightbox" layout="nodisplay">
+      <div class="lightbox">
+        <div class="actions clearfix  max-width-hd">
+          <a on="tap:resume-lightbox.close"
+             role="button"
+             tabindex="0" class="button white pointer right">x Close</a>
+          <a data-attr-t data-attr-t-interpolate href-t="https://github.com/pierremtb/pierremtb.github.io/releases/download/dl-1.0/Pierre_Jacquier-CV-{{lang.CURRENT}}.pdf" class="button white pointer left">↓ Download</a>
+        </div>
+
+        <div class="max-width-hd">
+          <amp-img width="210" height="297"
+                    src="/assets/cv-fr.svg" alt="CV" layout="responsive" class="mb2"></amp-img>
+        </div>   
+      </div>
+    </amp-lightbox>
   </body>
 </html>

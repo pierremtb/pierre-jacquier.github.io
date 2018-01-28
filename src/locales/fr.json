@@ -46,6 +46,7 @@
         "NATIVE": "Natif",
         "UPPER_ADVANCED": "Avancé",
         "COMMUNICATION_SKILLS": "Notions de communications",
-        "JUST_STARTED": "Tout juste commencé"
+        "JUST_STARTED": "Tout juste commencé",
+        "CURRENT": "FR"
     }
 }

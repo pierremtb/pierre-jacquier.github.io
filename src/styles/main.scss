@@ -464,6 +464,25 @@ amp-img.cover img {
   margin-left: 4rem;
 }
 
+.lightbox {
+  background: rgba(0,0,0,0.8);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: auto;
+}
+
+.lightbox amp-img {
+}
+
+.lightbox .actions {
+  margin: 0.5rem auto;
+}
+
+.lightbox h1 {
+  color: white;
+}
+
 @media (max-width: 1260px) {
   body {
     padding: 0.5rem;
