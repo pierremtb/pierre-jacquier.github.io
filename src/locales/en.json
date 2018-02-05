@@ -30,9 +30,10 @@
     "skills": {
         "GRAPHICAL": "Graphical",
         "MECHANICAL": "Mechanical",
+        "CURRENT_SIDE_PROJECT": "Current side project",
         "APPS_DEVELOPMENT_AND_DESIGN_TEAM": "Apps development and design team",
         "COMING_SOON": "Coming soon",
-        "FREELANCE_WORK_TO_DESIGN_AND_BUILD_THE_APP": "Freelance work to design and build the web app.",
+        "FREELANCE_WORK_TO_DESIGN_AND_BUILD_THE_APP": "Freelance work to design and build the web app",
         "TOP_25_MTB": "Top-25 U23 XCO Rider in France",
         "RIDER_SHEET": "Rider sheet"
     },

@@ -23,6 +23,7 @@
     "skills": {
         "GRAPHICAL": "Graphique",
         "MECHANICAL": "Mécanique",
+        "CURRENT_SIDE_PROJECT": "Projet du moment",
         "APPS_DEVELOPMENT_AND_DESIGN_TEAM": "Développement d'apps et équipe de design",
         "COMING_SOON": "Bientôt disponible",
         "FREELANCE_WORK_TO_DESIGN_AND_BUILD_THE_APP": "Design et la création de l'application (freelance)",

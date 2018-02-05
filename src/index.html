@@ -575,8 +575,8 @@
                 </div>
                 <div>
                   <p class="h2 m0">Todoboard</p>
-                  <p class="secondary-black pres m0 mt1"><span data-t>skills.COMING_SOON</span> <br>...</p>
-                  <a class="link-button block mt2 disabled">> <span data-t>nav.WEBSITE</span></a>
+                  <p class="secondary-black pres m0 mt1"><span data-t>skills.CURRENT_SIDE_PROJECT</span> <br><span data-t>skills.COMING_SOON</span></p>
+                  <a class="link-button block mt2" href="https://github.com/pierremtb/todoboard">> <span data-t>Github</span></a>
                 </div>
               </div>
               <div class="sm-col sm-col-12 md-col-4 bg-liri p3">
@@ -604,7 +604,7 @@
                 </div>
                 <div>
                   <p class="h2 white m0">Liri OS</p>
-                  <p class="secondary-white pres m0 mt1"><span data-t>skills.APPS_DEVELOPMENT_AND_DESIGN_TEAM</span>.</p>
+                  <p class="secondary-white pres m0 mt1"><span data-t>skills.APPS_DEVELOPMENT_AND_DESIGN_TEAM</span></p>
                   <a href="https://liri.io" class="link-button block mt2 white">> <span data-t>nav.WEBSITE</span></a>
                 </div>
               </div>
@@ -622,8 +622,8 @@
                 </div>
                 <div>
                   <p class="h2 white m0">2peak.coach</p>
-                  <p class="secondary-white dev-pres m0 mt1"><span data-t>skills.FREELANCE_WORK_TO_DESIGN_AND_BUILD_THE_APP</span>.</p>
-                  <a class="link-button block mt2 white disabled">> <span data-t>nav.WEBSITE</span> (<span data-t>nav.SOON</span>)</a>
+                  <p class="secondary-white dev-pres m0 mt1"><span data-t>skills.FREELANCE_WORK_TO_DESIGN_AND_BUILD_THE_APP</span></p>
+                  <a class="link-button block mt2 white" href="https://2peak.coach">> <span data-t>nav.WEBSITE</span></a>
                 </div>
               </div>
             </div>
@@ -927,12 +927,13 @@
           <a on="tap:resume-lightbox.close"
              role="button"
              tabindex="0" class="button white pointer right">x Close</a>
-          <a data-attr-t data-attr-t-interpolate href-t="https://github.com/pierremtb/pierremtb.github.io/releases/download/dl-1.0/Pierre_Jacquier-CV-{{lang.CURRENT}}.pdf" class="button white pointer left">↓ Download</a>
+          <a data-attr-t data-attr-t-interpolate href-t="https://github.com/pierremtb/pierremtb.github.io/releases/download/dl-1.0/GENERIC-Pierre_Jacquier-CV-{{lang.CURRENT}}.pdf" class="button white pointer left">↓ Download</a>
         </div>
 
         <div class="max-width-hd">
           <amp-img width="210" height="297"
-                    src="/assets/cv-fr.svg" alt="CV" layout="responsive" class="mb2"></amp-img>
+                   data-attr-t data-attr-t-interpolate
+                   src-t="/assets/GENERIC-Pierre Jacquier-CV-{{lang.CURRENT}}.svg" alt="CV" layout="responsive" class="mb2"></amp-img>
         </div>   
       </div>
     </amp-lightbox>
