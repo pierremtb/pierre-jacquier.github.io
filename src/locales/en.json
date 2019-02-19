@@ -1,24 +1,28 @@
 {
     "me": {
-      "BIO_FIRST_LINE": "Mechanical engineering student.",
-      "BIO_SECOND_LINE": "Cycling and IT lover. Top Writer on Medium.",
+      "BIO_FIRST_LINE": "Mechanical Engineering graduate student.",
+      "BIO_SECOND_LINE": "Computationally curious.",
       "RESUME": "Resume",
       "I_STUDY": "I study",
       "I_CODE": "I code",
-      "I_WRITE": "I write",
+      "I_WRITE": "I publish",
       "I_DESIGN": "I design",
-      "I_RACE": "I race",
+      "I_RACE": "I raced",
       "AND_I_M_ONLY_STARTING_DOT": "And I'm only starting."
     },
     "school": {
-        "PURSUING_A_MASTER_DEGREE": "Pursuing a Master degree",
+        "PURSUING_A_MASTER_DEGREE": "Pursuing a M. Eng.",
         "SEMESTER_ABROAD": "Semester abroad",
         "SPRING_2016": "Spring 2016",
         "ENGINEERING_INTERNSHIP": "Engineering internship",
         "FALL_2017": "Fall 2017",
         "6_MONTHS_IN": "6 months in",
         "GERMANY": "Germany",
-        "MALAYSIA": "Malaysia"
+        "MALAYSIA": "Malaysia",
+        "MCGILL": "McGill University",
+        "SPRING_2019": "Spring 2019",
+        "VISITING": "Visiting student in Maths and CS grad schools",
+        "PURSUING_A_MSC": "Pursuing a M. Sc. (dual degree)"
     },
     "nav": {
         "ABOUT": "About",
@@ -30,12 +34,16 @@
     "skills": {
         "GRAPHICAL": "Graphical",
         "MECHANICAL": "Mechanical",
+        "COMPUTATIONAL": "Computational",
+        "SCIENTIFIC": "Scientific",
         "CURRENT_SIDE_PROJECT": "Current side project",
         "APPS_DEVELOPMENT_AND_DESIGN_TEAM": "Apps development and design team",
         "COMING_SOON": "Coming soon",
         "FREELANCE_WORK_TO_DESIGN_AND_BUILD_THE_APP": "Freelance work to design and build the web app",
         "TOP_25_MTB": "Top-25 U23 XCO Rider in France",
-        "RIDER_SHEET": "Rider sheet"
+        "RIDER_SHEET": "Rider sheet",
+        "PERSONAL_BLOG": "Personal blog",
+        "ONCE_TOP_WRITER": "Once 'Top Writer' in four topics on "
     },
     "lang": {
         "EN_ENABLED": "active",

@@ -1,7 +1,7 @@
 {
     "me": {
       "BIO_FIRST_LINE": "Élève-ingénieur en mécanique.",
-      "BIO_SECOND_LINE": "Passionné de vélo et d'IT. Top Writer sur Medium.",
+      "BIO_SECOND_LINE": "Computationally curious.",
       "RESUME": "CV",
       "I_STUDY": "J'étudie",
       "I_CODE": "Je code",
@@ -11,7 +11,7 @@
       "AND_I_M_ONLY_STARTING_DOT": "Et je commence que."
     },
     "school": {
-        "PURSUING_A_MASTER_DEGREE": "2ème année d'Ecole d'Ingénieur",
+        "PURSUING_A_MASTER_DEGREE": "Dernière année d'Ecole d'Ingénieur",
         "SEMESTER_ABROAD": "Semestre à l'étranger",
         "SPRING_2016": "Primtemps 2016",
         "ENGINEERING_INTERNSHIP": "Stage assistant ingénieur",

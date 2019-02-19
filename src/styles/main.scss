@@ -112,6 +112,10 @@ a {
   background: #00BCD4;
 }
 
+.bg-white {
+  background: #ffffff;
+}
+
 .white {
   color: white;
 }
@@ -434,8 +438,8 @@ amp-img.cover img {
 }
 
 .story-img {
-  width: 220px;
-  height: 150px;
+  min-width: 220px;
+  // height: 150px;
   /* background-size: cover; */
 }
 
