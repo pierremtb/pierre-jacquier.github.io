@@ -7,7 +7,8 @@
       "I_CODE": "I code",
       "I_WRITE": "I publish",
       "I_DESIGN": "I design",
-      "I_RACE": "I raced",
+      "I_VENTURE": "I venture",
+      "I_RACE": "I used to race",
       "AND_I_M_ONLY_STARTING_DOT": "And I'm only starting."
     },
     "school": {
@@ -43,7 +44,8 @@
         "TOP_25_MTB": "Top-25 U23 XCO Rider in France",
         "RIDER_SHEET": "Rider sheet",
         "PERSONAL_BLOG": "Personal blog",
-        "ONCE_TOP_WRITER": "Once 'Top Writer' in four topics on "
+        "ONCE_TOP_WRITER": "Once 'Top Writer' in four topics on ",
+        "TECHNOLOGY_MISSIONS": "ETS Technology Missions"
     },
     "lang": {
         "EN_ENABLED": "active",
