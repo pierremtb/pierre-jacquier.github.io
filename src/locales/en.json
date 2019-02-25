@@ -3,12 +3,12 @@
       "BIO_FIRST_LINE": "Mechanical Engineering graduate student.",
       "BIO_SECOND_LINE": "Computationally curious.",
       "RESUME": "Resume",
-      "I_STUDY": "Studying",
+      "I_STUDY": "Studies",
       "I_CODE": "Programming",
       "I_WRITE": "Publishing",
       "I_DESIGN": "Engineering",
-      "I_UNDERTAKE": "Undertaking",
-      "I_RACE": "Racing",
+      "I_UNDERTAKE": "Entrepreneurship",
+      "I_RACE": "I used to be an athlete",
       "AND_I_M_ONLY_STARTING_DOT": "And I'm only starting."
     },
     "school": {
@@ -25,7 +25,7 @@
         "VISITING": "Visiting student in Maths and CS grad schools",
         "PURSUING_A_MSC": "Pursuing a M. Sc. (dual degree)",
         "ETS_DATE": "September 2018 – August 2020   |   Montreal, Canada",
-        "ETS_TITLE": "ÉTS — M.Sc. in MechEng (dual-degree with UTBM)",
+        "ETS_TITLE": "ÉTS — M.Sc. in Mechanical Engineering (dual-degree with UTBM)",
         "ETS_SUB": "Research project: “Machine Learning algorithms for non-linear problems: application to additive manufacturing.”",
         "MCGILL_DATE": "January 2019 – April 2019   |   Montreal, Canada",
         "MCGILL_TITLE": "McGill University — Visiting student in Maths and CS grad schools",
@@ -33,7 +33,7 @@
         "UTBM_TITLE": "UTBM — M. Eng. in Mechanical Engineering",
         "UTBM_SUB": "Specialized in Modeling and Simulation. Spent one semester abroad at Hochschule Karlsruhe, Germany.",
         "STREAM_DATE": "September 2017 – February 2018   |   Greater Kuala Lumpur, Malaysia",
-        "STREAM_TITLE": "Stream Environment Sdn. Bhd. — MechEng Design Intern",
+        "STREAM_TITLE": "Stream Environment Sdn. Bhd. — Mechanical Design Intern",
         "STREAM_SUB": "Optimizing automated vacuum waste collection systems weight, validation with numerical simulations and tests.<br>Full redesign of the standard waste compactor and its mechanism, assembly, and tests on the final product."
     },
     "nav": {
@@ -56,7 +56,10 @@
         "RIDER_SHEET": "Rider sheet",
         "PERSONAL_BLOG": "Personal blog",
         "ONCE_TOP_WRITER": "Once 'Top Writer' in four topics on ",
-        "TECHNOLOGY_MISSIONS": "ETS Technology Missions"
+        "TECHNOLOGY_MISSIONS": "ETS Technology Missions",
+        "SL01_REPORT": "Course project: 28-page report on the future of road safety (in German)",
+        "TODOBOARD": "Todoboard project: illustration for an abandoned productivity hardware idea",
+        "PERSISTENS": "Programming has always been a side gig, and at some point I realized that I could have both fun and clients at the same time."
     },
     "lang": {
         "EN_ENABLED": "active",

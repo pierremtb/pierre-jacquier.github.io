@@ -36,6 +36,15 @@ a {
   color: $accent-color;
 }
 
+#mcgill, #ets, #stream, #utbm {
+  transition: background 400ms;
+  background: rgba(255, 255, 255, 0)
+}
+
+#mcgill:hover, #ets:hover, #stream:hover, #utbm:hover {
+  background: rgba(255, 255, 255, 0.3)
+}
+
 #about-li:hover #about {
   opacity: 1;
 }
@@ -343,11 +352,6 @@ amp-img.cover img {
   fill: $accent-color;
 }
 
-#utbm {
-  border-radius: calc(82px + 2 * 3rem);
-  border-top-right-radius: 0;
-}
-
 .abroad {
   border-radius: calc(74px / 2);
   border-top-left-radius: 0;
@@ -572,15 +576,7 @@ amp-img.cover img {
     width: auto;
     border-radius: 0;
   }
-  #utbm-logo {
-    left: 0;
-    right: auto;
-  }
-  #utbm {
-    border-radius: calc(82px + 2 * 3rem);
-    border-top-left-radius: 0;
-    margin-right: 0;
-  }
+
   #i-race-cards {
     margin: 0;
     margin-right: 1.5rem;
