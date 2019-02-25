@@ -497,6 +497,10 @@ amp-img.cover img {
   color: white;
 }
 
+#map {
+  height: auto; width: 70%; margin: auto;
+}
+
 @media (max-width: 1260px) {
   body {
     padding: 0.5rem;
@@ -620,7 +624,7 @@ amp-img.cover img {
     opacity: 0;
     white-space: nowrap;
     transition: opacity 400ms;
-    display: none;
+  display: none;
   }
   
   .language-popup:not(.top-language) {
@@ -641,6 +645,15 @@ amp-img.cover img {
   #i-study {
     padding-top: 2rem;
     padding-bottom: 2rem;
+  }
+  .name {
+    font-size: 1.8rem;
+  }
+  #map {
+    width: 100%;
+  }
+  .bio {
+    font-size: 1rem;
   }
   #social {
     margin-top: 2rem;

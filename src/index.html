@@ -122,11 +122,11 @@
                     layout="fixed"></amp-img>
                   </div>      
                 </amp-img>
-                <span class="bold m0 ml2 f1d7 white inline-block align-middle md-hide lg-hide ptserif">Pierre Jacquier</span>
+                <span class="bold m0 name ml2 f1d7 white inline-block align-middle md-hide lg-hide ptserif">Pierre Jacquier</span>
               </div>  
               <div class="white flex-auto">
                 <p class="m0 h1 sm-hide xs-hide name">Pierre Jacquier</p>
-                <p class="white secondary-white h3 mt1 mb0 sm-mt2">
+                <p class="white secondary-white h3 mt1 mb0 sm-mt2 bio">
                   <span data-t>me.BIO_FIRST_LINE</span>
                   <!-- <br class="big-hide"> -->
                   <br>
@@ -317,401 +317,421 @@
           </div>
         </div>
 
-        <!-- Studies mobile title -->
-        <div class="bg-accent p1 px3 lg-hide">
-            <span class="align-middle inline-block black bold mono h2" data-t>me.I_STUDY</span>
-            <amp-img class="ml1 inline-block align-middle" width="22" height="22" src="/assets/emoji-rocket.webp" alt="Book" layout="fixed">
-              <div fallback>
-                  <amp-img class="ml1 inline-block align-middle" width="22" height="22" src="/assets/emoji-rocket.png" alt="Book" layout="fixed"></amp-img>
-              </div>
-            </amp-img>
-        </div>
-        <!-- Studies block -->
-        <div class="flex">
-          <!-- Side title -->
-          <div class="left-side border-box p3 pt4">
-            <div class="i-do bg-accent black bold table">
-              <span class="table-cell align-middle" data-t>me.I_STUDY</span>
-            </div>
+        <div id="studies">
+          <!-- Studies mobile title -->
+          <div class="transparent bg-primary p1 px3 lg-hide">
+              <a href="#studies">
+                <span class="align-middle inline-block white bold mono h2" data-t>me.I_STUDY</span>
+              </a>
           </div>
-          <!-- Content -->
-          <div class="flex-auto py2 px2 bg-primary" id="i-study">
-            <div class="md-flex">
-              <div class="" style="height: auto; width: 70%; margin: auto">
-                <amp-img class="" width="393" height="145" id="map"
-                src="/assets/map.svg" alt="Map" layout="responsive"></amp-img>
+          <!-- Studies block -->
+          <div class="flex">
+            <!-- Side title -->
+            <div class="left-side border-box p3 pt4">
+              <div class="i-do bg-accent black bold table">
+                <a href="#studies">
+                  <span class="table-cell align-middle" data-t>me.I_STUDY</span>
+                </a>
               </div>
             </div>
-            <a class="flex items-center mb1 px2 py1" id="mcgill"
-            href="https://www.mcgill.ca/" target="_blank">
-              <div class="flex-none"
-                style="height: 3rem;width:3rem">
-                <amp-img width="144" height="144" id="mcgill-pic"
-                src="/assets/mcgill.svg" alt="McGill" layout="responsive"></amp-img>
+            <!-- Content -->
+            <div class="flex-auto py2 px2 bg-primary" id="i-study">
+              <div class="md-flex">
+                <div id="map">
+                  <amp-img class="" width="393" height="145" id="map-img"
+                  src="/assets/map.svg" alt="Map" layout="responsive"></amp-img>
+                </div>
               </div>
-              <div class="flex-auto white pl2">
-                <h5 data-t class="m0 secondary-white">school.MCGILL_DATE</h5>
-                <h4 data-t class="m0">school.MCGILL_TITLE</h4>
-              </div>
-            </a>
-            <a class="flex items-center my1 px2 py1" id="ets"
-            href="https://www.etsmtl.ca" target="_blank">
-              <div class="flex-none"
-                style="height: 3rem;width:3rem">
-                <amp-img width="144" height="144" id="ets-pic"
-                src="/assets/ets.svg" alt="École de technologie supérieure" layout="responsive"></amp-img>
-              </div>
-              <div class="flex-auto white pl2">
-                <h5 data-t class="m0 secondary-white">school.ETS_DATE</h5>
-                <h4 data-t class="m0">school.ETS_TITLE</h4>
-                <h5 data-t class="m0 secondary-white">school.ETS_SUB</h5>
-              </div>
-            </a>
-            <a class="flex items-center my1 px2 py1" id="stream"
-              href="http://www.stream-environment.com/" target="_blank">
-              <div class="flex-none"
-                style="height: 3rem;width:3rem">
-                <amp-img width="144" height="144" id="stream-pic"
-                src="/assets/stream.svg" alt="Stream" layout="responsive"></amp-img>
-              </div>
-              <div class="flex-auto white pl2">
-                <h5 data-t class="m0 secondary-white">school.STREAM_DATE</h5>
-                <h4 data-t class="m0">school.STREAM_TITLE</h4>
-                <h5 data-t class="m0 secondary-white">school.STREAM_SUB</h5>
-              </div>
-            </a>
-            <a class="flex items-center mt1 px2 py1" id="utbm"
-              href="https://www.utbm.fr/" target="_blank">
-              <div class="flex-none"
-                style="height: 3rem;width:3rem">
-                <amp-img width="144" height="144" id="utbm-pic"
-                src="/assets/utbm.svg" alt="Université de Technologie Belfort Montbéliard"
-                layout="responsive"></amp-img>
-              </div>
-              <div class="flex-auto white pl2">
-                <h5 data-t class="m0 secondary-white">school.UTBM_DATE</h5>
-                <h4 data-t class="m0">school.UTBM_TITLE</h4>
-                <h5 data-t class="m0 secondary-white">school.UTBM_SUB</h5>
-              </div>
-            </a>
+              <a class="flex items-center mb1 px2 py1" id="mcgill"
+              href="https://www.mcgill.ca/" target="_blank">
+                <div class="flex-none"
+                  style="height: 3rem;width:3rem">
+                  <amp-img width="144" height="144" id="mcgill-pic"
+                  src="/assets/mcgill.svg" alt="McGill" layout="responsive"></amp-img>
+                </div>
+                <div class="flex-auto white pl2">
+                  <h5 data-t class="m0 secondary-white">school.MCGILL_DATE</h5>
+                  <h4 data-t class="m0">school.MCGILL_TITLE</h4>
+                </div>
+              </a>
+              <a class="flex items-center my1 px2 py1" id="ets"
+              href="https://www.etsmtl.ca" target="_blank">
+                <div class="flex-none"
+                  style="height: 3rem;width:3rem">
+                  <amp-img width="144" height="144" id="ets-pic"
+                  src="/assets/ets.svg" alt="École de technologie supérieure" layout="responsive"></amp-img>
+                </div>
+                <div class="flex-auto white pl2">
+                  <h5 data-t class="m0 secondary-white">school.ETS_DATE</h5>
+                  <h4 data-t class="m0">school.ETS_TITLE</h4>
+                  <h5 data-t class="m0 secondary-white">school.ETS_SUB</h5>
+                </div>
+              </a>
+              <a class="flex items-center my1 px2 py1" id="stream"
+                href="http://www.stream-environment.com/" target="_blank">
+                <div class="flex-none"
+                  style="height: 3rem;width:3rem">
+                  <amp-img width="144" height="144" id="stream-pic"
+                  src="/assets/stream.svg" alt="Stream" layout="responsive"></amp-img>
+                </div>
+                <div class="flex-auto white pl2">
+                  <h5 data-t class="m0 secondary-white">school.STREAM_DATE</h5>
+                  <h4 data-t class="m0">school.STREAM_TITLE</h4>
+                  <h5 data-t class="m0 secondary-white">school.STREAM_SUB</h5>
+                </div>
+              </a>
+              <a class="flex items-center mt1 px2 py1" id="utbm"
+                href="https://www.utbm.fr/" target="_blank">
+                <div class="flex-none"
+                  style="height: 3rem;width:3rem">
+                  <amp-img width="144" height="144" id="utbm-pic"
+                  src="/assets/utbm.svg" alt="Université de Technologie Belfort Montbéliard"
+                  layout="responsive"></amp-img>
+                </div>
+                <div class="flex-auto white pl2">
+                  <h5 data-t class="m0 secondary-white">school.UTBM_DATE</h5>
+                  <h4 data-t class="m0">school.UTBM_TITLE</h4>
+                  <h5 data-t class="m0 secondary-white">school.UTBM_SUB</h5>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
 
-        <!-- Engineering mobile title -->
-        <div class="bg-accent p1 px3 lg-hide">
-            <span class="align-middle inline-block black bold mono h2" data-t>me.I_DESIGN</span>
-        </div>
-        <!-- Engineering block -->
-        <div class="flex">
-          <!-- Side title -->
-          <div class="left-side border-box p3">
-            <div class="i-do bg-accent black bold table">
-              <span class="table-cell align-middle" data-t>me.I_DESIGN</span>
-            </div>
+        <div id="engineering">
+          <!-- Engineering mobile title -->
+          <div class="bg-accent p1 px3 lg-hide">
+            <a href="#engineering">
+              <span class="align-middle inline-block black bold mono h2" data-t>me.I_DESIGN</span>
+            </a>
           </div>
-          <!-- Content -->
-          <div class="flex-auto  bg-grey-2" id="books">
-            <div class="clearfix">
-                <div class="sm-col sm-col-12 md-col-6 bg-grey-2 pt3 px3" id="graphical">
-                  <p class="card-title m0 mb2"><span data-t>skills.MECHANICAL</span> <br>
-                    <span class="h4 secondary-black no-transform">CATIA V5-SolidWorks-OnShape-Keyshot</span></p>
-                  <div class="card-title-underline"></div>
-                  <a href="https://grabcad.com/library/sram-mtb-crankset-1">
-                    <amp-img width="767" height="569" layout="responsive"
-                             src="/assets/mechanical.webp" alt="Mechanical">
-                      <div fallback>
-                        <amp-img width="767" height="569" layout="responsive"
-                        src="/assets/mechanical.jpg" alt="Mechanical"></amp-img>    
-                      </div>        
-                    </amp-img>
-                  </a>
-                  <p class="secondary-black pres m0 mt1 mb2"><span data-t>skills.MECHANICAL_PROJECT</span></p>
-                  <a href="https://grabcad.com/library/sram-mtb-crankset-1" class="link-button block mt2 mb3">> grabcad.com</a>
-                </div>
-                <div class="sm-col sm-col-12 bg-white md-col-6 pt3 px3" id="graphical">
-                  <p class="card-title m0 mb2"><span data-t>skills.COMPUTATIONAL</span> <br>
-                    <span class="h4 secondary-black no-transform">Python-C++-MATLAB-ANSYS-Excel/VBA</span></p>
-                  <div class="card-title-underline"></div>
-                  <a href="https://drive.google.com/file/d/16QCzFpt5n7dKPU45Cb9aJzmxaD58YK9k/view">
-                    <amp-img width="767" height="569" layout="responsive"
-                             src="/assets/computational.webp" alt="Mechanical">
-                      <div fallback>
-                        <amp-img width="767" height="569" layout="responsive"
-                        src="/assets/computational.png" alt="Mechanical"></amp-img>    
-                      </div>        
-                    </amp-img>
-                  </a>
-                  <p class="secondary-black pres m0 mt1 mb2"><span data-t>skills.COMP_PROJECT</span></p>
-                  <a href="https://drive.google.com/file/d/16QCzFpt5n7dKPU45Cb9aJzmxaD58YK9k/view" class="link-button block mt2">> <span data-t>skills.FULL_PDF</span></a>
-                  <p class="secondary-black pres m0 mt2 mb2"><span data-t>skills.COMP_EASYFIT</span></p>
-                  <a href="https://github.com/pierremtb/easy-fit" class="link-button block mt2 mb3">> <span data-t>github.com</span></a>
-                </div>
+          <div class="flex">
+            <!-- Side title -->
+            <div class="left-side border-box p3">
+              <div class="i-do bg-accent black bold table">
+                <a href="#engineering">
+                  <span class="table-cell align-middle" data-t>me.I_DESIGN</span>
+                </a>
+              </div>
+            </div>
+            <!-- Content -->
+            <div class="flex-auto  bg-grey-2" id="books">
+              <div class="clearfix">
+                  <div class="sm-col sm-col-12 md-col-6 bg-grey-2 pt3 px3" id="graphical">
+                    <p class="card-title m0 mb2"><span data-t>skills.MECHANICAL</span> <br>
+                      <span class="h4 secondary-black no-transform">CATIA V5-SolidWorks-OnShape-Keyshot</span></p>
+                    <div class="card-title-underline"></div>
+                    <a href="https://grabcad.com/library/sram-mtb-crankset-1">
+                      <amp-img width="767" height="569" layout="responsive"
+                              src="/assets/mechanical.webp" alt="Mechanical">
+                        <div fallback>
+                          <amp-img width="767" height="569" layout="responsive"
+                          src="/assets/mechanical.jpg" alt="Mechanical"></amp-img>    
+                        </div>        
+                      </amp-img>
+                    </a>
+                    <p class="secondary-black pres m0 mt1 mb2"><span data-t>skills.MECHANICAL_PROJECT</span></p>
+                    <a href="https://grabcad.com/library/sram-mtb-crankset-1" class="link-button block mt2 mb3">> grabcad.com</a>
+                  </div>
+                  <div class="sm-col sm-col-12 bg-white md-col-6 pt3 px3" id="graphical">
+                    <p class="card-title m0 mb2"><span data-t>skills.COMPUTATIONAL</span> <br>
+                      <span class="h4 secondary-black no-transform">Python-C++-MATLAB-ANSYS-Excel/VBA</span></p>
+                    <div class="card-title-underline"></div>
+                    <a href="https://drive.google.com/file/d/16QCzFpt5n7dKPU45Cb9aJzmxaD58YK9k/view">
+                      <amp-img width="767" height="569" layout="responsive"
+                              src="/assets/computational.webp" alt="Mechanical">
+                        <div fallback>
+                          <amp-img width="767" height="569" layout="responsive"
+                          src="/assets/computational.png" alt="Mechanical"></amp-img>    
+                        </div>        
+                      </amp-img>
+                    </a>
+                    <p class="secondary-black pres m0 mt1 mb2"><span data-t>skills.COMP_PROJECT</span></p>
+                    <a href="https://drive.google.com/file/d/16QCzFpt5n7dKPU45Cb9aJzmxaD58YK9k/view" class="link-button block mt2">> <span data-t>skills.FULL_PDF</span></a>
+                    <p class="secondary-black pres m0 mt2 mb2"><span data-t>skills.COMP_EASYFIT</span></p>
+                    <a href="https://github.com/pierremtb/easy-fit" class="link-button block mt2 pb3">> <span data-t>github.com</span></a>
+                  </div>
+              </div>
             </div>
           </div>
         </div>
         
-        <!-- Entrepreneurship mobile title -->
-        <div class="bg-accent p1 px3 lg-hide">
-            <span class="align-middle inline-block black bold mono h2" data-t>me.I_UNDERTAKE</span>
-        </div>
-        <!-- Entrepreneurship block -->
-        <div class="flex">
-          <!-- Side title -->
-          <div class="left-side border-box p3">
-            <div class="i-do bg-accent black bold table">
-              <span class="table-cell align-middle" data-t>me.I_UNDERTAKE</span>
-            </div>
+        <div id="entrepreneurship">
+          <!-- Entrepreneurship mobile title -->
+          <div class="bg-accent p1 px3 lg-hide">
+            <a href="#entrepreneurship">
+              <span class="align-middle inline-block black bold mono h2" data-t>me.I_UNDERTAKE</span>
+            </a>
           </div>
-          <!-- Content -->
-          <div class="flex-auto bg-light" id="books">
-            <div class="clearfix"  style="background: #2F80ED">
-              <div class="sm-col sm-col-12 md-col-6 bg-grey-2 pt3 px3" style="background: #2F80ED" id="graphical">
-                <p class="card-title white m0 mb2"><span data-t>Persistens</span> <br>
-                  <span class="h4 secondary-white no-transform" data-t>skills.PERSISTENS_SUB<span></p>
-                <div class="card-title-underline mb2"></div>
-                <p class="secondary-white pres m0 mt1 mb2 justify"><span data-t>skills.PERSISTENS</span></p>
-                <a href="https://persistens.com" class="link-button block mt2 white">> persistens.com</a>
-              </div>
-              <div class="sm-col sm-col-12 md-col-6" style="background: #FFFFFF" id="graphical">
-                  <amp-img width="22" height="22" src="/assets/persistens.webp" alt="Persistens x Plan2PEAK" layout="responsive">
-                    <div fallback>
-                        <amp-img width="22" height="22" src="/assets/persistens.png" alt="Persistens x Plan2PEAK" layout="responsive"></amp-img>
-                    </div>
-                  </amp-img>
+          <!-- Entrepreneurship block -->
+          <div class="flex">
+            <!-- Side title -->
+            <div class="left-side border-box p3">
+              <div class="i-do bg-accent black bold table">
+                <a href="#entrepreneurship">
+                  <span class="table-cell align-middle" data-t>me.I_UNDERTAKE</span>
+                </a>
               </div>
             </div>
-            <div class="clearfix"  style="background: #EF3730">
-              <div class="sm-col sm-col-12 bg-white md-col-6" id="graphical" style="background:rgb(15, 13, 13)">
-                  <amp-img width="1083" height="785" src="/assets/mt.webp" alt="Technology Missions 2019 (Germany)" layout="responsive">
-                    <div fallback>
-                        <amp-img width="1083" height="785" src="/assets/mt.jpg" alt="Technology Missions 2019 (Germany)" layout="responsive"></amp-img>
-                    </div>
-                  </amp-img>
+            <!-- Content -->
+            <div class="flex-auto bg-light" id="books">
+              <div class="clearfix"  style="background: #2F80ED">
+                <div class="sm-col sm-col-12 md-col-6 bg-grey-2 pt3 px3" style="background: #2F80ED" id="graphical">
+                  <p class="card-title white m0 mb2"><span data-t>Persistens</span> <br>
+                    <span class="h4 secondary-white no-transform" data-t>skills.PERSISTENS_SUB<span></p>
+                  <div class="card-title-underline mb2"></div>
+                  <p class="secondary-white pres m0 mt1 mb2 justify"><span data-t>skills.PERSISTENS</span></p>
+                  <a href="https://persistens.com" class="link-button block mt2 white">> persistens.com</a>
+                </div>
+                <div class="sm-col sm-col-12 md-col-6" style="background: #FFFFFF" id="graphical">
+                    <amp-img width="22" height="22" src="/assets/persistens.webp" alt="Persistens x Plan2PEAK" layout="responsive">
+                      <div fallback>
+                          <amp-img width="22" height="22" src="/assets/persistens.png" alt="Persistens x Plan2PEAK" layout="responsive"></amp-img>
+                      </div>
+                    </amp-img>
+                </div>
               </div>
-              <div class="sm-col sm-col-12 bg-white md-col-6 py3 px3" id="graphical" style="background:#EF3730">
-                <p class="card-title white m0 mb2"><span data-t>skills.TECHNOLOGY_MISSIONS</span> <br>
-                <span class="h4 secondary-white no-transform" data-t>skills.TECHNOLOGY_MISSIONS_SUB</span></p>
-                <div class="card-title-underline mb2"></div>
-                <p class="secondary-white pres m0 mt1 mb2 justify" data-t>skills.TECHNOLOGY_MISSIONS_DESC</p>
-                <a href="http://missionstechno.etsmtl.ca/?lang=en" class="link-button block mt2 white">> missionstechno.etsmtl.ca</a>
+              <div class="clearfix"  style="background: #EF3730">
+                <div class="sm-col sm-col-12 bg-white md-col-6" id="graphical" style="background:rgb(15, 13, 13)">
+                    <amp-img width="1083" height="785" src="/assets/mt.webp" alt="Technology Missions 2019 (Germany)" layout="responsive">
+                      <div fallback>
+                          <amp-img width="1083" height="785" src="/assets/mt.jpg" alt="Technology Missions 2019 (Germany)" layout="responsive"></amp-img>
+                      </div>
+                    </amp-img>
+                </div>
+                <div class="sm-col sm-col-12 bg-white md-col-6 py3 px3" id="graphical" style="background:#EF3730">
+                  <p class="card-title white m0 mb2"><span data-t>skills.TECHNOLOGY_MISSIONS</span> <br>
+                  <span class="h4 secondary-white no-transform" data-t>skills.TECHNOLOGY_MISSIONS_SUB</span></p>
+                  <div class="card-title-underline mb2"></div>
+                  <p class="secondary-white pres m0 mt1 mb2 justify" data-t>skills.TECHNOLOGY_MISSIONS_DESC</p>
+                  <a href="http://missionstechno.etsmtl.ca/?lang=en" class="link-button block mt2 white">> missionstechno.etsmtl.ca</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Publishing mobile title -->
-        <div class="bg-accent p1 px3 lg-hide">
-            <span class="align-middle inline-block black bold mono h2" data-t>me.I_WRITE</span>
-            <amp-img class="ml1 inline-block align-middle" width="22" height="22" src="/assets/emoji-book.webp" alt="Book" layout="fixed">
-              <div fallback>
-                  <amp-img class="ml1 inline-block align-middle" width="22" height="22" src="/assets/emoji-book.png" alt="Book" layout="fixed"></amp-img>
-              </div>
-            </amp-img>
-        </div>
-        <!--Publishing block-->
-        <div class="flex">
-          <!-- Side title -->
-          <div class="left-side border-box p3">
-            <div class="i-do bg-accent black bold table">
-              <span class="table-cell align-middle" data-t>me.I_WRITE</span>
-            </div>
+        <div id="publishing">
+          <!-- Publishing mobile title -->
+          <div class="bg-accent p1 px3 lg-hide">
+            <a href="#publishing">
+              <span class="align-middle inline-block black bold mono h2" data-t>me.I_WRITE</span>
+            </a>
           </div>
-          <!-- Content -->
-          <div class="flex-auto bg-light relative" id="i-write">
-            <!-- Scientific/Graphical -->
-            <div class="clearfix relative zi-2">
-              <!-- Scientific -->
-              <div class="sm-col sm-col-12 md-col-6 bg-white pt3 px3" id="graphical">
-                <p class="card-title m0 mb2"><span data-t>skills.SCIENTIFIC</span> <br>
-                  <span class="h4 secondary-black no-transform">LaTeX-Microsoft Office</span></p>
-                <div class="card-title-underline mb2"></div>
-                <p class="secondary-black pres m0 mt1 mb2"><span data-t>skills.SL01_REPORT</span></p>
-                <a href="http://bit.ly/2XbAb31" class="link-button block my2">> <span data-t>skills.FULL_PDF</span></a>
-                <a href="http://bit.ly/2XbAb31">
-                  <amp-img width="1020" height="651" layout="responsive"
-                            src="/assets/latex.webp" alt="Scientific writing">
-                    <div fallback>
-                      <amp-img width="1020" height="351" layout="responsive"
-                      src="/assets/latex.png" alt="Scientific writing"></amp-img>  
-                    </div>        
-                  </amp-img>
-                </a>
-              </div>
-              <!-- Graphical -->
-              <div class="sm-col sm-col-12 md-col-6 bg-grey-3 pt3 px3" id="graphical">
-                <p class="card-title m0 mb2"><span data-t>skills.GRAPHICAL</span> <br> <span class="h4 secondary-black no-transform">Illustrator-InDesign-Figma</span></p>
-                <div class="card-title-underline mb2"></div>
-                <p class="secondary-black pres m0 mt1 mb2"><span data-t>skills.TODOBOARD</span></p>
-                <a href="https://dribbble.com/shots/3932023-Todoboard" class="link-button block my2">> dribbble.com</a>
-                <a href="https://dribbble.com/shots/3932023-Todoboard">
-                  <amp-img width="1020" height="651" layout="responsive"
-                            src="/assets/graphical.webp" alt="Graphical design">
-                    <div fallback>
-                      <amp-img width="1020" height="651" layout="responsive"
-                      src="/assets/graphical.png" alt="Graphical design"></amp-img>  
-                    </div>        
-                  </amp-img>
+          <!--Publishing block-->
+          <div class="flex">
+            <!-- Side title -->
+            <div class="left-side border-box p3">
+              <div class="i-do bg-accent black bold table">
+                <a href="#publishing">
+                  <span class="table-cell align-middle" data-t>me.I_WRITE</span>
                 </a>
               </div>
             </div>
-            <!-- Personal blog -->
-            <div class="relative">
-              <!-- Background -->
-              <amp-img layout="fill" class="cover absolute" src="/assets/i-write.webp" alt="I write">
-                <div fallback>
-                  <amp-img layout="fill" class="cover absolute" src="/assets/i-write.jpg" alt="I write"></amp-img>
+            <!-- Content -->
+            <div class="flex-auto bg-light relative" id="i-write">
+              <!-- Scientific/Graphical -->
+              <div class="clearfix relative zi-2">
+                <!-- Scientific -->
+                <div class="sm-col sm-col-12 md-col-6 bg-white pt3 px3" id="graphical">
+                  <p class="card-title m0 mb2"><span data-t>skills.SCIENTIFIC</span> <br>
+                    <span class="h4 secondary-black no-transform">LaTeX-Microsoft Office</span></p>
+                  <div class="card-title-underline mb2"></div>
+                  <p class="secondary-black pres m0 mt1 mb2"><span data-t>skills.SL01_REPORT</span></p>
+                  <a href="http://bit.ly/2XbAb31" class="link-button block my2">> <span data-t>skills.FULL_PDF</span></a>
+                  <a href="http://bit.ly/2XbAb31">
+                    <amp-img width="1020" height="651" layout="responsive"
+                              src="/assets/latex.webp" alt="Scientific writing">
+                      <div fallback>
+                        <amp-img width="1020" height="351" layout="responsive"
+                        src="/assets/latex.png" alt="Scientific writing"></amp-img>  
+                      </div>        
+                    </amp-img>
+                  </a>
                 </div>
-              </amp-img>
-                <!-- Subtitle -->
-                <div class="px3 pt3 relative zi-2">
-                  <p class="card-title m0 mb2"><span data-t>skills.PERSONAL_BLOG</span> <br>
-                    <span class="h4 secondary-black no-transform"><span data-t>skills.ONCE_TOP_WRITER</span> Medium</span></p>
-                  <div class="card-title-underline"></div>
+                <!-- Graphical -->
+                <div class="sm-col sm-col-12 md-col-6 bg-grey-3 pt3 px3" id="graphical">
+                  <p class="card-title m0 mb2"><span data-t>skills.GRAPHICAL</span> <br> <span class="h4 secondary-black no-transform">Illustrator-InDesign-Figma</span></p>
+                  <div class="card-title-underline mb2"></div>
+                  <p class="secondary-black pres m0 mt1 mb2"><span data-t>skills.TODOBOARD</span></p>
+                  <a href="https://dribbble.com/shots/3932023-Todoboard" class="link-button block my2">> dribbble.com</a>
+                  <a href="https://dribbble.com/shots/3932023-Todoboard">
+                    <amp-img width="1020" height="651" layout="responsive"
+                              src="/assets/graphical.webp" alt="Graphical design">
+                      <div fallback>
+                        <amp-img width="1020" height="651" layout="responsive"
+                        src="/assets/graphical.png" alt="Graphical design"></amp-img>  
+                      </div>        
+                    </amp-img>
+                  </a>
                 </div>
-                <div class="px3 pt2 clearfix relative zi-2">
-                    <div class="bg-grey-1 rounded md-col md-col-6">
-                        <amp-img class="top-rounded" width="400" height="300" src="/assets/productive.webp" alt="Book" layout="responsive">
-                          <div fallback>
-                            <amp-img class="top-rounded" width="400" height="300" src="/assets/productive.jpg" alt="Book" layout="responsive"></amp-img>
+              </div>
+              <!-- Personal blog -->
+              <div class="relative">
+                <!-- Background -->
+                <amp-img layout="fill" class="cover absolute" src="/assets/i-write.webp" alt="I write">
+                  <div fallback>
+                    <amp-img layout="fill" class="cover absolute" src="/assets/i-write.jpg" alt="I write"></amp-img>
+                  </div>
+                </amp-img>
+                  <!-- Subtitle -->
+                  <div class="px3 pt3 relative zi-2">
+                    <p class="card-title m0 mb2"><span data-t>skills.PERSONAL_BLOG</span> <br>
+                      <span class="h4 secondary-black no-transform"><span data-t>skills.ONCE_TOP_WRITER</span> Medium</span></p>
+                    <div class="card-title-underline"></div>
+                  </div>
+                  <div class="px3 pt2 clearfix relative zi-2">
+                      <div class="bg-grey-1 rounded md-col md-col-6">
+                          <amp-img class="top-rounded" width="400" height="300" src="/assets/productive.webp" alt="Book" layout="responsive">
+                            <div fallback>
+                              <amp-img class="top-rounded" width="400" height="300" src="/assets/productive.jpg" alt="Book" layout="responsive"></amp-img>
+                            </div>
+                          </amp-img>
+                          <div class="p2 black">
+                              <p class="h2 m0">8 Killer Habits That Made Last Month So Productive</p>
+                              <p class="secondary-black m0 mt1">Certainly the most productive month of my whole life. (Published in The Startup)</p>
+                              <a class="link-button mt2 inline-block black" href="https://medium.com/swlh/8-killer-habits-that-made-last-month-so-productive-cc4e6d64e1a4">
+                                > medium.com
+                                (2.4K Views)
+                              </a>
                           </div>
-                        </amp-img>
-                        <div class="p2 black">
-                            <p class="h2 m0">8 Killer Habits That Made Last Month So Productive</p>
-                            <p class="secondary-black m0 mt1">Certainly the most productive month of my whole life. (Published in The Startup)</p>
-                            <a class="link-button mt2 inline-block black" href="https://medium.com/swlh/8-killer-habits-that-made-last-month-so-productive-cc4e6d64e1a4">
+                      </div>
+                  </div>
+                  <div class="mx3 my2 bg-light rounded relative zi-2">
+                    <div class="clearfix md-flex">
+                          <div class="story-img left-rounded relative">
+                            <amp-img layout="fill" class="left-rounded cover absolute" src="/assets/focused.webp" alt="Why hiring me">
+                              <div fallback>
+                                <amp-img layout="fill" class="left-rounded cover absolute" src="/assets/focused.png" alt="Why hiring me"></amp-img>
+                              </div>
+                            </amp-img>
+                          </div>
+                        <div class="p2 pl3 black flex-auto">
+                            <p class="h3 m0 mt1">The Ultimate Trick to Stay Focused 24/7</p>
+                            <p class="secondary-black m0 mt1">A great way to kick yourself where it hurts, at every single new browser tab. (Published in The Startup)</p>
+                            <a class="link-button mt2 inline-block black" href="https://medium.com/swlh/the-ultimate-trick-to-stay-focused-24-7-551cb3a684c1">
                               > medium.com
-                              (2.4K Views)
+                              (9.99K Views)
                             </a>
                         </div>
                     </div>
-                </div>
-                <div class="mx3 my2 bg-light rounded relative zi-2">
-                   <div class="clearfix md-flex">
-                        <div class="story-img left-rounded relative">
-                          <amp-img layout="fill" class="left-rounded cover absolute" src="/assets/focused.webp" alt="Why hiring me">
-                            <div fallback>
-                              <amp-img layout="fill" class="left-rounded cover absolute" src="/assets/focused.png" alt="Why hiring me"></amp-img>
-                            </div>
-                          </amp-img>
-                        </div>
-                      <div class="p2 pl3 black flex-auto">
-                          <p class="h3 m0 mt1">The Ultimate Trick to Stay Focused 24/7</p>
-                          <p class="secondary-black m0 mt1">A great way to kick yourself where it hurts, at every single new browser tab. (Published in The Startup)</p>
-                          <a class="link-button mt2 inline-block black" href="https://medium.com/swlh/the-ultimate-trick-to-stay-focused-24-7-551cb3a684c1">
-                            > medium.com
-                            (9.99K Views)
-                          </a>
-                      </div>
                   </div>
-                </div>
-                <div class="mx3 my2 bg-light rounded relative zi-2">
-                   <div class="clearfix md-flex">
-                     <div class="story-img left-rounded relative">
-                      <amp-img layout="fill" class="left-rounded cover absolute" src="/assets/i-write-morning-person.webp" alt="Dev Apps on CB">
-                        <div fallback>
-                          <amp-img layout="fill" class="left-rounded cover absolute" src="/assets/i-write-morning-person.png" alt="I write"></amp-img>
-                        </div>
-                      </amp-img>
-                     </div>
-                      <div class="p2 pl3 black flex-auto">
-                          <p class="h3 m0 mt1">How I Became a Morning Person in One Week</p>
-                          <p class="secondary-black m0 mt1">Following three easy steps. (Published in beyourself)</p>
-                          <a class="link-button mt2 inline-block black"
-                             href="https://byrslf.co/how-i-became-a-morning-person-in-one-week-ffe46d9e2e05">
-                             > medium.com
-                          </a>
+                  <div class="mx3 my2 bg-light rounded relative zi-2">
+                    <div class="clearfix md-flex">
+                      <div class="story-img left-rounded relative">
+                        <amp-img layout="fill" class="left-rounded cover absolute" src="/assets/i-write-morning-person.webp" alt="Dev Apps on CB">
+                          <div fallback>
+                            <amp-img layout="fill" class="left-rounded cover absolute" src="/assets/i-write-morning-person.png" alt="I write"></amp-img>
+                          </div>
+                        </amp-img>
                       </div>
-                   </div>
-                </div>
-                <div class="mx3 mt2 bg-light rounded relative zi-2">
-                   <div class="clearfix md-flex">
-                     <div class="story-img left-rounded relative">
-                      <amp-img layout="fill" class="left-rounded cover absolute" src="/assets/i-write-dev-cb.webp" alt="Dev Apps on CB">
-                        <div fallback>
-                          <amp-img layout="fill" class="left-rounded cover absolute" src="/assets/i-write-dev-cb.jpg" alt="I write"></amp-img>
+                        <div class="p2 pl3 black flex-auto">
+                            <p class="h3 m0 mt1">How I Became a Morning Person in One Week</p>
+                            <p class="secondary-black m0 mt1">Following three easy steps. (Published in beyourself)</p>
+                            <a class="link-button mt2 inline-block black"
+                              href="https://byrslf.co/how-i-became-a-morning-person-in-one-week-ffe46d9e2e05">
+                              > medium.com
+                            </a>
                         </div>
-                      </amp-img>
-                     </div>
-                      <div class="p2 pl3 black flex-auto">
-                          <p class="h3 m0 mt1">Developing Android Apps, right on your Chromebook</p>
-                          <p class="secondary-black m0 mt1">Goodbye, emulators.</p>
-                          <a class="link-button mt2 inline-block black"
-                             href="https://android.jlelse.eu/developing-android-apps-right-on-your-chromebook-f3a00cb78e0e">
-                             > medium.com
-                             (31K Views)
-                          </a>
-                          <br>
-                          <a class="link-button mt2 inline-block black"
-                             href="https://chromeunboxed.com/develop-android-apps-chromebook/">
-                            > chromeunboxed.com (Guest post)
-                          </a>
+                    </div>
+                  </div>
+                  <div class="mx3 mt2 bg-light rounded relative zi-2">
+                    <div class="clearfix md-flex">
+                      <div class="story-img left-rounded relative">
+                        <amp-img layout="fill" class="left-rounded cover absolute" src="/assets/i-write-dev-cb.webp" alt="Dev Apps on CB">
+                          <div fallback>
+                            <amp-img layout="fill" class="left-rounded cover absolute" src="/assets/i-write-dev-cb.jpg" alt="I write"></amp-img>
+                          </div>
+                        </amp-img>
                       </div>
-                   </div>
-                </div>
-                <div class="pb3"></div>
+                        <div class="p2 pl3 black flex-auto">
+                            <p class="h3 m0 mt1">Developing Android Apps, right on your Chromebook</p>
+                            <p class="secondary-black m0 mt1">Goodbye, emulators.</p>
+                            <a class="link-button mt2 inline-block black"
+                              href="https://android.jlelse.eu/developing-android-apps-right-on-your-chromebook-f3a00cb78e0e">
+                              > medium.com
+                              (31K Views)
+                            </a>
+                            <br>
+                            <a class="link-button mt2 inline-block black"
+                              href="https://chromeunboxed.com/develop-android-apps-chromebook/">
+                              > chromeunboxed.com (Guest post)
+                            </a>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="pb3"></div>
+              </div>
             </div>
           </div>
         </div>
 
-        <!-- Race site title -->
-        <div class="bg-accent p1 px3 lg-hide">
-            <span class="align-middle inline-block black bold mono h2" data-t>me.I_RACE</span>
-            <amp-img class="ml1 inline-block align-middle" width="22" height="22" src="/assets/emoji-bike.webp" alt="Book" layout="fixed">
-              <div fallback>
-                  <amp-img class="ml1 inline-block align-middle" width="22" height="22" src="/assets/emoji-bike.png" alt="Book" layout="fixed"></amp-img>
-              </div>
-            </amp-img>
-        </div>
-        <!-- Race block -->
-        <div class="flex">
-          <!-- Title -->
-          <div class="left-side border-box p3">
-            <div class="i-do bg-white-transparent black bold table">
-              <span class="table-cell align-middle" data-t>me.I_RACE</span>
-            </div>
+        <div id="racing">
+          <!-- Race site title -->
+          <div class="bg-white-transparent p1 px3 lg-hide">
+            <a href="#racing">
+              <span class="align-middle inline-block black bold mono h2" data-t>me.I_RACE</span>
+            </a>
           </div>
-          <!-- Content -->
-          <div class="flex-auto bg-light paper-round-bottom-left paper-round-bottom-right shadow p3 relative" id="i-race">
-            <amp-img layout="fill" class="paper-round-bottom-left paper-round-bottom-right cover absolute" src="/assets/i-race.webp" alt="I race">
-              <div fallback>
-                <amp-img layout="fill" class="paper-round-bottom-left paper-round-bottom-right cover absolute" src="/assets/i-race.jpg" alt="I race"></amp-img>
-              </div>
-            </amp-img>
-            <div class="center mt4 absolute right-0 mr3 zi-2" id="i-race-cards">
-              <div class="bg-dark-grey p3 w20 border-box" id="vtt-conliege">
-                <a href="https://www.facebook.com/teamxcvttconliege/">
-                  <amp-img layout="responsive" width="490" height="114"
-                          src="/assets/vtt-conliege.png" alt="VTT Conliege"></amp-img>
+          <!-- Race block -->
+          <div class="flex">
+            <!-- Title -->
+            <div class="left-side border-box p3">
+              <div class="i-do bg-white-transparent black bold table">
+                <a href="#racing">
+                  <span class="table-cell align-middle" data-t>me.I_RACE</span>
                 </a>
               </div>
-              <div class="mt2 bg-light rounded black p2 bold w20 border-box">
-                <span class="h4" data-t>skills.TOP_25_MTB</span> (2017)
-              </div>
-              <div class="mt2 bg-accent rounded black p2 w20 border-box">
-                <!-- TODO: change link -->
-                <a href="https://github.com/pierremtb/pierremtb.github.io/releases/download/dl-1.0/Pierre.JACQUIER-Profil.VTT.2018.pdf"
-                   class="link-button block no-decoration black">> <span data-t>skills.RIDER_SHEET</span> (FR)</a>
+            </div>
+            <!-- Content -->
+            <div class="flex-auto bg-light paper-round-bottom-left paper-round-bottom-right shadow p3 relative" id="i-race">
+              <amp-img layout="fill" class="paper-round-bottom-left paper-round-bottom-right cover absolute" src="/assets/i-race.webp" alt="I race">
+                <div fallback>
+                  <amp-img layout="fill" class="paper-round-bottom-left paper-round-bottom-right cover absolute" src="/assets/i-race.jpg" alt="I race"></amp-img>
+                </div>
+              </amp-img>
+              <div class="center mt4 absolute right-0 mr3 zi-2" id="i-race-cards">
+                <div class="bg-dark-grey p3 w20 border-box" id="vtt-conliege">
+                  <a href="https://www.facebook.com/teamxcvttconliege/">
+                    <amp-img layout="responsive" width="490" height="114"
+                            src="/assets/vtt-conliege.png" alt="VTT Conliege"></amp-img>
+                  </a>
+                </div>
+                <div class="mt2 bg-light rounded black p2 bold w20 border-box">
+                  <span class="h4" data-t>skills.TOP_25_MTB</span> (2017)
+                </div>
+                <div class="mt2 bg-accent rounded black p2 w20 border-box">
+                  <!-- TODO: change link -->
+                  <a href="https://github.com/pierremtb/pierremtb.github.io/releases/download/dl-1.0/Pierre.JACQUIER-Profil.VTT.2018.pdf"
+                    class="link-button block no-decoration black">> <span data-t>skills.RIDER_SHEET</span> (FR)</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      
-        <!-- Only starting mobile title -->
-        <div class="bg-white-transparent p1 px3 lg-hide">
-            <span class="align-middle inline-block black bold mono h2" data-t>me.AND_I_M_ONLY_STARTING_DOT</span>
-        </div>
-        <!-- Only starting block -->
-        <div class="flex mt4" id="i-m-only-starting">
-          <!-- Side Title -->
-          <div class="left-side border-box p3">
-            <div class="i-do bg-white-transparent black bold table mt0d25">
-              <span class="table-cell align-middle" data-t>me.AND_I_M_ONLY_STARTING_DOT</span>
-            </div>
+        
+        <div id="only-starting">
+          <!-- Only starting mobile title -->
+          <div class="bg-white-transparent p1 px3 lg-hide">
+            <a href="#only-starting">
+              <span class="align-middle inline-block black bold mono h2" data-t>me.AND_I_M_ONLY_STARTING_DOT</span>
+            </a>
           </div>
-          <!-- Content -->
-          <div class="flex-auto p3">
-            <p class="white h2 light m0 italic">Anyone who stops learning is old, whether at twenty or eighty.</p>
-            <p class="secondary-white h3 m0 mt1">Henry Ford</p>
+          <!-- Only starting block -->
+          <div class="flex mt4" id="i-m-only-starting">
+            <!-- Side Title -->
+            <div class="left-side border-box p3">
+              <div class="i-do bg-white-transparent black bold table mt0d25">
+                <a href="#only-starting">
+                  <span class="table-cell align-middle" data-t>me.AND_I_M_ONLY_STARTING_DOT</span>
+                </a>
+              </div>
+            </div>
+            <!-- Content -->
+            <div class="flex-auto p3">
+              <p class="white h2 light m0 italic">Anyone who stops learning is old, whether at twenty or eighty.</p>
+              <p class="secondary-white h3 m0 mt1">Henry Ford</p>
+            </div>
           </div>
         </div>
       </div>
