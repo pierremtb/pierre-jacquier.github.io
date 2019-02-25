@@ -2,6 +2,7 @@
 @import 'colors';
 html {
   font-family: 'Roboto Slab', serif;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -266,7 +267,7 @@ amp-img.cover img {
   border-top-right-radius: 1rem;
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 0;
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 1.0rem;
   float: right;
   display: inline-block;
   font-family: 'Roboto Mono', monospace;
@@ -615,7 +616,7 @@ amp-img.cover img {
     padding: 0.5rem 1rem;
     border-radius: 1.5rem;
     box-sizing: border-box;
-    right: 2.5rem;
+    right: 1.5rem;
     opacity: 0;
     white-space: nowrap;
     transition: opacity 400ms;

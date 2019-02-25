@@ -12,18 +12,6 @@
       "AND_I_M_ONLY_STARTING_DOT": "And I'm only starting."
     },
     "school": {
-        "PURSUING_A_MASTER_DEGREE": "Pursuing a M. Eng.",
-        "SEMESTER_ABROAD": "Semester abroad",
-        "SPRING_2016": "Spring 2016",
-        "ENGINEERING_INTERNSHIP": "Engineering internship",
-        "FALL_2017": "Fall 2017",
-        "6_MONTHS_IN": "6 months in",
-        "GERMANY": "Germany",
-        "MALAYSIA": "Malaysia",
-        "MCGILL": "McGill University",
-        "SPRING_2019": "Spring 2019",
-        "VISITING": "Visiting student in Maths and CS grad schools",
-        "PURSUING_A_MSC": "Pursuing a M. Sc. (dual degree)",
         "ETS_DATE": "September 2018 – August 2020   |   Montreal, Canada",
         "ETS_TITLE": "ÉTS — M.Sc. in Mechanical Engineering (dual-degree with UTBM)",
         "ETS_SUB": "Research project: “Machine Learning algorithms for non-linear problems: application to additive manufacturing.”",
@@ -57,9 +45,16 @@
         "PERSONAL_BLOG": "Personal blog",
         "ONCE_TOP_WRITER": "Once 'Top Writer' in four topics on ",
         "TECHNOLOGY_MISSIONS": "ETS Technology Missions",
-        "SL01_REPORT": "Course project: 28-page report on the future of road safety (in German)",
+        "TECHNOLOGY_MISSIONS_SUB": "Year-long student project",
+        "TECHNOLOGY_MISSIONS_DESC": "For two weeks in April 2019, my teammates and I will travel to Munich, Stuttgart, and Berlin, Germany, to visit companies and universities, aiming for new partnerships and expanded professional networks. This project starts almost a year prior, to organize and fund the trip.",
+        "SL01_REPORT": "Course project: 28-page elaborate LaTeX report on the future of road safety (in German)",
+        "MECHANICAL_PROJECT": "Course project: CAD model with CATIA V5 of a high-end mountain bike drivetrain system, including the crankset, the chain, the cogs and the derailleur. Rendered using Keyshot",
+        "COMP_PROJECT": "Research oriented course project: Shock-tube problem using homemade SPH code",
+        "COMP_EASYFIT": "Open-source JS library to parse .FIT files",
+        "FULL_PDF": "Full PDF",
+        "PERSISTENS_SUB": "Hire me as your freelancer!",
         "TODOBOARD": "Todoboard project: illustration for an abandoned productivity hardware idea",
-        "PERSISTENS": "Programming has always been a side gig, and at some point I realized that I could have both fun and clients at the same time."
+        "PERSISTENS": "Programming has always been a side gig, and at some point I realized that I could have both fun and clients at the same time.<br><br>Persistens is the brand name. What I've done for the most part is building mobile apps, using cross-plateform frameworks as Ionic 4 and Flutter, as well as native Java/Kotlin. From mockups to final product, from client to server. Just give me a keyboard and a large cup of Cameronian Gold Blend tea."
     },
     "lang": {
         "EN_ENABLED": "active",
