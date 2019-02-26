@@ -53,6 +53,18 @@ module.exports = function (grunt) {
             expand: true,
             src: path.join(project.src, 'sitemap.xml'),
             dest: path.join(project.dist, '/'),
+          },
+          {
+            flatten: true,
+            expand: true,
+            src: path.join(project.src, 'google1e6df2694e0730ed.html'),
+            dest: path.join(project.dist, '/'),
+          },
+          {
+            flatten: true,
+            expand: true,
+            src: path.join(project.src, 'BingSiteAuth.xml'),
+            dest: path.join(project.dist, '/'),
           }
         ],
       },
