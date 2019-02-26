@@ -47,6 +47,12 @@ module.exports = function (grunt) {
             expand: true,
             src: path.join(project.src, 'CNAME'),
             dest: path.join(project.dist, '/'),
+          },
+          {
+            flatten: true,
+            expand: true,
+            src: path.join(project.src, 'sitemap.xml'),
+            dest: path.join(project.dist, '/'),
           }
         ],
       },
