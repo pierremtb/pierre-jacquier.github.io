@@ -13,9 +13,11 @@
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400" rel="stylesheet"> -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto+bold" rel="stylesheet"> -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Vollkorn:400,400i,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,600,600i" rel="stylesheet">
     <script type="application/ld+json">
       {
         "@context": "http://schema.org",
@@ -60,7 +62,7 @@
   
     <!-- Mobile langs -->
     <div class="p1 bg-primary-dark" id="small-languages-wrap">
-      <ul class="white list-reset bold mono center">
+      <ul class="white list-reset bold bold center">
         <a href="/">
           <li data-attr-t data-attr-t-interpolate class-t="inline-block px1 white relative {{lang.EN_ENABLED}}">
             <span class="lang-name">EN</span>
@@ -136,17 +138,18 @@
                     layout="fixed"></amp-img>
                   </div>      
                 </amp-img>
-                <span class="bold m0 name ml2 f1d7 white inline-block align-middle md-hide lg-hide ptserif">Pierre Jacquier</span>
+                <span class="m0 name bold ml2 f1d7 white inline-block align-middle md-hide lg-hide ptserif">Pierre Jacquier</span>
               </div>  
               <div class="white flex-auto">
-                <p class="m0 h1 sm-hide xs-hide name">Pierre Jacquier</p>
-                <p class="white secondary-white h3 mt1 mb0 sm-mt2 bio">
+                <p class="m0 h1 sm-hide xs-hide name bold">Pierre Jacquier</p>
+                <p class="white secondary-white h3 mt0 mb0 sm-mt2 bold">
                   <span data-t>me.BIO_FIRST_LINE</span>
                   <!-- <br class="big-hide"> -->
                   <br>
                   <span data-t>me.BIO_SECOND_LINE</span>
-                  <a on="tap:resume-lightbox" role="button" tabindex="0"
-                     class="link-button block mt0d6 white accent md-mb2 pointer">> <span data-t>me.RESUME</span></a>
+                  <a data-attr-t data-attr-t-interpolate href-t="{{me.CV}}"
+                    target="_blank" role="button" tabindex="0"
+                     class="link-button bold block mt0d6 white accent md-mb2 pointer">> <span data-t>me.RESUME</span></a>
                 </p>
               </div>
               <div class="table mx-auto md-mt2 md-pb2" id="social">
@@ -335,7 +338,7 @@
           <!-- Studies mobile title -->
           <div class="transparent bg-primary p1 px3 lg-hide">
               <a href="#studies">
-                <span class="align-middle inline-block white bold mono h2" data-t>me.I_STUDY</span>
+                <span class="align-middle inline-block white bold bold h2" data-t>me.I_STUDY</span>
               </a>
           </div>
           <!-- Studies block -->
@@ -344,7 +347,7 @@
             <div class="left-side border-box p3 pt4">
               <div class="i-do bg-accent black bold table">
                 <a href="#studies">
-                  <span class="table-cell align-middle" data-t>me.I_STUDY</span>
+                  <span class="align-middle" data-t>me.I_STUDY</span>
                 </a>
               </div>
             </div>
@@ -378,7 +381,7 @@
                 <div class="flex-auto white pl2">
                   <h5 data-t class="m0 secondary-white">school.ETS_DATE</h5>
                   <h4 data-t class="m0">school.ETS_TITLE</h4>
-                  <h5 data-t class="m0 secondary-white">school.ETS_SUB</h5>
+                  <h5 data-t class="m0 secondary-white serif">school.ETS_SUB</h5>
                 </div>
               </a>
               <a class="flex items-center my1 px2 py1" id="stream"
@@ -391,7 +394,7 @@
                 <div class="flex-auto white pl2">
                   <h5 data-t class="m0 secondary-white">school.STREAM_DATE</h5>
                   <h4 data-t class="m0">school.STREAM_TITLE</h4>
-                  <h5 data-t class="m0 secondary-white">school.STREAM_SUB</h5>
+                  <h5 data-t class="m0 secondary-white serif">school.STREAM_SUB</h5>
                 </div>
               </a>
               <a class="flex items-center mt1 px2 py1" id="utbm"
@@ -405,7 +408,7 @@
                 <div class="flex-auto white pl2">
                   <h5 data-t class="m0 secondary-white">school.UTBM_DATE</h5>
                   <h4 data-t class="m0">school.UTBM_TITLE</h4>
-                  <h5 data-t class="m0 secondary-white">school.UTBM_SUB</h5>
+                  <h5 data-t class="m0 secondary-white serif">school.UTBM_SUB</h5>
                 </div>
               </a>
             </div>
@@ -416,7 +419,7 @@
           <!-- Engineering mobile title -->
           <div class="bg-accent p1 px3 lg-hide">
             <a href="#engineering">
-              <span class="align-middle inline-block black bold mono h2" data-t>me.I_DESIGN</span>
+              <span class="align-middle inline-block black bold bold h2" data-t>me.I_DESIGN</span>
             </a>
           </div>
           <div class="flex">
@@ -424,7 +427,7 @@
             <div class="left-side border-box p3">
               <div class="i-do bg-accent black bold table">
                 <a href="#engineering">
-                  <span class="table-cell align-middle" data-t>me.I_DESIGN</span>
+                  <span class="align-middle" data-t>me.I_DESIGN</span>
                 </a>
               </div>
             </div>
@@ -432,7 +435,7 @@
             <div class="flex-auto  bg-grey-2" id="books">
               <div class="clearfix">
                   <div class="sm-col sm-col-12 md-col-6 bg-grey-2 pt3 px3" id="graphical">
-                    <p class="card-title m0 mb2"><span data-t>skills.MECHANICAL</span> <br>
+                    <p class="card-title m0 mb2"><span data-t class="bold">skills.MECHANICAL</span> <br>
                       <span class="h4 secondary-black no-transform">CATIA V5-SolidWorks-OnShape-Keyshot</span></p>
                     <div class="card-title-underline"></div>
                     <a href="https://grabcad.com/library/sram-mtb-crankset-1">
@@ -444,11 +447,11 @@
                         </div>        
                       </amp-img>
                     </a>
-                    <p class="secondary-black pres m0 mt1 mb2"><span data-t>skills.MECHANICAL_PROJECT</span></p>
-                    <a href="https://grabcad.com/library/sram-mtb-crankset-1" class="link-button block mt2 mb3">> grabcad.com</a>
+                    <p class="secondary-black pres m0 mt1 mb2"><span data-t class="serif">skills.MECHANICAL_PROJECT</span></p>
+                    <a href="https://grabcad.com/library/sram-mtb-crankset-1" class="link-button bold block mt2 mb3">> grabcad.com</a>
                   </div>
                   <div class="sm-col sm-col-12 bg-white md-col-6 pt3 px3" id="graphical">
-                    <p class="card-title m0 mb2"><span data-t>skills.COMPUTATIONAL</span> <br>
+                    <p class="card-title m0 mb2"><span data-t class="bold">skills.COMPUTATIONAL</span> <br>
                       <span class="h4 secondary-black no-transform">Python-C++-MATLAB-ANSYS-Excel/VBA</span></p>
                     <div class="card-title-underline"></div>
                     <a href="https://drive.google.com/file/d/16QCzFpt5n7dKPU45Cb9aJzmxaD58YK9k/view">
@@ -460,10 +463,10 @@
                         </div>        
                       </amp-img>
                     </a>
-                    <p class="secondary-black pres m0 mt1 mb2"><span data-t>skills.COMP_PROJECT</span></p>
-                    <a href="https://drive.google.com/file/d/16QCzFpt5n7dKPU45Cb9aJzmxaD58YK9k/view" class="link-button block mt2">> <span data-t>skills.FULL_PDF</span></a>
+                    <p class="secondary-black pres m0 mt1 mb2 serif"><span data-t>skills.COMP_PROJECT</span></p>
+                    <a href="https://drive.google.com/file/d/16QCzFpt5n7dKPU45Cb9aJzmxaD58YK9k/view" class="link-button bold block mt2">> <span data-t>skills.FULL_PDF</span></a>
                     <p class="secondary-black pres m0 mt2 mb2"><span data-t>skills.COMP_EASYFIT</span></p>
-                    <a href="https://github.com/pierremtb/easy-fit" class="link-button block mt2 pb3">> <span data-t>github.com</span></a>
+                    <a href="https://github.com/pierremtb/easy-fit" class="link-button bold block mt2 pb3">> <span data-t>github.com</span></a>
                   </div>
               </div>
             </div>
@@ -474,7 +477,7 @@
           <!-- Entrepreneurship mobile title -->
           <div class="bg-accent p1 px3 lg-hide">
             <a href="#entrepreneurship">
-              <span class="align-middle inline-block black bold mono h2" data-t>me.I_UNDERTAKE</span>
+              <span class="align-middle inline-block black bold bold h2" data-t>me.I_UNDERTAKE</span>
             </a>
           </div>
           <!-- Entrepreneurship block -->
@@ -483,7 +486,7 @@
             <div class="left-side border-box p3">
               <div class="i-do bg-accent black bold table">
                 <a href="#entrepreneurship">
-                  <span class="table-cell align-middle" data-t>me.I_UNDERTAKE</span>
+                  <span class="align-middle" data-t>me.I_UNDERTAKE</span>
                 </a>
               </div>
             </div>
@@ -491,11 +494,11 @@
             <div class="flex-auto bg-light" id="books">
               <div class="clearfix"  style="background: #2F80ED">
                 <div class="sm-col sm-col-12 md-col-6 bg-grey-2 pt3 px3" style="background: #2F80ED" id="graphical">
-                  <p class="card-title white m0 mb2"><span data-t>Persistens</span> <br>
+                  <p class="card-title white m0 mb2"><span data-t class="bold">Persistens</span> <br>
                     <span class="h4 secondary-white no-transform" data-t>skills.PERSISTENS_SUB<span></p>
                   <div class="card-title-underline mb2"></div>
-                  <p class="secondary-white pres m0 mt1 mb2 justify"><span data-t>skills.PERSISTENS</span></p>
-                  <a href="https://persistens.com" class="link-button block mt2 pb2 white">> persistens.com</a>
+                  <p class="secondary-white pres m0 mt1 mb2 justify serif"><span data-t>skills.PERSISTENS</span></p>
+                  <a href="https://persistens.com" class="link-button bold block mt2 pb2 white">> persistens.com</a>
                 </div>
                 <div class="sm-col sm-col-12 md-col-6" style="background: #FFFFFF" id="graphical">
                     <amp-img width="22" height="22" src="/assets/persistens.webp" alt="Persistens x Plan2PEAK" layout="responsive">
@@ -514,11 +517,11 @@
                     </amp-img>
                 </div>
                 <div class="sm-col sm-col-12 bg-white md-col-6 py3 px3" id="graphical" style="background:#EF3730">
-                  <p class="card-title white m0 mb2"><span data-t>skills.TECHNOLOGY_MISSIONS</span> <br>
+                  <p class="card-title white m0 mb2"><span data-t class="bold">skills.TECHNOLOGY_MISSIONS</span> <br>
                   <span class="h4 secondary-white no-transform" data-t>skills.TECHNOLOGY_MISSIONS_SUB</span></p>
                   <div class="card-title-underline mb2"></div>
-                  <p class="secondary-white pres m0 mt1 mb2 justify" data-t>skills.TECHNOLOGY_MISSIONS_DESC</p>
-                  <a href="http://missionstechno.etsmtl.ca/?lang=en" class="link-button block mt2 white">> missionstechno.etsmtl.ca</a>
+                  <p class="secondary-white pres m0 mt1 mb2 justify serif" data-t>skills.TECHNOLOGY_MISSIONS_DESC</p>
+                  <a href="http://missionstechno.etsmtl.ca/?lang=en" class="link-button bold block mt2 white">> missionstechno.etsmtl.ca</a>
                 </div>
               </div>
             </div>
@@ -529,7 +532,7 @@
           <!-- Publishing mobile title -->
           <div class="bg-accent p1 px3 lg-hide">
             <a href="#publishing">
-              <span class="align-middle inline-block black bold mono h2" data-t>me.I_WRITE</span>
+              <span class="align-middle inline-block black bold bold h2" data-t>me.I_WRITE</span>
             </a>
           </div>
           <!--Publishing block-->
@@ -538,7 +541,7 @@
             <div class="left-side border-box p3">
               <div class="i-do bg-accent black bold table">
                 <a href="#publishing">
-                  <span class="table-cell align-middle" data-t>me.I_WRITE</span>
+                  <span class="align-middle" data-t>me.I_WRITE</span>
                 </a>
               </div>
             </div>
@@ -548,11 +551,11 @@
               <div class="clearfix relative zi-2">
                 <!-- Scientific -->
                 <div class="sm-col sm-col-12 md-col-6 bg-white pt3 px3" id="graphical">
-                  <p class="card-title m0 mb2"><span data-t>skills.SCIENTIFIC</span> <br>
+                  <p class="card-title m0 mb2"><span data-t class="bold">skills.SCIENTIFIC</span> <br>
                     <span class="h4 secondary-black no-transform">LaTeX-Microsoft Office</span></p>
                   <div class="card-title-underline mb2"></div>
-                  <p class="secondary-black pres m0 mt1 mb2"><span data-t>skills.SL01_REPORT</span></p>
-                  <a href="http://bit.ly/2XbAb31" class="link-button block my2">> <span data-t>skills.FULL_PDF</span></a>
+                  <p class="secondary-black pres m0 mt1 mb2 serif"><span data-t>skills.SL01_REPORT</span></p>
+                  <a href="http://bit.ly/2XbAb31" class="link-button bold block my2">> <span data-t>skills.FULL_PDF</span></a>
                   <a href="http://bit.ly/2XbAb31">
                     <amp-img width="1020" height="651" layout="responsive"
                               src="/assets/latex.webp" alt="Scientific writing">
@@ -565,10 +568,10 @@
                 </div>
                 <!-- Graphical -->
                 <div class="sm-col sm-col-12 md-col-6 bg-grey-3 pt3 px3" id="graphical">
-                  <p class="card-title m0 mb2"><span data-t>skills.GRAPHICAL</span> <br> <span class="h4 secondary-black no-transform">Illustrator-InDesign-Figma</span></p>
+                  <p class="card-title m0 mb2"><span data-t class="bold">skills.GRAPHICAL</span> <br> <span class="h4 secondary-black no-transform">Illustrator-InDesign-Figma</span></p>
                   <div class="card-title-underline mb2"></div>
-                  <p class="secondary-black pres m0 mt1 mb2"><span data-t>skills.TODOBOARD</span></p>
-                  <a href="https://dribbble.com/shots/3932023-Todoboard" class="link-button block my2">> dribbble.com</a>
+                  <p class="secondary-black pres m0 mt1 mb2 serif"><span data-t>skills.TODOBOARD</span></p>
+                  <a href="https://dribbble.com/shots/3932023-Todoboard" class="link-button bold block my2">> dribbble.com</a>
                   <a href="https://dribbble.com/shots/3932023-Todoboard">
                     <amp-img width="1020" height="651" layout="responsive"
                               src="/assets/graphical.webp" alt="Graphical design">
@@ -590,7 +593,7 @@
                 </amp-img>
                   <!-- Subtitle -->
                   <div class="px3 pt3 relative zi-2">
-                    <p class="card-title m0 mb2"><span data-t>skills.PERSONAL_BLOG</span> <br>
+                    <p class="card-title m0 mb2"><span data-t class="bold">skills.PERSONAL_BLOG</span> <br>
                       <span class="h4 secondary-black no-transform"><span data-t>skills.ONCE_TOP_WRITER</span> Medium</span></p>
                     <div class="card-title-underline"></div>
                   </div>
@@ -601,10 +604,10 @@
                               <amp-img class="top-rounded" width="400" height="300" src="/assets/productive.jpg" alt="Book" layout="responsive"></amp-img>
                             </div>
                           </amp-img>
-                          <div class="p2 black">
-                              <p class="h2 m0">8 Killer Habits That Made Last Month So Productive</p>
-                              <p class="secondary-black m0 mt1">Certainly the most productive month of my whole life. (Published in The Startup)</p>
-                              <a class="link-button mt2 inline-block black" href="https://medium.com/swlh/8-killer-habits-that-made-last-month-so-productive-cc4e6d64e1a4">
+                          <div class="p2 black ">
+                              <p class="h2 m0 serif bold">8 Killer Habits That Made Last Month So Productive</p>
+                              <p class="secondary-black m0 mt1 serif">Certainly the most productive month of my whole life. (Published in The Startup)</p>
+                              <a class="link-button bold mt2 inline-block black" href="https://medium.com/swlh/8-killer-habits-that-made-last-month-so-productive-cc4e6d64e1a4">
                                 > medium.com
                                 (2.4K Views)
                               </a>
@@ -621,9 +624,9 @@
                             </amp-img>
                           </div>
                         <div class="p2 pl3 black flex-auto">
-                            <p class="h3 m0 mt1">The Ultimate Trick to Stay Focused 24/7</p>
-                            <p class="secondary-black m0 mt1">A great way to kick yourself where it hurts, at every single new browser tab. (Published in The Startup)</p>
-                            <a class="link-button mt2 inline-block black" href="https://medium.com/swlh/the-ultimate-trick-to-stay-focused-24-7-551cb3a684c1">
+                            <p class="h3 m0 mt1 serif bold">The Ultimate Trick to Stay Focused 24/7</p>
+                            <p class="secondary-black m0 mt1 serif">A great way to kick yourself where it hurts, at every single new browser tab. (Published in The Startup)</p>
+                            <a class="link-button bold mt2 inline-block black" href="https://medium.com/swlh/the-ultimate-trick-to-stay-focused-24-7-551cb3a684c1">
                               > medium.com
                               (9.99K Views)
                             </a>
@@ -640,9 +643,9 @@
                         </amp-img>
                       </div>
                         <div class="p2 pl3 black flex-auto">
-                            <p class="h3 m0 mt1">How I Became a Morning Person in One Week</p>
-                            <p class="secondary-black m0 mt1">Following three easy steps. (Published in beyourself)</p>
-                            <a class="link-button mt2 inline-block black"
+                            <p class="h3 m0 mt1 serif bold">How I Became a Morning Person in One Week</p>
+                            <p class="secondary-black m0 mt1 serif">Following three easy steps. (Published in beyourself)</p>
+                            <a class="link-button bold mt2 inline-block black"
                               href="https://byrslf.co/how-i-became-a-morning-person-in-one-week-ffe46d9e2e05">
                               > medium.com
                             </a>
@@ -659,15 +662,15 @@
                         </amp-img>
                       </div>
                         <div class="p2 pl3 black flex-auto">
-                            <p class="h3 m0 mt1">Developing Android Apps, right on your Chromebook</p>
-                            <p class="secondary-black m0 mt1">Goodbye, emulators.</p>
-                            <a class="link-button mt2 inline-block black"
+                            <p class="h3 m0 mt1 serif bold">Developing Android Apps, right on your Chromebook</p>
+                            <p class="secondary-black m0 mt1 serif">Goodbye, emulators.</p>
+                            <a class="link-button bold mt2 inline-block black"
                               href="https://android.jlelse.eu/developing-android-apps-right-on-your-chromebook-f3a00cb78e0e">
                               > medium.com
                               (31K Views)
                             </a>
                             <br>
-                            <a class="link-button mt2 inline-block black"
+                            <a class="link-button bold mt2 inline-block black"
                               href="https://chromeunboxed.com/develop-android-apps-chromebook/">
                               > chromeunboxed.com (Guest post)
                             </a>
@@ -684,7 +687,7 @@
           <!-- Race site title -->
           <div class="bg-white-transparent p1 px3 lg-hide">
             <a href="#racing">
-              <span class="align-middle inline-block black bold mono h2" data-t>me.I_RACE</span>
+              <span class="align-middle inline-block black bold bold h2" data-t>me.I_RACE</span>
             </a>
           </div>
           <!-- Race block -->
@@ -693,7 +696,7 @@
             <div class="left-side border-box p3">
               <div class="i-do bg-white-transparent black bold table">
                 <a href="#racing">
-                  <span class="table-cell align-middle" data-t>me.I_RACE</span>
+                  <span class="align-middle" data-t>me.I_RACE</span>
                 </a>
               </div>
             </div>
@@ -717,7 +720,7 @@
                 <div class="mt2 bg-accent rounded black p2 w20 border-box">
                   <!-- TODO: change link -->
                   <a href="https://github.com/pierremtb/pierremtb.github.io/releases/download/dl-1.0/Pierre.JACQUIER-Profil.VTT.2018.pdf"
-                    class="link-button block no-decoration black">> <span data-t>skills.RIDER_SHEET</span> (FR)</a>
+                    class="link-button bold block no-decoration black">> <span data-t>skills.RIDER_SHEET</span> (FR)</a>
                 </div>
               </div>
             </div>
@@ -728,7 +731,7 @@
           <!-- Only starting mobile title -->
           <div class="bg-white-transparent p1 px3 lg-hide">
             <a href="#only-starting">
-              <span class="align-middle inline-block black bold mono h2" data-t>me.AND_I_M_ONLY_STARTING_DOT</span>
+              <span class="align-middle inline-block black bold bold h2" data-t>me.AND_I_M_ONLY_STARTING_DOT</span>
             </a>
           </div>
           <!-- Only starting block -->
@@ -737,14 +740,14 @@
             <div class="left-side border-box p3">
               <div class="i-do bg-white-transparent black bold table mt0d25">
                 <a href="#only-starting">
-                  <span class="table-cell align-middle" data-t>me.AND_I_M_ONLY_STARTING_DOT</span>
+                  <span class="align-middle" data-t>me.AND_I_M_ONLY_STARTING_DOT</span>
                 </a>
               </div>
             </div>
             <!-- Content -->
             <div class="flex-auto p3">
-              <p class="white h2 light m0 italic">Anyone who stops learning is old, whether at twenty or eighty.</p>
-              <p class="secondary-white h3 m0 mt1">Henry Ford</p>
+              <p class="white h1 light m0 serif italic">Anyone who stops learning is old, whether at twenty or eighty.</p>
+              <p class="secondary-white h3 m0 mt0">Henry Ford</p>
             </div>
           </div>
         </div>
@@ -752,7 +755,7 @@
       
       <!-- Langs -->
       <div class="p3" id="languages-wrap">
-        <ul class="white list-reset bold mono" id="languages">
+        <ul class="white list-reset bold bold" id="languages">
           <a href="/">
             <li data-attr-t data-attr-t-interpolate class-t="pb1 white relative {{lang.EN_ENABLED}}">
               <span class="lang-name">EN</span>
@@ -801,11 +804,11 @@
     <div>
       <ul class="list-reset m0 center" id="bottom-links">
         <a href="#top">
-          <li class="pointer inline-block mono white button mr2 secondary-white"><span data-t>nav.BACK_TO_TOP</span></li>
+          <li class="pointer inline-block bold white button mr2 secondary-white"><span data-t>nav.BACK_TO_TOP</span></li>
         </a>
-        <li id="about-li" class="pointer inline-block mono white button ml2 secondary-white relative"><span data-t>nav.ABOUT</span>
-          <div class="m0 bg-light absolute black left-align p1 px2" id="about">
-            <p>
+        <li id="about-li" class="pointer inline-block bold white button ml2 secondary-white relative"><span data-t>nav.ABOUT</span>
+          <div class="m0 bg-light absolute black blackleft-align p1 px2" id="about">
+            <p left-align>
               The code is proudly hosted on <a href="https://github.com/pierremtb/pierremtb.github.io">Github</a>.
               <br>
               Personal blog's background was taken by <a href="https://unsplash.com/@faceline">Thomas Martisen</a>.
@@ -814,24 +817,6 @@
         </li>
       </ul>
     </div>
-
-    <!-- Resume modal -->
-    <amp-lightbox id="resume-lightbox" layout="nodisplay">
-      <div class="lightbox p2" style="box-sizing:border-box">
-        <div class="actions clearfix  max-width-hd">
-          <a on="tap:resume-lightbox.close"
-             role="button"
-             tabindex="0" class="button white pointer right">x Close</a>
-          <a data-attr-t data-attr-t-interpolate href-t="https://github.com/pierremtb/pierremtb.github.io/releases/download/dl-1.0/GENERIC-Pierre_Jacquier-CV-{{lang.CURRENT}}.pdf" class="button white pointer left">↓ Download</a>
-        </div>
-
-        <div class="max-width-hd">
-          <amp-img width="85" height="110"
-                   data-attr-t data-attr-t-interpolate
-                   src-t="/assets/GENERIC-Pierre Jacquier-CV-{{lang.CURRENT}}.svg" alt="CV" layout="responsive" class="mb2"></amp-img>
-        </div>   
-      </div>
-    </amp-lightbox>
 
   </body>
 </html>

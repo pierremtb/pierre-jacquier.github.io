@@ -1,7 +1,8 @@
 @import 'basscss';
 @import 'colors';
 html {
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
   scroll-behavior: smooth;
 }
 
@@ -16,7 +17,6 @@ a {
 
 #about {
   width: 20rem;
-  font-family: 'Roboto Slab', serif;
   top: -5rem;
   text-transform: none;
   left: calc(100% + 1rem);
@@ -62,8 +62,12 @@ a {
   text-transform: uppercase;
 }
 
-.mono {
-  font-family: 'Roboto Mono', monospace;
+.bold {
+  font-weight: 600;
+}
+
+.serif {
+  font-family: 'Vollkorn', serif;
 }
 
 .bg-primary {
@@ -270,7 +274,6 @@ amp-img.cover img {
   padding: 0.5rem 1.0rem;
   float: right;
   display: inline-block;
-  font-family: 'Roboto Mono', monospace;
 }
 
 #i-race {
@@ -374,7 +377,6 @@ amp-img.cover img {
 .button {
   text-transform: uppercase;
   text-decoration: none;
-  font-family: 'Roboto Mono', monospace;
   font-weight: 700;
   /* padding: 0.5rem; */
   /* border-radius: 20px; */
@@ -385,8 +387,6 @@ amp-img.cover img {
 .card-title {
   font-size: 1.2rem;
   color: rgba(0, 0, 0, $primary-black-opacity);
-  letter-spacing: 0.1rem;
-  text-transform: uppercase;
 }
 
 .card-title.white {
@@ -416,8 +416,7 @@ amp-img.cover img {
 }
 
 .link-button {
-  font-family: 'Roboto Mono';
-  font-weight: 700;
+  font-weight: 600;
   text-decoration: none;
   color: inherit;
   // text-transform: uppercase;
@@ -443,7 +442,7 @@ amp-img.cover img {
 }
 
 .name {
-  font-family: 'PT Serif', 'Roboto Slab', serif;
+  font-family: 'Vollkorn', serif;
   font-size: 3rem;
 }
 

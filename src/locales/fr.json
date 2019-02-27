@@ -9,12 +9,13 @@
       "I_DESIGN": "Ingénierie",
       "I_UNDERTAKE": "Entreprenariat",
       "I_RACE": "J'étais athlète il y a peu",
-      "AND_I_M_ONLY_STARTING_DOT": "Et je commence que."
+      "AND_I_M_ONLY_STARTING_DOT": "Et je commence que.",
+      "CV": "https://drive.google.com/file/d/1HlIMlxw6OSOxyYduH_s_GxhwHOfQKF6a/view?usp=sharing"
     },
     "school": {
         "ETS_DATE": "Septembre 2018 – Août 2020   |   Montréal, Canada",
         "ETS_TITLE": "ÉTS — M.Sc.A. en Génie Mécanique (double diplôme avec l'UTBM)",
-        "ETS_SUB": "Mémoire: “Algorithmes d&#39;apprentissage machine pour les problèmes nonlinéaires: application à la fabrication additive.”",
+        "ETS_SUB": "Mémoire: <span class=\"italic\">“Algorithmes d&#39;apprentissage machine pour les problèmes nonlinéaires: application à la fabrication additive.”</span>",
         "MCGILL_DATE": "Janvier 2019 – Avril 2019   |   Montréal, Canada",
         "MCGILL_TITLE": "McGill University — Semestre d'études dans les facultés de Maths et d'Informatique",
         "UTBM_DATE": "Septembre 2014 – Août 2020   |   Belfort, France & Karlsruhe, Allemagne",
