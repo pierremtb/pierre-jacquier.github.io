@@ -54,8 +54,8 @@
         "PERSISTENS": "La programmation a toujours été une passion pour moi, et j'ai réalisé que je pouvais à la fois m'amuser et satisfaire des clients.<br><br>Persistens est ma marque de fabrique. La plupart de mes travaux sont des applications mobiles, utilisant des bibliothèques comme Ionic 4 ou Flutter, et aussi du code natif Java/Kotlin. Du prototype au produit final, du client au serveur. Donnez moi juste un clavier et une grande tasse de thé Cameronian Gold Blend."
     },
     "lang": {
-        "EN_ENABLED": "active",
-        "FR_ENABLED": "",
+        "EN_ENABLED": "",
+        "FR_ENABLED": "active",
         "DE_ENABLED": "",
         "ES_ENABLED": "",
         "CH_ENABLED": "",
