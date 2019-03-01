@@ -64,6 +64,9 @@
         "UPPER_ADVANCED": "Avancé",
         "COMMUNICATION_SKILLS": "Notions de communications",
         "JUST_STARTED": "Just started",
-        "CURRENT": "FR"
+        "CURRENT": "FR",
+        "HTML": "fr",
+        "TITLE": "Pierre Jacquier — Élève-ingénieur en mécanique",
+        "DESCRIPTION": "Master avec mémoire à l'ÉTS, Montréal, Canada. Computationally curious."
     }
 }

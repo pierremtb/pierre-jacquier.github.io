@@ -68,6 +68,9 @@
         "UPPER_ADVANCED": "Upper advanced",
         "COMMUNICATION_SKILLS": "Communication skills",
         "JUST_STARTED": "Just started",
-        "CURRENT": "EN"
+        "CURRENT": "EN",
+        "HTML": "en",
+        "TITLE": "Pierre Jacquier — Mechanical Engineering student",
+        "DESCRIPTION": "Master's degree at ÉTS, Montreal, Canada. Computationally curious."
     }
 }
