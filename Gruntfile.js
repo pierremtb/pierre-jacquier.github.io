@@ -6,7 +6,9 @@ module.exports = function (grunt) {
     dist: 'dist',
     locales: 'locales',
     assets: 'assets',
+    pages: 'pages',
     todoboard: 'todoboard',
+    castmenu: 'castmenu',
   }
 
   grunt.initConfig({
@@ -38,8 +40,15 @@ module.exports = function (grunt) {
           {
             expand: true,
             flatten: true,
-            src: [path.join(project.src, project.todoboard, '**')],
+            src: [path.join(project.src, project.pages, project.todoboard, '**')],
             dest: path.join(project.dist, project.todoboard),
+            filter: 'isFile',
+          },
+          {
+            expand: true,
+            flatten: true,
+            src: [path.join(project.src, project.pages, project.castmenu, '**')],
+            dest: path.join(project.dist, project.castmenu),
             filter: 'isFile',
           },
           {
@@ -72,8 +81,8 @@ module.exports = function (grunt) {
     clean: [project.dist],
     watch: {
 			options: { livereload:true },
-			files: [path.join(project.src, '**')],
-			tasks: ['sass', 'i18n', 'replace'],
+			files: [path.join(project.src, '**'), path.join(project.src, project.pages, project.castmenu, '**')],
+			tasks: ['sass', 'i18n', 'copy', 'replace'],
 		},
     express:{
       all:{
@@ -108,6 +117,7 @@ module.exports = function (grunt) {
         },
         files: [
             {expand: true, flatten: true, src: ['dist/index.html'], dest: 'dist/'},
+            {expand: true, flatten: true, src: ['dist/castmenu/index.html'], dest: 'dist/castmenu/'},
             {expand: true, flatten: true, src: ['dist/fr/index.html'], dest: 'dist/fr'},
         ]
       }
