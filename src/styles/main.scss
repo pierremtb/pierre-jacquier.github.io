@@ -196,7 +196,10 @@ amp-img.cover img {
   border-radius: 1.5rem;
 }
 
-#graphical {}
+.project {
+  z-index: 10;
+  box-shadow: none;
+}
 
 .separator {
   height: 0.5rem;
