@@ -197,8 +197,11 @@ amp-img.cover img {
 }
 
 .project {
-  z-index: 10;
-  box-shadow: none;
+  transition: 400ms all;
+}
+
+.project:hover {
+  background-color: $accent-color
 }
 
 .separator {
