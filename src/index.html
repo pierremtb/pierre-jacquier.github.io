@@ -61,7 +61,7 @@
     </amp-analytics>
   
     <!-- Mobile langs -->
-    <div class="p1 bg-primary-dark" id="small-languages-wrap">
+    <div class="p1 bg-primary-dark mt3" id="small-languages-wrap">
       <ul class="white list-reset bold bold center">
         <a href="/">
           <li data-attr-t data-attr-t-interpolate class-t="inline-block px1 white relative {{lang.EN_ENABLED}}">
@@ -100,11 +100,52 @@
       </ul>
     </div>
 
+    <div id="top-bar" class="max-width-hd">
+      <div class="flex">
+        <div class="left-side pl3 py2 flex justify-end items-center">
+            <amp-img class="circle inline-block align-middle ml2"
+                    width="24" height="24"
+                    src="/assets/me-suit.webp"
+                    alt="Pierre Jacquier"
+                    layout="fixed">
+              <div fallback>
+                <amp-img class="circle inline-block align-middle"
+                width="24" height="24"
+                src="/assets/me-suit.jpg"
+                alt="Pierre Jacquier"
+                layout="fixed"></amp-img>
+              </div>      
+            </amp-img>
+          <span class="align-middle ml1 bold serif white">Pierre Jacquier</span>
+        </div>
+        <div class="flex-auto py2 px2 white">
+          <div class="flex">
+            <a href="#resume" class="flex-auto center">Resume</a>
+            <a href="#engineering" class="flex-auto center">Projects</a>
+            <a href="#publishing" class="flex-auto center">Blog</a>
+            <a href="#about" class="flex-auto center">About</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="top-bar-mask" class="max-width-hd">
+      <div class="flex">
+        <div class="left-side pl3 py2 bg-primary-dark">
+          <span class="align-middle ml1 bold serif primary-dark">Pierre Jacquier</span>
+        </div>
+        <div class="flex-auto py2 px2 white">
+        </div>
+      </div>
+    </div>
+
     <div class="md-flex max-width-hd">
       <div class="flex-auto">
+        <div class="top-bar-height xs-hide sm-hide md-hide"></div>
 
         <!-- Pierre Jacquier -->
-        <div class="flex">
+        <div class="flex relative">
+          <div id="resume" class="bar-target"></div>
           <!-- Pic -->
           <div class="pt3 px3 border-box clearfix left-side right-align">
             <amp-img class="circle inline-block align-middle"
@@ -415,7 +456,8 @@
           </div>
         </div>
 
-        <div id="engineering">
+        <div class="relative">
+          <div id="engineering" class="bar-target"></div>
           <!-- Engineering mobile title -->
           <div class="bg-accent p1 px3 lg-hide">
             <a href="#engineering">
@@ -575,7 +617,8 @@
           </div>
         </div>
 
-        <div id="publishing">
+        <div class="relative">
+          <div id="publishing" class="bar-target"></div>
           <!-- Publishing mobile title -->
           <div class="bg-accent p1 px3 lg-hide">
             <a href="#publishing">
@@ -594,42 +637,7 @@
             </div>
             <!-- Content -->
             <div class="flex-auto bg-light relative" id="i-write">
-              <!-- Scientific/Graphical -->
-              <div class="clearfix relative zi-2">
-                <!-- Scientific -->
-                <div class="sm-col sm-col-12 md-col-6 bg-white pt3 px3">
-                  <p class="card-title m0 mb2"><span data-t class="bold">skills.SCIENTIFIC</span> <br>
-                    <span class="h4 secondary-black no-transform">LaTeX</span></p>
-                  <div class="card-title-underline mb2"></div>
-                  <p class="secondary-black pres m0 mt1 mb2 serif"><span data-t>skills.SL01_REPORT</span></p>
-                  <a href="http://bit.ly/2XbAb31" class="link-button bold block my2">> <span data-t>skills.FULL_PDF</span></a>
-                  <a href="http://bit.ly/2XbAb31">
-                    <amp-img width="1020" height="651" layout="responsive"
-                              src="/assets/latex.webp" alt="Scientific writing">
-                      <div fallback>
-                        <amp-img width="1020" height="351" layout="responsive"
-                        src="/assets/latex.png" alt="Scientific writing"></amp-img>  
-                      </div>        
-                    </amp-img>
-                  </a>
-                </div>
-                <!-- Graphical -->
-                <div class="sm-col sm-col-12 md-col-6 bg-grey-3 pt3 px3">
-                  <p class="card-title m0 mb2"><span data-t class="bold">skills.GRAPHICAL</span> <br> <span class="h4 secondary-black no-transform">Illustrator, InDesign, Figma</span></p>
-                  <div class="card-title-underline mb2"></div>
-                  <p class="secondary-black pres m0 mt1 mb2 serif"><span data-t>skills.TODOBOARD</span></p>
-                  <a href="https://dribbble.com/shots/3932023-Todoboard" class="link-button bold block my2">> dribbble.com</a>
-                  <a href="https://dribbble.com/shots/3932023-Todoboard">
-                    <amp-img width="1020" height="651" layout="responsive"
-                              src="/assets/graphical.webp" alt="Graphical design">
-                      <div fallback>
-                        <amp-img width="1020" height="651" layout="responsive"
-                        src="/assets/graphical.png" alt="Graphical design"></amp-img>  
-                      </div>        
-                    </amp-img>
-                  </a>
-                </div>
-              </div>
+              
               <!-- Personal blog -->
               <div class="relative">
                 <!-- Background -->
@@ -726,6 +734,42 @@
                   </div>
                   <div class="pb3"></div>
               </div>
+              <!-- Scientific/Graphical -->
+              <div class="clearfix relative zi-2">
+                <!-- Scientific -->
+                <div class="sm-col sm-col-12 md-col-6 bg-white pt3 px3">
+                  <p class="card-title m0 mb2"><span data-t class="bold">skills.SCIENTIFIC</span> <br>
+                    <span class="h4 secondary-black no-transform">LaTeX</span></p>
+                  <div class="card-title-underline mb2"></div>
+                  <p class="secondary-black pres m0 mt1 mb2 serif"><span data-t>skills.SL01_REPORT</span></p>
+                  <a href="http://bit.ly/2XbAb31" class="link-button bold block my2">> <span data-t>skills.FULL_PDF</span></a>
+                  <a href="http://bit.ly/2XbAb31">
+                    <amp-img width="1020" height="651" layout="responsive"
+                              src="/assets/latex.webp" alt="Scientific writing">
+                      <div fallback>
+                        <amp-img width="1020" height="351" layout="responsive"
+                        src="/assets/latex.png" alt="Scientific writing"></amp-img>  
+                      </div>        
+                    </amp-img>
+                  </a>
+                </div>
+                <!-- Graphical -->
+                <div class="sm-col sm-col-12 md-col-6 bg-grey-3 pt3 px3">
+                  <p class="card-title m0 mb2"><span data-t class="bold">skills.GRAPHICAL</span> <br> <span class="h4 secondary-black no-transform">Illustrator, InDesign, Figma</span></p>
+                  <div class="card-title-underline mb2"></div>
+                  <p class="secondary-black pres m0 mt1 mb2 serif"><span data-t>skills.TODOBOARD</span></p>
+                  <a href="https://dribbble.com/shots/3932023-Todoboard" class="link-button bold block my2">> dribbble.com</a>
+                  <a href="https://dribbble.com/shots/3932023-Todoboard">
+                    <amp-img width="1020" height="651" layout="responsive"
+                              src="/assets/graphical.webp" alt="Graphical design">
+                      <div fallback>
+                        <amp-img width="1020" height="651" layout="responsive"
+                        src="/assets/graphical.png" alt="Graphical design"></amp-img>  
+                      </div>        
+                    </amp-img>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -754,7 +798,7 @@
                   <amp-img layout="fill" class="paper-round-bottom-left paper-round-bottom-right cover absolute" src="/assets/i-race.jpg" alt="I race"></amp-img>
                 </div>
               </amp-img>
-              <div class="center mt4 absolute right-0 mr3 zi-2" id="i-race-cards">
+              <div class="center mt1 absolute right-0 mr3 zi-2" id="i-race-cards">
                 <div class="bg-dark-grey p3 w20 border-box" id="vtt-conliege">
                   <a href="https://www.facebook.com/teamxcvttconliege/">
                     <amp-img layout="responsive" width="490" height="114"
@@ -764,20 +808,20 @@
                 <div class="mt2 bg-light rounded black p2 bold w20 border-box">
                   <span class="h4" data-t>skills.TOP_25_MTB</span> (2017)
                 </div>
-                <div class="mt2 bg-accent rounded black p2 w20 border-box">
-                  <!-- TODO: change link -->
+                <!-- <div class="mt2 bg-accent rounded black p2 w20 border-box">
                   <a href="https://github.com/pierremtb/pierremtb.github.io/releases/download/dl-1.0/Pierre.JACQUIER-Profil.VTT.2018.pdf"
                     class="link-button bold block no-decoration black">> <span data-t>skills.RIDER_SHEET</span> (FR)</a>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
         </div>
         
-        <div id="only-starting">
+        <div class="relative">
+          <div id="about" class="bar-target"></div>
           <!-- Only starting mobile title -->
           <div class="bg-white-transparent p1 px3 lg-hide">
-            <a href="#only-starting">
+            <a href="#about">
               <span class="align-middle inline-block black bold bold h2" data-t>me.AND_I_M_ONLY_STARTING_DOT</span>
             </a>
           </div>
@@ -795,6 +839,17 @@
             <div class="flex-auto p3">
               <p class="white h1 light m0 serif italic">Anyone who stops learning is old, whether at twenty or eighty.</p>
               <p class="secondary-white h3 m0 mt0">Henry Ford</p>
+              <p class="white serif mt4">
+                <span data-t>me.PLZ_REACH_OUT</span>
+                <span data-t>me.BEST_WAY_IS</span><a class="accent" href="mailto:mail@pierrejacquier.com">mail@pierrejacquier.com</a>.<br>
+                <span data-t>me.I_M_INTO_HARD_SOFT</span>
+                <span data-t>me.COFFEE_ON_ME</span> 🙃
+              </p>
+              <p class="secondary-white serif">
+                <span data-t>me.HOST_GH</span><a class="accent" href="https://github.com/pierremtb/pierremtb.github.io">Github</a>.
+                <br>
+                <span data-t>me.PHOTO_CREDITS</span><a class="accent" href="https://unsplash.com/@faceline">Thomas Martisen</a>.
+              </p>
             </div>
           </div>
         </div>
@@ -853,7 +908,7 @@
         <a href="#top">
           <li class="pointer inline-block bold white button mr2 secondary-white"><span data-t>nav.BACK_TO_TOP</span></li>
         </a>
-        <li id="about-li" class="pointer inline-block bold white button ml2 secondary-white relative"><span data-t>nav.ABOUT</span>
+        <!-- <li id="about-li" class="pointer inline-block bold white button ml2 secondary-white relative"><span data-t>nav.ABOUT</span>
           <div class="m0 bg-light absolute black black left-align p1 px2" id="about">
             <p>
               The code is proudly hosted on <a href="https://github.com/pierremtb/pierremtb.github.io">Github</a>.
@@ -861,9 +916,10 @@
               Personal blog's background was taken by <a href="https://unsplash.com/@faceline">Thomas Martisen</a>.
             </p>
           </div>
-        </li>
+        </li> -->
       </ul>
     </div>
+
 
   </body>
 </html>
