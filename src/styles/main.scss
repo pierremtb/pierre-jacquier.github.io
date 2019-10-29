@@ -541,7 +541,6 @@ amp-img.cover img {
 }
 
 @media (max-width: 1260px) {
-
   body {
     padding: 0.5rem;
   }
@@ -688,7 +687,10 @@ amp-img.cover img {
   #small-languages-wrap li:hover {
     color: $accent-color;
   }
+}
 
+@media (max-width: 52em) {
+  
   
   #top-bar {
     right: 0;
@@ -697,10 +699,7 @@ amp-img.cover img {
   #top-bar-mask {
     display: none;
   }
-}
-
-@media (max-width: 52em) {
-
+  
   #i-study {
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -751,12 +750,5 @@ amp-img.cover img {
   }
   #i-m-only-starting {
     margin-top: 2rem;
-  
-  #top-bar {
-    right: 0;
-  }
-
-  #top-bar-mask {
-    display: none;
   }
 }
