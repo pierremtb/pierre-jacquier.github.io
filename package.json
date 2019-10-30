@@ -19,6 +19,6 @@
   "scripts": {
     "serve": "grunt serve",
     "build": "grunt",
-    "deploy": ""
+    "deploy": "grunt;git subtree push --prefix dist origin master"
   }
 }
