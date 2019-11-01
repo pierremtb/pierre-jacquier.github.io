@@ -505,6 +505,14 @@ amp-img.cover img {
   z-index: 2
 }
 
+.lg-pr4 {
+  padding-right: 4rem;
+}
+
+.lg-mt2 {
+  margin-top: 2rem;
+}
+
 .f1d7 {
   font-size: 1.7rem;
 }
@@ -525,9 +533,6 @@ amp-img.cover img {
   overflow: auto;
 }
 
-.lightbox amp-img {
-}
-
 .lightbox .actions {
   margin: 0.5rem auto;
 }
@@ -540,10 +545,42 @@ amp-img.cover img {
   height: auto; width: 70%; margin: auto;
 }
 
-@media (max-width: 1260px) {
+#languages-wrap {
+  z-index: 99999;
+}
+
+@media(max-width: 72em) {
+
   body {
     padding: 0.5rem;
   }
+  .left-side {
+    padding-left: 0.5rem;
+    padding-right: 1rem;
+    width: 12rem;
+    min-width: 12rem;
+  }
+  .left-side .lg-hide {
+    display: block;
+  }
+
+  #languages-wrap {
+    padding-right: 0.5rem;
+  }
+
+}
+
+@media (max-width: 64em) {
+  .lg-mt2 {
+    margin-top: 0;
+  }
+  .lg-pr4 {
+    padding-right: 0;
+  }
+// @media (max-width: 1260px) {
+  // body {
+  //   padding: 0.5rem;
+  // }
   
   #top-bar {
     right: 0;
@@ -553,18 +590,18 @@ amp-img.cover img {
     display: none;
   }
 
-  .left-side {
-    padding-left: 0.5rem;
-    padding-right: 1rem;
-  }
+  // .left-side {
+  //   padding-left: 0.5rem;
+  //   padding-right: 1rem;
+  // }
 
-  .left-side .lg-hide {
-    display: block;
-  }
+  // .left-side .lg-hide {
+  //   display: block;
+  // }
 
-  #languages-wrap {
-    padding-right: 0.5rem;
-  }
+  // #languages-wrap {
+  //   padding-right: 0.5rem;
+  // }
   #i-write .button.ml4 {
     margin-left: 0;
     margin-top: 0;
@@ -573,12 +610,13 @@ amp-img.cover img {
     display: block;
   }
   
-  .lg-ml4 {
-    margin-left: 0;
-  }
+  // .lg-ml4 {
+  //   margin-left: 0;
+  // }
 }
 
-@media (max-width: 62em) {
+// @media (max-width: 62em) {
+@media (max-width: 64em) {
   body {
     padding: 0;
   }
@@ -689,7 +727,8 @@ amp-img.cover img {
   }
 }
 
-@media (max-width: 52em) {
+// @media (max-width: 52em) {
+@media (max-width: 64em) {
   
   
   #top-bar {
@@ -705,7 +744,7 @@ amp-img.cover img {
     padding-bottom: 2rem;
   }
   .name {
-    font-size: 1.8rem;
+    font-size: 2.8rem;
   }
   #map {
     width: 100%;
@@ -750,5 +789,11 @@ amp-img.cover img {
   }
   #i-m-only-starting {
     margin-top: 2rem;
+  }
+}
+
+@media (max-width: 52em) {
+  .name {
+    font-size: 1.8rem;
   }
 }

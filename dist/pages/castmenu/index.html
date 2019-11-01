@@ -61,14 +61,14 @@
     </amp-analytics>
 
     <div class="md-flex max-width-hd">
-      <div class="flex-auto pr4">
+      <div class="flex-auto lg-pr4">
 
         <div id="studies">
                 <!-- Studies mobile title -->
                 <div class="transparent p1 px3 lg-hide">
                 </div>
                 <!-- Studies block -->
-                <div class="flex">
+                <div class="flex lg-mt2">
                     <!-- Side title -->
                     <div class="left-side border-box p3 pt4">
                     </div>
@@ -251,7 +251,12 @@
                 </ul>
   
                 <h2>Screenshot</h2>
-                <amp-img class=" mx1" width="648" height="355" src="/assets/castmenu-screen.webp" alt="Pierre Jacquier" layout="fixed">
+                <amp-img class="md-hide lg-hide mx1" width="648" height="355" src="/assets/castmenu-screen.webp" alt="Pierre Jacquier" layout="responsive">
+                    <div fallback="">
+                        <amp-img class="" width="648" height="355" src="/assets/castmenu-screen.png" alt="Pierre Jacquier" layout="responsive"></amp-img>
+                    </div>
+                </amp-img>
+                <amp-img class="sm-hide xs-hide mx1" width="648" height="355" src="/assets/castmenu-screen.webp" alt="Pierre Jacquier" layout="fixed">
                     <div fallback="">
                         <amp-img class="" width="648" height="355" src="/assets/castmenu-screen.png" alt="Pierre Jacquier" layout="fixed"></amp-img>
                     </div>
