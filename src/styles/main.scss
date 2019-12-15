@@ -1,9 +1,17 @@
 @import 'basscss';
 @import 'colors';
 html {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   scroll-behavior: smooth;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.serif {
+  font-family: 'PT Serif', serif;
 }
 
 body {
@@ -20,7 +28,7 @@ a {
   z-index: 999;
   top: 0;
   left: 0;
-  right: 84px;
+  right: 68px;
   background-color: $primary-dark-color; 
 }
 
@@ -64,6 +72,12 @@ a {
   color: $accent-color;
 }
 
+#i-study {
+  h5 {
+    font-weight: 400;
+  }
+}
+
 #mcgill, #ets, #stream, #utbm {
   transition: background 400ms;
   background: rgba(255, 255, 255, 0)
@@ -87,14 +101,6 @@ a {
 
 .uppercase {
   text-transform: uppercase;
-}
-
-.bold {
-  font-weight: 600;
-}
-
-.serif {
-  font-family: 'Vollkorn', serif;
 }
 
 .bg-primary {
@@ -482,8 +488,11 @@ amp-img.cover img {
 }
 
 .name {
-  font-family: 'Vollkorn', serif;
-  font-size: 3rem;
+  font-size: 2.5rem;
+}
+
+.sub-name {
+  font-size: 1.15rem;
 }
 
 .story-img {
