@@ -1,6 +1,6 @@
 {
     "me": {
-      "BIO_FIRST_LINE": "Élève-ingénieur en Génie Mécanique.",
+      "BIO_FIRST_LINE": "Ingénieur Systèmes pour une startup.",
       "BIO_SECOND_LINE": "Computationally curious.",
       "RESUME": "CV",
       "I_STUDY": "Expérience",
@@ -19,8 +19,11 @@
       "PHOTO_CREDITS": "Le fond de Blog personnel a été pris par "
     },
     "school": {
-        "VM_DATE": "Octobre 2019 – Maintenant  |   Montréal, Canada",
-        "VM_TITLE": "Vehicle Mind — Full Stack Developer",
+        "VM2_DATE": "Juin 2020 – Maintenant  |   Montréal, Canada",
+        "VM2_TITLE": "Vehicle Mind — Ingénieur Systèmes",
+        "VM2_SUB": "Temps plein.",
+        "VM_DATE": "Octobre 2019 – Mai 2019  |   Montréal, Canada",
+        "VM_TITLE": "Vehicle Mind — Full Stack Developeur, Généralist",
         "VM_SUB": "Temps partiel à côté de mon projet de recherche pour aider une start-up à révolutionner l'entretien des voitures.",
         "ETS_DATE": "Septembre 2018 – Août 2020   |   Montréal, Canada",
         "ETS_TITLE": "ÉTS — M.Sc.A. en Génie Mécanique (double diplôme avec l'UTBM)",
