@@ -6,6 +6,7 @@
       "I_STUDY": "Experience",
       "I_CODE": "Programming",
       "I_WRITE": "Publishing",
+      "I_RESEARCH": "Research",
       "I_DESIGN": "Engineering",
       "I_UNDERTAKE": "Entrepreneurship",
       "I_RACE": "I used to be an athlete",
@@ -82,7 +83,7 @@
         "JUST_STARTED": "Just started",
         "CURRENT": "EN",
         "HTML": "en",
-        "TITLE": "Pierre Jacquier — Mechanical Engineering student",
+        "TITLE": "Pierre Jacquier, Engineer at a tech startup",
         "DESCRIPTION": "Master's degree at ÉTS, Montreal, Canada. Computationally curious."
     }
 }

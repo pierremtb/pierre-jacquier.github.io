@@ -1,6 +1,6 @@
 {
     "me": {
-      "BIO_FIRST_LINE": "Ingénieur Systèmes pour une startup.",
+      "BIO_FIRST_LINE": "Ingénieur Systèmes pour une startup tech.",
       "BIO_SECOND_LINE": "Computationally curious.",
       "RESUME": "CV",
       "I_STUDY": "Expérience",
@@ -9,6 +9,7 @@
       "I_DESIGN": "Ingénierie",
       "I_UNDERTAKE": "Entreprenariat",
       "I_RACE": "J'étais athlète il y a peu",
+      "I_RESEARCH": "Recherche",
       "AND_I_M_ONLY_STARTING_DOT": "Et je commence que.",
       "CV": "http://bit.ly/pierrejacquier-cvfr",
       "PLZ_REACH_OUT": "Si vous êtes arrivé jusque là, contactez-moi !",
@@ -78,7 +79,7 @@
         "JUST_STARTED": "Just started",
         "CURRENT": "FR",
         "HTML": "fr",
-        "TITLE": "Pierre Jacquier — Élève-ingénieur en mécanique",
+        "TITLE": "Pierre Jacquier, Ingénieur dans une startup tech",
         "DESCRIPTION": "Master avec mémoire à l'ÉTS, Montréal, Canada. Computationally curious."
     }
 }
