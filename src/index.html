@@ -5,6 +5,7 @@
     <script async src="https://cdn.ampproject.org/v0.js"></script>
     <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
     <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
+    <script async custom-element="amp-anim" src="https://cdn.ampproject.org/v0/amp-anim-0.1.js"></script>
     <title data-t>lang.TITLE</title>
     <meta data-attr-t data-attr-t-interpolate name="description" content-t="{{lang.DESCRIPTION}}">
     <meta name="keywords" content="Student, ETS, McGill, Mechanical Engineering, Graduate, Master, Computational, Programming">
@@ -372,6 +373,65 @@
             </div>
           </div>
         </div>
+        <div class="relative">
+          <div id="engineering" class="bar-target"></div>
+          <!-- Engineering mobile title -->
+          <!-- <div class="bg-white-transparent p1 px3 lg-hide">
+            <a href="#engineering">
+              <span class="align-middle inline-block black bold bold h2" data-t>me.I_RESEARCH</span>
+            </a>
+          </div> -->
+          <div class="flex">
+            <!-- Side title -->
+            <div class="left-side border-box p3">
+              <div class="i-do bg-accent black bold table">
+                <a href="#engineering">
+                  <span class="align-middle" data-t>me.I_RESEARCH</span>
+                </a>
+              </div>
+            </div>
+            <!-- Content -->
+            <div class="flex-auto bg-primary" id="books">
+              <div class="clearfix">
+                <a href="https://pierrejacquier.com/POD-UQNN/" target="_blank">
+                  <div class="project sm-col sm-col-12 md-col-6 bg-primary white pt3 px3">
+                    <p class="card-title m0 mb2 white"><span data-t class="bold">New content coming up</span> <br>
+                      <span class="h4 secondary-white no-transform">3D Printing + Electronics</span></p>
+                    <div class="card-title-underline"></div>
+                    <div class="mt2">
+                      <amp-anim width="400" height="200" src="/assets/3dprint.gif" class="rounded">
+                        <amp-img placeholder width="400" height="200" src="/assets/3dprint.jpg" class="rounded">
+                        </amp-img>
+                      </amp-anim>
+                    </div>
+                    <p class="white pres m0 mt1 mb2"><span data-t class="serif">
+                      I've been working on some side projects to develop my prototyping skills and stay on the verge of hardware development.
+                    </span></p>
+                    <!-- <a class="link-button bold block mt2 mb3">> <span data-t>nav.SOON</span></a> -->
+                  </div>
+                </a>
+                <a href="https://pierrejacquier.com/POD-UQNN/" target="_blank">
+                  <div class="project sm-col sm-col-12 md-col-6 bg-primary white pt3 px3">
+                    <p class="card-title m0 mb2 white"><span data-t class="bold">Research paper just published!</span> <br>
+                      <span class="h4 secondary-white no-transform">Uncertainty Quantification in the POD-NN framework</span></p>
+                    <div class="card-title-underline"></div>
+                    <!-- <amp-img width="767" height="569" layout="responsive"
+                            src="/assets/mechanical.webp" alt="Mechanical">
+                      <div fallback>
+                        <amp-img width="767" height="569" layout="responsive"
+                        src="/assets/mechanical.jpg" alt="Mechanical"></amp-img>    
+                      </div>        
+                    </amp-img> -->
+                    <p class="white pres m0 mt1 mb2"><span data-t class="serif">Applying AI tools to Computational Mechanics was at the core of my thesis. </span></p>
+                    <p class="white pres m0 mt1 mb2"><span data-t class="serif">Preprint published, "Non-Intrusive Reduced-Order Modeling Using Uncertainty-Aware Deep Neural Networks and Proper Orthogonal Decomposition: Application to Flood Modeling", 
+                      Pierre Jacquier, Azzedine Abdedou, Vincent Delmas, Azzeddine Soulaimani.</span></p>
+                    <a href="https://pierrejacquier.com/POD-UQNN/" target="_blank" class="link-button bold block mt2 mb3">> <span data-t>nav.READ_MORE</span></a>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <div id="studies">
           <!-- Studies mobile title -->
@@ -476,48 +536,6 @@
                   <h5 data-t class="m0 secondary-white serif">school.UTBM_SUB</h5>
                 </div>
               </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="relative">
-          <div id="engineering" class="bar-target"></div>
-          <!-- Engineering mobile title -->
-          <div class="bg-white-transparent p1 px3 lg-hide">
-            <a href="#engineering">
-              <span class="align-middle inline-block black bold bold h2" data-t>me.I_RESEARCH</span>
-            </a>
-          </div>
-          <div class="flex">
-            <!-- Side title -->
-            <div class="left-side border-box p3">
-              <div class="i-do bg-accent black bold table">
-                <a href="#engineering">
-                  <span class="align-middle" data-t>me.I_RESEARCH</span>
-                </a>
-              </div>
-            </div>
-            <!-- Content -->
-            <div class="flex-auto bg-primary" id="books">
-              <div class="clearfix">
-                <a href="https://pierrejacquier.com/POD-UQNN/" target="_blank">
-                  <div class="project sm-col sm-col-12 md-col-12 bg-primary white pt3 px3">
-                    <p class="card-title m0 mb2 white"><span data-t class="bold">Research paper just published!</span> <br>
-                      <span class="h4 secondary-white no-transform">Uncertainty Quantification in the POD-NN framework</span></p>
-                    <div class="card-title-underline"></div>
-                    <!-- <amp-img width="767" height="569" layout="responsive"
-                            src="/assets/mechanical.webp" alt="Mechanical">
-                      <div fallback>
-                        <amp-img width="767" height="569" layout="responsive"
-                        src="/assets/mechanical.jpg" alt="Mechanical"></amp-img>    
-                      </div>        
-                    </amp-img> -->
-                    <p class="white pres m0 mt1 mb2"><span data-t class="serif">Preprint published, "Non-Intrusive Reduced-Order Modeling Using Uncertainty-Aware Deep Neural Networks and Proper Orthogonal Decomposition: Application to Flood Modeling", 
-                      Pierre Jacquier, Azzedine Abdedou, Vincent Delmas, Azzeddine Soulaimani.</span></p>
-                    <a href="https://pierrejacquier.com/POD-UQNN/" target="_blank" class="link-button bold block mt2 mb3">> <span data-t>nav.READ_MORE</span></a>
-                  </div>
-                </a>
-              </div>
             </div>
           </div>
         </div>
