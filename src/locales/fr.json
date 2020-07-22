@@ -3,6 +3,7 @@
       "BIO_FIRST_LINE": "Ingénieur Systèmes pour une startup tech.",
       "BIO_SECOND_LINE": "Computationally curious.",
       "RESUME": "CV",
+      "FEATURED": "En avant",
       "I_STUDY": "Expérience",
       "I_CODE": "Programmation",
       "I_WRITE": "Publication",
@@ -43,7 +44,10 @@
         "BACK_TO_TOP": "Retour en haut",
         "WEBSITE": "Site web",
         "READ_MORE": "En savoir plus",
-        "SOON": "Bientôt"
+        "SOON": "Bientôt",
+        "RESUME": "CV",
+        "PROJECTS": "Projets",
+        "BLOG": "Blog"
     },
     "skills": {
         "GRAPHICAL": "Graphique",
@@ -64,7 +68,11 @@
         "FULL_PDF": "PDF entier",
         "PERSISTENS_SUB": "Embauchez-moi en freelancer !",
         "TODOBOARD": "Projet Todoboard: illustration pour un projet abandonné sur le thème de la productivité",
-        "PERSISTENS": "La programmation a toujours été une passion pour moi, et j'ai réalisé que je pouvais à la fois m'amuser et satisfaire des clients.<br><br>Persistens est ma marque de fabrique. La plupart de mes travaux sont des applications mobiles, utilisant des bibliothèques comme Ionic 4 ou Flutter, et aussi du code natif Java/Kotlin. Du prototype au produit final, du client au serveur. Donnez moi juste un clavier et une grande tasse de thé Cameronian Gold Blend."
+        "PERSISTENS": "La programmation a toujours été une passion pour moi, et j'ai réalisé que je pouvais à la fois m'amuser et satisfaire des clients.<br><br>Persistens est ma marque de fabrique. La plupart de mes travaux sont des applications mobiles, utilisant des bibliothèques comme Ionic 4 ou Flutter, et aussi du code natif Java/Kotlin. Du prototype au produit final, du client au serveur. Donnez moi juste un clavier et une grande tasse de thé Cameronian Gold Blend.",
+        "3DFEAT": "Nouveau contenu",
+        "3DFEAT_SUB": "J'ai travaillé sur des projets parallèles pour améliorer mes compétences en matière de prototypage et rester à la pointe du développement matériel, en utilisant des outils comme Autodesk Fusion.",
+        "PAPER": "Article scientifique publié !",
+        "PAPER_SUB": "Appliquer les techniques d'IA à la mécanique des fliudes était au coeur de mon mémoire."
     },
     "lang": {
         "EN_ENABLED": "",

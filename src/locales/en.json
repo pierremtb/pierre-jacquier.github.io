@@ -3,6 +3,7 @@
       "BIO_FIRST_LINE": "Systems Engineer at a tech startup.",
       "BIO_SECOND_LINE": "Computationally curious.",
       "RESUME": "Resume",
+      "FEATURED": "Featured",
       "I_STUDY": "Experience",
       "I_CODE": "Programming",
       "I_WRITE": "Publishing",
@@ -43,7 +44,10 @@
         "BACK_TO_TOP": "Back to top",
         "WEBSITE": "Website",
         "READ_MORE": "Read more",
-        "SOON": "Soon"
+        "SOON": "Soon",
+        "RESUME": "Resume",
+        "PROJECTS": "Projects",
+        "BLOG": "Blog"
     },
     "skills": {
         "GRAPHICAL": "Graphical",
@@ -68,7 +72,11 @@
         "FULL_PDF": "Full PDF",
         "PERSISTENS_SUB": "Hire me as your freelancer!",
         "TODOBOARD": "Todoboard project: illustration for an abandoned productivity hardware idea",
-        "PERSISTENS": "Programming has always been a side gig, and at some point I realized that I could have both fun and clients at the same time.<br><br>Persistens is the brand name. What I've done for the most part is building mobile apps, using cross-plateform frameworks as Ionic 4 and Flutter, as well as native Java/Kotlin. From mockups to final product, from client to server. Just give me a keyboard and a large cup of Cameronian Gold Blend tea."
+        "PERSISTENS": "Programming has always been a side gig, and at some point I realized that I could have both fun and clients at the same time.<br><br>Persistens is the brand name. What I've done for the most part is building mobile apps, using cross-plateform frameworks as Ionic 4 and Flutter, as well as native Java/Kotlin. From mockups to final product, from client to server. Just give me a keyboard and a large cup of Cameronian Gold Blend tea.",
+        "3DFEAT": "New content coming up",
+        "3DFEAT_SUB": "I've been working on some side projects to enhance my prototyping skills and stay on the verge of hardware development, using tools like Autodesk Fusion.",
+        "PAPER": "Research paper just published!",
+        "PAPER_SUB": "Applying AI tools to Computational Mechanics was at the core of my thesis."
     },
     "lang": {
         "EN_ENABLED": "active",
