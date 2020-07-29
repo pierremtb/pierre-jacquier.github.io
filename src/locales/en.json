@@ -73,8 +73,8 @@
         "PERSISTENS_SUB": "Hire me as your freelancer!",
         "TODOBOARD": "Todoboard project: illustration for an abandoned productivity hardware idea",
         "PERSISTENS": "Programming has always been a side gig, and at some point I realized that I could have both fun and clients at the same time.<br><br>Persistens is the brand name. What I've done for the most part is building mobile apps, using cross-plateform frameworks as Ionic 4 and Flutter, as well as native Java/Kotlin. From mockups to final product, from client to server. Just give me a keyboard and a large cup of Cameronian Gold Blend tea.",
-        "3DFEAT": "New content coming up",
-        "3DFEAT_SUB": "I've been working on some side projects to enhance my prototyping skills and stay on the verge of hardware development, using tools like Autodesk Fusion.",
+        "3DFEAT": "Episode 1 is out",
+        "3DFEAT_SUB": "We're building a DIY Kettle Manager with a Raspberry Pi, Machine Learning, and 3D Printing.",
         "PAPER": "Research paper just published!",
         "PAPER_SUB": "Applying AI tools to Computational Mechanics was at the core of my thesis."
     },
