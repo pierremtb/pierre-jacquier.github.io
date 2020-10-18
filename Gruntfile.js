@@ -84,13 +84,11 @@ module.exports = function (grunt) {
 			files: [path.join(project.src, '**'), path.join(project.src, project.pages, project.castmenu, '**')],
 			tasks: ['sass', 'i18n', 'copy', 'replace'],
 		},
-    express:{
-      all:{
-        options:{
+    connect: {
+      server: {
+        options: {
           port: 3000,
-          hostname: 'localhost',
-          bases: [project.dist],
-          livereload: true	
+          base: project.dist,
         }
       }
     },
@@ -138,11 +136,11 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-express');
+  grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-webp-compress');
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-replace');
 
   grunt.registerTask('default', ['clean', 'sass', 'i18n', 'copy', 'cwebp', 'replace']);
-  grunt.registerTask('serve',['express','watch']);
+  grunt.registerTask('serve',['connect','watch']);
 };
