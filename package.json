@@ -8,6 +8,7 @@
     "grunt-contrib-connect": "^1.0.2",
     "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-sass": "^2.0.0",
+    "grunt-contrib-watch": "^1.1.0",
     "grunt-i18n-static": "0.1.13",
     "grunt-parallel": "^0.5.1",
     "grunt-replace": "^1.0.1",
@@ -17,8 +18,8 @@
     "node-sass": "^4.14.1"
   },
   "scripts": {
-    "serve": "grunt serve",
+    "start": "grunt && grunt serve",
     "build": "grunt",
-    "deploy": "grunt;git subtree push --prefix dist origin master"
+    "deploy": "grunt && git subtree push --prefix dist origin master"
   }
 }

@@ -1,6 +1,6 @@
 {
     "me": {
-      "BIO_FIRST_LINE": "Engineer at a tech startup.",
+      "BIO_FIRST_LINE": "Hardware Engineer at Algolux.",
       "BIO_SECOND_LINE": "Computationally curious.",
       "RESUME": "Resume",
       "FEATURED": "Featured",
@@ -21,8 +21,11 @@
       "PHOTO_CREDITS": "Personal blog's background was taken by "
     },
     "school": {
-        "VM2_DATE": "June 2020 – Now  |   Montreal, Canada",
-        "VM2_TITLE": "Vehicle Mind — Systems Engineer",
+        "AL_DATE": "October 2020 – Now | Montreal, Canada",
+        "AL_TITLE": "Algolux — Junior Hardware Engineer",
+        "AL_SUB": "Robust perception in all condition, for self-driving cars and beyond",
+        "VM2_DATE": "October 2019 – October 2020  |   Montreal, Canada",
+        "VM2_TITLE": "Vehicle Mind — Full Stack Engineer",
         "VM2_SUB": "Part of a diverse, cross-functional team, trying to have a high-level understanding of the different technologies, participate in company vision meetings, contribute to the software engineering effort, design workflows and automate processes.",
         "VM_DATE": "October 2019 – May 2019  |   Montreal, Canada",
         "VM_TITLE": "Vehicle Mind — Full Stack Developer/Tech Generalist",

@@ -142,5 +142,5 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-replace');
 
   grunt.registerTask('default', ['clean', 'sass', 'i18n', 'copy', 'cwebp', 'replace']);
-  grunt.registerTask('serve',['connect','watch']);
+  grunt.registerTask('serve', ['connect','watch']);
 };
