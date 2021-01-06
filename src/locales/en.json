@@ -73,7 +73,7 @@
         "SL01_REPORT": "Course project: 28-page elaborate LaTeX report on the future of road safety (in German)",
         "MECHANICAL_PROJECT": "Course project: CAD model of a high-end mountain bike drivetrain system, including the crankset, the chain, the cogs and the derailleur.",
         "COMP_PROJECT": "Research oriented course project: Shock-tube problem using homemade SPH code.",
-        "COMP_EASYFIT": "Open-source JS library to parse .FIT files. It started as a in-house tool for a training platform I was working on, and has now multiple contributors.",
+        "COMP_EASYFIT": "Open-source JS library to parse .FIT files. It started as an in-house tool for a training platform I was working on, and has now multiple contributors.",
         "FULL_PDF": "Full PDF",
         "PERSISTENS_SUB": "Freelance engineering services company",
         "TODOBOARD": "Todoboard project: illustration for an abandoned productivity hardware idea",
