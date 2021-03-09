@@ -89,7 +89,8 @@
         "MEDIUM_PUBLICATION": "Medium publication",
         "RESEARCH_PROJECT": "M.S. Thesis + Journal Publication",
         "RESEARCH_PROJECT_SUB": "Research, Python, TensorFlow 2, Paraview",
-        "RESEARCH_PROJECT_DESC": "There is much to gain from transferring Deep Learning tools to older fields like Computational Fluid Dynamics in practical engineering contexts. Flooding predictions in the Montreal metro area were our test case. <br> For the thesis we tested multiple approaches (mainly PINNs), for which open-source contributions have been made, and pushed the POD-NN concept further with Uncertainty Quantification, borrowing state-of-the-art ML models."
+        "RESEARCH_PROJECT_DESC": "There is much to gain from transferring Deep Learning tools to older fields like Computational Fluid Dynamics in practical engineering contexts. Flooding predictions in the Montreal metro area were our test case. <br> For the thesis we tested multiple approaches (mainly PINNs), for which open-source contributions have been made, and pushed the POD-NN concept further with Uncertainty Quantification, borrowing state-of-the-art ML models.",
+        "FEAT_PROJECT_DESC": "Currently converting hardware from an old cheap 3D printer into a fancier CoreXY 'Anet Evolution' design. The FreeCAD model is hosted on GitHub and a lot of details about the project live in my Notion."
     },
     "lang": {
         "EN_ENABLED": "active",
