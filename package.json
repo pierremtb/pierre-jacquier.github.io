@@ -20,6 +20,7 @@
     "deploy": "grunt && git subtree push --prefix dist origin master"
   },
   "dependencies": {
+    "coffeescript": "^2.5.1",
     "sass": "^1.36.0"
   }
 }
