@@ -65,7 +65,7 @@
         "ONCE_TOP_WRITER": "Statut 'Top Writer' en 2017 dans quatre sujets sur ",
         "TECHNOLOGY_MISSIONS": "ETS Missions Technologiques",
         "TECHNOLOGY_MISSIONS_SUB": "Projet étudiant d'une année complète",
-        "TECHNOLOGY_MISSIONS_DESC": "Pour deux semaines en Avril 2019, mon équipe et moi iront à Munich, Stuttgart et Berlin, afin de visiter entreprises et universités, pour consrtuire partenariats et réseaux professionnels. Le projet démarre an à l'avance pour organiser et financer le voyage.",
+        "TECHNOLOGY_MISSIONS_DESC": "Pour deux semaines en Avril 2019, mon équipe et moi sommes allés à Munich, Stuttgart et Berlin, afin de visiter entreprises et universités, pour consrtuire partenariats et réseaux professionnels. Le projet démarre an à l'avance pour organiser et financer le voyage.",
         "SL01_REPORT": "Projet de cours: rapport en LaTeX de 28 pages sur le futur de la sécurité routière (en allemand)",
         "MECHANICAL_PROJECT": "Course project: CAD model with CATIA V5 of a high-end mountain bike drivetrain system, including the crankset, the chain, the cogs and the derailleur. Rendered using Keyshot",
         "COMP_PROJECT": "Research oriented course project: Shock-tube problem using homemade SPH code",
@@ -86,7 +86,7 @@
         "RESEARCH_PROJECT": "M.S. Thesis",
         "RESEARCH_PROJECT_SUB": "Research, Python, TensorFlow 2, Paraview",
         "RESEARCH_PROJECT_DESC": "There is much to gain from transferring Deep Learning tools to older fields like Computational Fluid Dynamics in practical engineering contexts. Flooding predictions in the Montreal metro area were our test case. <br> For the thesis we tested multiple approaches (mainly PINNs), for which open-source contributions have been made, and pushed the POD-NN concept further with Uncertainty Quantification, borrowing state-of-the-art ML models.",
-        "FEAT_PROJECT_DESC": "Réutilisation du matériel d'une vieille imprimante 3D pour suivre le concept CoreXY 'Anet Evolution'. Le modèle est hébergé sur GitHub et plus de détails se trouve sur mon Notion."
+        "FEAT_PROJECT_DESC": "Currently building a product dear to my heart: Bringing Git as a version control tool for Mechanical/Industrial Design files 🚆 <br><br>At the moment the product is revolving around a full-fledged React/TypeScript app served via Node. It connects to GitHub and shows 3D diffs for commits and pull requests. The diff engine is written in C++."
     },
     "lang": {
         "EN_ENABLED": "",
