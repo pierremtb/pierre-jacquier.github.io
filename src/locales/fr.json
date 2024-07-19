@@ -1,8 +1,8 @@
 {
     "me": {
-      "BIO_FIRST_LINE": "Tech Lead chez Algolux.",
+      "BIO_FIRST_LINE": "Technical PM at Torc Robotics.",
       "BIO_SECOND_LINE": "Computationally curious.",
-      "BIO_LONG": "Je suis actuellement Tech Lead chez Algolux, une entreprise Montréalaise révolutionnant la robustesse de vision par ordinateur, pour les véhicules autonomes et plus. Avec un double-diplôme en mécanique entre la France et le Canada, et une passion pour le logiciel et la technologie, je travaille pour atteindre un point de compréhension complète des produits, avec le but ultime d'en lancer.",
+      "BIO_LONG": "Je travaille actuellement en tant que responsable technique chez Torc Robotics, une entreprise américaine de transport routier autonome. Diplômé en ingénierie mécanique et très intéressé par le monde logiciel, je souhaite parvenir à une compréhension transversale des produits tech.",
       "RESUME": "CV",
       "FEATURED": "En avant",
       "I_STUDY": "Expérience",
@@ -95,7 +95,7 @@
         "ES_ENABLED": "",
         "CH_ENABLED": "",
         "FLUENT": "Courant",
-        "NATIVE": "Navif",
+        "NATIVE": "Natif",
         "UPPER_ADVANCED": "Avancé",
         "COMMUNICATION_SKILLS": "Notions de communications",
         "JUST_STARTED": "Just started",
